@@ -7,9 +7,22 @@
       alt="Henry Overholt's Logo"
     />
   </a>
-  <!-- <i id="showNav" class="fas fa-bars"></i> -->
   <nav>
-    <ul>
+    <div id="dropDownNav">
+      <i id="showNav" class="fas fa-bars"></i>
+      <ul id="smallNav">
+        <li><a routerLinkActive="activeRoute" routerLink="/story">STORY</a></li>
+        <li>
+          <a routerLinkActive="activeRoute" routerLink="/projects">PROJECTS</a>
+        </li>
+        <li>
+          <a routerLinkActive="activeRoute" routerLink="/contact"
+            >SAY 'HELLO'</a
+          >
+        </li>
+      </ul>
+    </div>
+    <ul id="bigNav">
       <li><a routerLinkActive="activeRoute" routerLink="/story">STORY</a></li>
       <li>
         <a routerLinkActive="activeRoute" routerLink="/projects">PROJECTS</a>
