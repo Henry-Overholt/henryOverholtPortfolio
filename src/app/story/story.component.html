@@ -1,1 +1,26 @@
-<p>story works!</p>
+<div id="wrapper">
+  <div id="timelineContainer">
+    <h2>My Career Timeline</h2>
+    <button *ngIf="up" (click)="handleUpArrow()">
+      <i class="fas fa-arrow-circle-up"></i>
+    </button>
+    <div id="timelineHolder">
+      <div id="currentTimeline">
+        <img id="logo" src="{{ currentTimeline.logo }}" alt="" />
+        <div id="timelineTitle">
+          <h3 id="date">{{ currentTimeline.date }}</h3>
+          <h4 id="company">
+            <em>{{ currentTimeline.company }}</em> ~
+            {{ currentTimeline.position }}
+          </h4>
+        </div>
+      </div>
+      <div id="timelineBody" *ngFor="let string of strings; index as i">
+        <p>{{ string }}</p>
+      </div>
+    </div>
+    <button *ngIf="down" (click)="handleDownArrow()">
+      <i class="fas fa-arrow-circle-down"></i>
+    </button>
+  </div>
+</div>
