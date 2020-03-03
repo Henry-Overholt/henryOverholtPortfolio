@@ -1,19 +1,30 @@
 #wrapper {
   color: rgb(0, 0, 56);
   font-family: "Raleway";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #timelineContainer {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 #logo {
   width: 100px;
 }
 #timelineHolder {
-  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px 0px 2px 0px solid rgb(0, 0, 56);
 }
 #currentTimeline {
   display: flex;
@@ -26,16 +37,88 @@
   flex-direction: column;
   align-items: center;
 }
+#timelineBody {
+  width: 90%;
+  margin-top: 10px;
+}
+#body {
+  padding-bottom: 5px;
+}
 h2 {
   font-size: 20px;
   font-family: "Rock Salt";
 }
 .fas {
   font-size: 30px;
+  color: rgb(0, 0, 56);
 }
 #date {
   font-size: 20px;
 }
 button {
-  width: 100%;
+  background: none;
+  border: 1px solid rgb(0, 0, 56);
+  width: 10%;
+  border: 1px solid purple;
+}
+.on {
+  visibility: visible;
+}
+.off {
+  visibility: hidden;
+}
+#dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  height: 0;
+  border: 0.5px solid grey;
+  width: 15%;
+}
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+}
+.selected {
+  background: rgb(0, 0, 56);
+}
+.unselected {
+  background: grey;
+}
+@media screen and (min-width: 768px) {
+  #timeline {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #timelineContainer {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  #currentTimeline {
+    width: 40%;
+  }
+
+  #timelineHolder {
+    flex-direction: row;
+    width: 70%;
+  }
+  button {
+    width: 100px;
+    height: 300px;
+  }
+  #logo {
+    width: 250px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .fas {
+    font-size: 50px;
+  }
 }
