@@ -31,12 +31,18 @@ a {
 }
 .fas:hover {
   transform: scale(1.1);
+  background: yellow;
+  padding: 5px;
+  border-radius: 10px;
 }
 #dropDownNav:hover > #smallNav {
   visibility: visible;
 }
 #bigNav {
   display: none;
+}
+#smallNav li:hover {
+  background: yellow;
 }
 #smallNav {
   visibility: hidden;
