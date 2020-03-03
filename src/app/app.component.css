@@ -80,7 +80,7 @@ footer {
   width: 20px;
 }
 #footerLogo {
-  width: 40px;
+  display: none;
 }
 #github {
   width: 20px;
@@ -129,6 +129,7 @@ footer {
     width: 50px;
   }
   #footerLogo {
+    display: block;
     width: 100px;
   }
   #github {

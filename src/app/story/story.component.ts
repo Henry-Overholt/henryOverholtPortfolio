@@ -13,21 +13,25 @@ export class StoryComponent implements OnInit {
       alt: "Grand Circus Bootcamp Logo",
       position: "Front-end Bootcamp",
       date: "July 2019 - September 2019",
-      body: ["This is my most recent experience", "This was a bootcamp"],
+      body: [
+        "This is my most recent experience",
+        "This was a bootcamp",
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?"
+      ],
       index: 0
     },
-    // {
-    //   logo: "./../../assets/careerTimeline/forOurFutureLogo.png",
-    //   company: "For Our Future MI",
-    //   alt: "For Our Future MI Logo",
-    //   position: "Field Organizer",
-    //   date: "September 2018 - December 2018",
-    //   body: [
-    //     "This is my most recent experience",
-    //     "THis was a campiagn for local offices"
-    //   ],
-    //   index: 1
-    // },
+    {
+      logo: "./../../assets/careerTimeline/forOurFutureLogo.png",
+      company: "For Our Future MI",
+      alt: "For Our Future MI Logo",
+      position: "Field Organizer",
+      date: "September 2018 - December 2018",
+      body: [
+        "THis was a campiagn for local offices",
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?"
+      ],
+      index: 1
+    },
     {
       logo: "./../../assets/careerTimeline/cityyearLogo.png",
       company: "City Year Detroit",
@@ -35,10 +39,10 @@ export class StoryComponent implements OnInit {
       position: "Team Leader",
       date: "August 2016 - July 2018",
       body: [
-        "This is my most recent experience",
-        "This was two one year programs"
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?",
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?"
       ],
-      index: 1
+      index: 2
     },
     {
       logo: "./../../assets/careerTimeline/ohioLogo.png",
@@ -48,15 +52,16 @@ export class StoryComponent implements OnInit {
       date: "August 2012 - August 2016",
       body: [
         "This is my most recent experience",
-        "THis was a campiagn for local offices"
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?"
       ],
-      index: 2
+      index: 3
     }
   ];
   currentTimeline: any = this.timeline[0];
   strings: any = this.currentTimeline.body;
   up: boolean = false;
   down: boolean = true;
+  dots: number[] = [0, 1, 2, 3];
 
   constructor() {}
 
