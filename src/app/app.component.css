@@ -92,9 +92,6 @@ footer {
     justify-content: flex-end;
     margin-left: 10px;
   }
-  header {
-    border-bottom-width: 6px;
-  }
   li:hover {
     text-decoration: underline;
     font-weight: bold;
