@@ -1,16 +1,15 @@
-/* font-family: 'Arizonia', ;
-font-family: 'Alex Brush', ;
+/* 
 font-family: 'Rock Salt', ;
-font-family: 'Pinyon Script', ;
-font-family: 'Permanent Marker', ;
-font-family: 'Amatic SC', ;
-font-family: 'Yesteryear', ; */
+font-family:'Raleway'
+*/
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   color: rgb(0, 0, 56);
+  font-family: "Raleway";
 }
 #headerLogo {
   width: 110px;
