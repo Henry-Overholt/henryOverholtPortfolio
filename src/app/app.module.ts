@@ -1,16 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { AppComponent } from "./app.component";
+import { HomeComponent } from "./home/home.component";
+import { StoryComponent } from "./story/story.component";
+import { ProjectsComponent } from "./projects/projects.component";
+import { ContactComponent } from "./contact/contact.component";
+const appRoutes: Routes = [
+  { path: "home", component: HomeComponent },
+  { path: "story", component: StoryComponent },
+  { path: "projects", component: ProjectsComponent },
+  { path: "contact", component: ContactComponent },
+  { path: "**", component: HomeComponent },
+  { path: "", redirectTo: "/home", pathMatch: "full" }
+];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    StoryComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
