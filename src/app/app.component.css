@@ -7,10 +7,58 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   color: rgb(0, 0, 56);
   font-family: "Raleway";
+  margin: 5px 10px 10px 0px;
+  border-bottom: 3px solid rgb(0, 0, 56);
 }
 #headerLogo {
   width: 110px;
+}
+nav {
+  display: hide;
+}
+a {
+  color: rgb(0, 0, 56);
+  text-decoration: none;
+}
+.activeRoute {
+  background: yellow;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+  }
+  .activeRoute {
+    padding: 8px;
+    border-radius: 10px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 80%;
+  }
+  li {
+    list-style: none;
+  }
+  #headerLogo {
+    width: 200px;
+  }
 }

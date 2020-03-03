@@ -1,5 +1,5 @@
 <header>
-  <a>
+  <a routerLink="/home">
     <img
       id="headerLogo"
       class="logo"
@@ -7,10 +7,17 @@
       alt="Henry Overholt's Logo"
     />
   </a>
+  <!-- <i id="showNav" class="fas fa-bars"></i> -->
   <nav>
-    <a routerLink="/story">STORY</a>
-    <a routerLink="/projects">PROJECTS</a>
-    <a routerLink="/contact">SAY 'HELLO'</a>
+    <ul>
+      <li><a routerLinkActive="activeRoute" routerLink="/story">STORY</a></li>
+      <li>
+        <a routerLinkActive="activeRoute" routerLink="/projects">PROJECTS</a>
+      </li>
+      <li>
+        <a routerLinkActive="activeRoute" routerLink="/contact">SAY 'HELLO'</a>
+      </li>
+    </ul>
   </nav>
 </header>
 <router-outlet></router-outlet>
