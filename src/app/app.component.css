@@ -54,6 +54,7 @@ a {
   align-items: flex-end;
   position: absolute;
   right: 20px;
+  z-index: 2;
 }
 #smallNav li {
   border: 1px solid rgb(0, 0, 56);
