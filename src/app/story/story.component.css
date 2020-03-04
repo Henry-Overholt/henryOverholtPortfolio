@@ -46,20 +46,26 @@
 }
 h2 {
   font-size: 20px;
-  font-family: "Rock Salt";
+  font-family: "Raleway";
 }
 .fas {
   font-size: 30px;
   color: rgb(0, 0, 56);
 }
 #date {
-  font-size: 20px;
+  font-size: 15px;
+  font-family: "Rock Salt";
+}
+#company {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 button {
-  background: none;
+  background: white;
   border: 1px solid rgb(0, 0, 56);
   width: 10%;
-  border: 1px solid purple;
+  z-index: 1;
 }
 .on {
   visibility: visible;
@@ -75,11 +81,12 @@ button {
   border-radius: 5px;
   height: 0;
   border: 0.5px solid grey;
-  width: 15%;
+  width: 20%;
 }
+
 .dot {
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
 }
 .selected {
@@ -117,6 +124,18 @@ button {
   h2 {
     font-size: 30px;
     margin-bottom: 0px;
+  }
+  #date {
+    font-size: 25px;
+  }
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+  }
+  #dots {
+    border-width: 1px;
+    width: 15%;
   }
   .fas {
     font-size: 50px;

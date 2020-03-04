@@ -76,14 +76,11 @@ footer {
   border-top: 3px solid rgb(0, 0, 56);
   padding-top: 5px;
 }
-#linkedIn {
-  width: 20px;
+i {
+  font-size: 40px;
 }
 #footerLogo {
   display: none;
-}
-#github {
-  width: 20px;
 }
 @media screen and (min-width: 768px) {
   nav {

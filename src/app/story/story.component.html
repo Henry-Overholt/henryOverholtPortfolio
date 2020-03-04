@@ -2,7 +2,10 @@
   <div id="timeline">
     <h2>Timeline</h2>
     <div id="timelineContainer">
-      <button [ngClass]="up == true ? 'on' : 'off'" (click)="handleUpArrow()">
+      <button
+        [ngClass]="up == true ? 'on' : 'off'"
+        (click)="handleRightArrow()"
+      >
         <i class="fas fa-arrow-circle-left"></i>
       </button>
       <div id="timelineHolder">
@@ -24,7 +27,7 @@
       </div>
       <button
         [ngClass]="down == true ? 'on' : 'off'"
-        (click)="handleDownArrow()"
+        (click)="handleLeftArrow()"
       >
         <i class="fas fa-arrow-circle-right"></i>
       </button>
@@ -32,6 +35,7 @@
     <div id="dots">
       <div *ngFor="let dot of dots; index as i">
         <p
+          (click)="handleDotClick(i)"
           class="dot"
           [ngClass]="currentTimeline.index === i ? 'selected' : 'unselected'"
         ></p>
