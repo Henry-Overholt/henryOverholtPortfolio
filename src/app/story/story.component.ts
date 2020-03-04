@@ -33,6 +33,18 @@ export class StoryComponent implements OnInit {
       index: 1
     },
     {
+      logo: "./../../assets/careerTimeline/saadCongressLogo.png",
+      company: "Faryouz for Congress",
+      alt: "For Our Future MI Logo",
+      position: "Regional Field Director",
+      date: "July 2018 - August 2018",
+      body: [
+        "THis was a campiagn for local offices",
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?"
+      ],
+      index: 2
+    },
+    {
       logo: "./../../assets/careerTimeline/cityyearLogo.png",
       company: "City Year Detroit",
       alt: "City Year Logo",
@@ -42,7 +54,7 @@ export class StoryComponent implements OnInit {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?",
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?"
       ],
-      index: 2
+      index: 3
     },
     {
       logo: "./../../assets/careerTimeline/ohioLogo.png",
@@ -54,7 +66,7 @@ export class StoryComponent implements OnInit {
         "This is my most recent experience",
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?"
       ],
-      index: 3
+      index: 4
     }
   ];
   currentTimeline: any = this.timeline[0];
@@ -62,7 +74,7 @@ export class StoryComponent implements OnInit {
   strings: any = this.currentTimeline.body;
   up: boolean = false;
   down: boolean = true;
-  dots: number[] = [0, 1, 2, 3];
+  dots: number[] = [0, 1, 2, 3, 4];
 
   constructor() {}
 
