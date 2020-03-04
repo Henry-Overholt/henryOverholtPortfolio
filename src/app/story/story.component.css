@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #timeline {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 #timelineContainer {
   display: flex;
@@ -82,6 +84,10 @@ button {
   height: 0;
   border: 0.5px solid grey;
   width: 20%;
+  margin: 10px 0px 10px 0px;
+}
+.hide {
+  display: static;
 }
 
 .dot {
@@ -95,7 +101,11 @@ button {
 .unselected {
   background: grey;
 }
+
 @media screen and (min-width: 768px) {
+  .hide {
+    display: none;
+  }
   #timeline {
     display: flex;
     align-items: center;
