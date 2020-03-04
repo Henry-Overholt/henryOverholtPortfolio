@@ -1,0 +1,114 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-family: "Raleway";
+  height: 75vh;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 95%;
+  margin-top: 50px;
+}
+label {
+  text-indent: -10000px;
+}
+#contactForm h1 {
+  align-self: center;
+}
+input {
+  border: 2px solid rgb(0, 0, 56);
+  height: 25px;
+  font-size: 12px;
+  margin: 0px 2px 0px 2px;
+  border-radius: 5px;
+}
+textarea {
+  border: 2px solid rgb(0, 0, 56);
+  margin: 0px 2px 5px 2px;
+  border-radius: 5px;
+}
+textarea ::placeholder {
+  font-size: 12px;
+}
+button {
+  border: 2px solid rgb(0, 0, 56);
+  color: white;
+  font-family: "Rock Salt";
+  background: rgb(0, 0, 56);
+
+  border-radius: 10px;
+  margin: 5px;
+}
+#info input {
+  flex: 1;
+}
+#info {
+  display: flex;
+}
+#personalContact {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  #contactForm {
+    width: 40%;
+    margin-top: 0;
+  }
+  #wrapper {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  input {
+    height: 40px;
+    font-size: 15px;
+    margin: 1px 5px 1px 5px;
+  }
+  #personalContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+  img {
+    width: 200px;
+    border: 5px solid yellow;
+    border-radius: 100%;
+  }
+  #socialHandles {
+    margin-left: 10px;
+    width: 50%;
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-family: "Rock Salt";
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: "Rock Salt";
+  }
+  i {
+    font-size: 50px;
+    padding-right: 10px;
+    border-right: 4px solid rgb(0, 0, 56);
+    margin-right: 15px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 56);
+  }
+  .fa-linkedin {
+    color: blue;
+  }
+  .fa-github-sqaure {
+    color: black;
+  }
+}
