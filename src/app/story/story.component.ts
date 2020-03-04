@@ -58,6 +58,7 @@ export class StoryComponent implements OnInit {
     }
   ];
   currentTimeline: any = this.timeline[0];
+  lastTimeLine: any = this.timeline[0];
   strings: any = this.currentTimeline.body;
   up: boolean = false;
   down: boolean = true;
@@ -66,24 +67,50 @@ export class StoryComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-  handleUpArrow(): void {
+  handleRightArrow(): void {
     let index: number = this.currentTimeline.index;
     this.down = true;
     if (index > 0) {
       let nextIndex: number = index - 1;
-      this.currentTimeline = this.timeline[nextIndex];
+      this.scroll(nextIndex, true);
     } else {
       this.up = false;
     }
   }
-  handleDownArrow(): void {
+  handleLeftArrow(): void {
     let index: number = this.currentTimeline.index;
     this.up = true;
     if (index < this.timeline.length - 1) {
       let nextIndex: number = index + 1;
-      this.currentTimeline = this.timeline[nextIndex];
+      this.scroll(nextIndex, false);
     } else {
       this.down = false;
     }
+  }
+  handleDotClick(i: number) {
+    this.currentTimeline = this.timeline[i];
+  }
+  scroll(index: number, direction: boolean) {
+    let element = document.getElementById("timelineHolder");
+    element.style.position = "relative";
+    if (direction === true) {
+      element.style.left = "100%";
+    } else {
+      element.style.left = "-100%";
+    }
+    element.style.transition = ".25s";
+    element.style.visibility = "hidden";
+    setTimeout(() => {
+      if (direction === true) {
+        element.style.left = "-100%";
+      } else {
+        element.style.left = "100%";
+      }
+      this.currentTimeline = this.timeline[index];
+    }, 250);
+    setTimeout(() => {
+      element.style.visibility = "visible";
+      element.style.left = "0";
+    }, 500);
   }
 }
