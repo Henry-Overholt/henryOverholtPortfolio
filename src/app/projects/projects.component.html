@@ -1,1 +1,32 @@
-<p>projects works!</p>
+<main>
+  <div id="projectsContainer">
+    <h3>PROJECTS</h3>
+    <h5>Some of the things I've built</h5>
+    <div id="projects">
+      <div
+        class="project flexColumn"
+        *ngFor="let project of projects; index as i"
+      >
+        <div id="projectInfo" class="flexColumn">
+          <h4 (click)="moreInfo(project.index)">{{ project.projectName }}</h4>
+          <div id="elevatorPitch" class="hideMobile flexColumn">
+            <p (click)="moreInfo(project.index)">{{ project.elevator }}</p>
+            <div class="icons">
+              <a href="{{ project.github }}"><i class="fab fa-github"></i></a>
+              <a *ngIf="project.live === true" href="{{ project.link }}"
+                ><i class="far fa-eye"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="computer" (click)="moreInfo(project.index)">
+          <img class="coverPic" src="{{ project.coverPic }}" alt="" />
+          <div *ngIf="project.mobile === true" class="phone">
+            <img src="{{ project.mobilePic }}" alt="" class="phonePic" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skillSet"></div>
+</main>
