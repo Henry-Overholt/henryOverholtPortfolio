@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
 }
+p {
+  text-indent: 8px;
+  font-size: 11px;
+}
 #timeline {
   display: flex;
   flex-direction: column;
@@ -51,23 +55,25 @@ h2 {
   font-family: "Raleway";
 }
 .fas {
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(0, 0, 56);
 }
 #date {
-  font-size: 15px;
+  font-size: 11px;
   font-family: "Rock Salt";
 }
 #company {
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 12px;
+
   margin-bottom: 5px;
 }
 button {
   background: white;
-  border: 1px solid rgb(0, 0, 56);
-  width: 10%;
+  border: none;
+  margin: 0px 1px 0px 1px;
+  width: 8%;
   z-index: 1;
+  outline: none;
 }
 .on {
   visibility: visible;
@@ -119,14 +125,21 @@ button {
   #currentTimeline {
     width: 40%;
   }
-
+  p {
+    text-indent: 15px;
+    font-size: 15px;
+  }
   #timelineHolder {
     flex-direction: row;
     width: 70%;
   }
+  #company {
+    font-size: 25px;
+  }
   button {
     width: 100px;
     height: 300px;
+    flex: 1;
   }
   #logo {
     width: 250px;

@@ -14,7 +14,7 @@ export class StoryComponent implements OnInit {
       position: "Front-end Bootcamp",
       date: "July 2019 - September 2019",
       body: [
-        "This is my most recent experience",
+        "This is my most recent experience. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore, velit repellat, eos repellendus amet vel fuga numquam ipsam distinctio ab ducimus non dolorum, eum dolores necessitatibus natus nisi repudiandae.",
         "This was a bootcamp",
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?"
       ],
