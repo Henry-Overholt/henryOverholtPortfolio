@@ -16,4 +16,10 @@ export class ProjectsComponent implements OnInit {
   moreInfo(i: number) {
     this.projectsService.setProject(this.projects[i]);
   }
+  swingIn() {
+    let projects = document.getElementById("projects");
+    setTimeout(() => {
+      projects.style.transition = "2s";
+    }, 200);
+  }
 }
