@@ -1,0 +1,162 @@
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  font-family: "Rock Salt";
+  margin: 100px 0px 10px 0px;
+}
+h4 {
+  font-family: "Rock Salt";
+}
+.computer {
+  align-self: center;
+  width: 200px;
+  height: 150px;
+  background-image: url("./../../assets/emptyLaptopScreen.jpeg");
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+.coverPic {
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-75px);
+  top: 15px;
+  width: 149px;
+  height: 95px;
+  border-radius: 3px;
+}
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  border-top: 2px solid rgb(0, 0, 56);
+  width: 100%;
+}
+.phonePic {
+  position: relative;
+  left: 7px;
+  top: 13px;
+  width: 34px;
+  height: 65px;
+  border-radius: 1px;
+  border-right: 1px solid black;
+}
+.phone {
+  position: relative;
+  bottom: 50px;
+  left: 150px;
+  width: 50px;
+  height: 100px;
+  background-image: url("./../../assets/iphoneBlank.png");
+  background-position: center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.hideMobile {
+  display: none;
+}
+h5 {
+  margin-bottom: 100px;
+  font-family: "Raleway";
+}
+/* .project {
+  border: 1px solid rgb(0, 0, 56);
+} */
+/* #skillSet {
+  border: 1px dashed blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  transform: rotate(360deg);
+  transition: 5s;
+} */
+@media screen and (min-width: 768px) {
+  .computer {
+    width: 400px;
+    height: 300px;
+    background-size: 400px;
+  }
+  .hideMobile {
+    display: flex;
+  }
+  .coverPic {
+    top: 30px;
+    width: 301px;
+    transform: translateX(-150.5px);
+    height: 190px;
+    border-radius: 6px;
+  }
+  .phonePic {
+    left: 13px;
+    top: 36px;
+    width: 68.5px;
+    height: 123px;
+  }
+  .phone {
+    position: relative;
+    bottom: 100px;
+    left: 310px;
+    width: 100px;
+    height: 200px;
+    background-size: 200px;
+  }
+  i {
+    font-size: 50px;
+    color: black;
+    z-index: 1;
+  }
+  .project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  #projectInfo {
+    width: 50%;
+  }
+  h3 {
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  #elevatorPitch {
+    width: 80%;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
