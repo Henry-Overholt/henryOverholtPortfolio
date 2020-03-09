@@ -2,4 +2,15 @@
   <h1>Henry O.</h1>
 
   <h2>I'm a Frontend Developer based in the Detroit area.</h2>
+  <div id="bubbleContainer">
+    <div
+      *ngFor="let bubble of bubbles; index as i"
+      class="{{ bubble.class }}"
+      [@changePosition]="bubble.state"
+      [ngClass]="bubble.state === 'initial' ? 'blue' : 'yellow'"
+    >
+      <!-- <p>{{ i }}</p> -->
+    </div>
+  </div>
 </main>
+<!--  [@changePosition]="bubble.state" -->
