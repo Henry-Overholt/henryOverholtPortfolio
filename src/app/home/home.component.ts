@@ -34,13 +34,13 @@ import {
       state(
         "initial",
         style({
-          left: "100vw"
+          left: "100%"
         })
       ),
       state(
         "final",
         style({
-          left: "-100vw",
+          left: "-100%",
           background: "yellow"
         })
       ),

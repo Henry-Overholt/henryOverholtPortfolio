@@ -13,35 +13,36 @@ import {
   templateUrl: "./projects.component.html",
   styleUrls: ["./projects.component.css"],
   animations: [
-    trigger("swingUp", [
+    trigger("type", [
       state("void", style({ opacity: 0 })),
-      transition("void=>*", animate("500ms"))
+      transition("void=>*", animate("500ms 1000ms"))
+    ]),
+    trigger("swingUp", [
+      state("void", style({ opacity: 0, top: "100vh" })),
+      transition("void=>*", animate("1000ms"))
+    ]),
+    trigger("fadeIn", [
+      state("void", style({ opacity: 0 })),
+      transition("void=>*", animate("1000ms 500ms"))
     ]),
     trigger("changePosition", [
       state(
         "initial",
         style({
-          background: "white",
-          color: "rgb(0, 0, 56)"
+          background: "white"
         })
       ),
       state(
         "final",
         style({
-          background: "rgb(0, 0, 56)",
-          color: "yellow"
+          background: "rgb(0, 0, 56)"
         })
       ),
-      transition("initial<=>final", animate("4000ms 1000ms"))
-      // transition("final=>initial", animate("6000ms"))
+      transition("initial<=>final", animate("4000ms 1500ms"))
     ]),
-    trigger("changeColor", [
+    trigger("fadeTitle", [
       state("void", style({ opacity: 0 })),
-      // state("blue", style({ color: "rgb(0, 0, 56)" })),
-      // state("yellow", style({ color: "yellow" })),
-      transition("void=>*", animate("1000ms"))
-      // transition("blue =>yellow", animate("5000ms")),
-      // transition("yellow => blue", animate("1000ms"))
+      transition("void=>*", animate("2000ms 1000ms ease-in"))
     ])
   ]
 })
@@ -61,8 +62,68 @@ export class ProjectsComponent implements OnInit {
     { class: "pillar ", index: 10, state: "initial" },
     { class: "pillar ", index: 11, state: "initial" }
   ];
-  randomInterval: number;
   currentState: string = "yellow";
+  commands: any[] = [
+    {
+      position: "Henrys-MacBook-Pro:~ henry-overholt$",
+      command: "cd Documents",
+      spread: false,
+      class: "",
+      folders: [],
+      show: false
+    },
+    {
+      position: "Henrys-MacBook-Pro:Documents henry-overholt$",
+      command: "ls",
+      spread: false,
+      class: "",
+      folders: [],
+      show: false
+    },
+    {
+      position: "",
+      command: "",
+      spread: true,
+      class: "spread",
+      folders: ["home", "contact", "projects", "story", "skills"],
+      show: false
+    },
+    {
+      position: "Henrys-MacBook-Pro:Documents henry-overholt$ ",
+      command: "cd skills",
+      spread: false,
+      class: "",
+      folders: [],
+      show: false
+    },
+    {
+      position: "Henrys-MacBook-Pro:skills henry-overholt$ ",
+      command: "ls",
+      spread: false,
+      class: "",
+      folders: [],
+      show: false
+    },
+    {
+      position: "",
+      command: "",
+      spread: true,
+      class: " skills",
+      folders: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Angular",
+        "Node.JS",
+        "Git/GitHub",
+        "TypeScript",
+        "SQL"
+      ],
+      show: false
+    }
+  ];
+  cursor: boolean = true;
+  playAgain: boolean = false;
   constructor(private projectsService: ProjectsService) {}
 
   ngOnInit() {
@@ -74,41 +135,47 @@ export class ProjectsComponent implements OnInit {
   }
   startAnimations() {
     // this.changeTitleColor();
-    this.changeState(0);
+    setTimeout(() => {
+      this.changeState(0);
+    }, 500);
+
     setTimeout(() => {
       this.changeState(1);
-    }, 400);
+    }, 1000);
     setTimeout(() => {
       this.changeState(2);
-    }, 800);
+    }, 1500);
     setTimeout(() => {
       this.changeState(3);
-    }, 1200);
+    }, 2000);
     setTimeout(() => {
       this.changeState(4);
-    }, 1600);
+    }, 2500);
     setTimeout(() => {
       this.changeState(5);
-    }, 2000);
+    }, 3000);
     setTimeout(() => {
       this.changeState(6);
-    }, 2000);
+    }, 3000);
     setTimeout(() => {
       this.changeState(7);
-    }, 1600);
+    }, 2500);
     setTimeout(() => {
       this.changeState(8);
-    }, 1200);
+    }, 2000);
     setTimeout(() => {
       this.changeState(9);
-    }, 800);
+    }, 1500);
     setTimeout(() => {
       this.changeState(10);
-    }, 400);
-    this.changeState(11);
+    }, 1000);
+    setTimeout(() => {
+      this.changeState(11);
+    }, 500);
+    this.blinkCursor();
+    this.writeCommands();
   }
   changeState(i: number) {
-    this.randomInterval = Math.floor(Math.random() * (5500 - 4500) + 4500);
     this.pillars[i].state =
       this.pillars[i].state === "initial" ? "final" : "initial";
     setInterval(() => {
@@ -116,13 +183,37 @@ export class ProjectsComponent implements OnInit {
         this.pillars[i].state === "initial" ? "final" : "initial";
     }, 6500);
   }
-  changeTitleColor() {
-    this.currentState = "blue";
+  blinkCursor(): void {
+    setInterval(() => {
+      this.cursor = !this.cursor;
+    }, 500);
+  }
+  writeCommands() {
     setTimeout(() => {
-      this.currentState = this.currentState === "yellow" ? "blue" : "yellow";
-      setInterval(() => {
-        this.currentState = this.currentState === "yellow" ? "blue" : "yellow";
-      }, 6100);
-    }, 1000);
+      this.commands[0].show = true;
+      setTimeout(() => {
+        this.commands[1].show = true;
+        setTimeout(() => {
+          this.commands[2].show = true;
+          setTimeout(() => {
+            this.commands[3].show = true;
+            setTimeout(() => {
+              this.commands[4].show = true;
+              setTimeout(() => {
+                this.commands[5].show = true;
+                this.playAgain = true;
+              }, 1500);
+            }, 4000);
+          }, 4000);
+        }, 1500);
+      }, 4000);
+    }, 4000);
+  }
+  replay() {
+    this.commands.forEach(command => {
+      command.show = false;
+    });
+    this.writeCommands();
+    this.playAgain = false;
   }
 }

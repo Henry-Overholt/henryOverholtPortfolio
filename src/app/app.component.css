@@ -47,7 +47,10 @@ a {
 #smallNav li:hover {
   background: yellow;
 }
-#smallNav {
+.hideHome {
+  visibility: hidden;
+}
+#logoWrapper . #smallNav {
   visibility: hidden;
   display: flex;
   flex-direction: column;
