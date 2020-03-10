@@ -4,6 +4,18 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.pillar {
+  width: 20%;
+}
+
+#pillars {
+  display: flex;
+  height: 100vh;
+  width: 80%;
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+}
 #projectsContainer {
   display: flex;
   flex-direction: column;
@@ -18,7 +30,9 @@ main {
 }
 h3 {
   font-family: "Rock Salt";
-  margin: 100px 0px 10px 0px;
+  font-size: 30px;
+  padding: 50px 0px 10px 0px;
+  color: yellow;
 }
 h4 {
   font-family: "Rock Salt";
@@ -49,10 +63,13 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid rgb(0, 0, 56);
 }
 .project {
   border-top: 2px solid rgb(0, 0, 56);
   width: 100%;
+  background: white;
+  z-index: 1;
 }
 .phonePic {
   position: relative;
@@ -79,24 +96,78 @@ h4 {
   display: none;
 }
 h5 {
-  margin-bottom: 100px;
+  padding-bottom: 50px;
   font-family: "Raleway";
+  color: yellow;
 }
-/* .project {
-  border: 1px solid rgb(0, 0, 56);
-} */
-/* #skillSet {
-  border: 1px dashed blue;
+#skillSet {
+  width: 100%;
+  height: 300px;
+  background: rgb(0, 0, 56);
+  border-radius: 10px;
+  position: relative;
+}
+#skillContainer {
+  margin-top: 20px;
+  width: 90%;
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+#cursor {
+  width: 5px;
+  height: 12px;
+  background: white;
+  margin-top: 0;
+  margin-left: 5px;
+}
+#showContainer {
+  color: yellow;
+  display: flex;
   flex-wrap: wrap;
-  height: 250px;
-  width: 250px;
-  border-radius: 100%;
-  transform: rotate(360deg);
-  transition: 5s;
-} */
+  flex-direction: row;
+  width: 100%;
+}
+.line {
+  color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 12px;
+  font-family: "Turret Road", cursive;
+  margin: 5px 5px 0px 5px;
+}
+.line p {
+  padding-right: 5px;
+}
+.command {
+  transition: "500ms linear";
+}
+.spread {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.folder {
+  width: 20%;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.skills .folder {
+  width: 40%;
+  padding: 5px 5px 0px 5px;
+  border: 1px solid transparent;
+}
+.skills .folder:hover {
+  border: 1px solid white;
+}
 @media screen and (min-width: 768px) {
   .computer {
     width: 400px;
@@ -110,7 +181,7 @@ h5 {
     width: 15%;
   }
 
-  #pillarsLeft {
+  #pillars {
     display: flex;
     height: 100vh;
     width: 70%;
@@ -142,15 +213,16 @@ h5 {
   i {
     font-size: 50px;
     color: black;
-    z-index: 1;
+    z-index: 2;
   }
   .project {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    width: 80%;
     background: white;
-    z-index: 1;
+  }
+  #projects {
+    width: 80%;
   }
   .project:hover {
     transform: scale(1.05);
@@ -161,6 +233,7 @@ h5 {
   h3 {
     font-size: 60px;
     color: yellow;
+    margin-top: 100px;
   }
   h4 {
     font-size: 25px;
@@ -169,14 +242,50 @@ h5 {
   h5 {
     font-size: 25px;
     color: yellow;
+    margin-bottom: 100px;
   }
   #elevatorPitch {
     width: 80%;
+    font-family: "Raleway", sans-serif;
   }
   .icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+  }
+
+  #skillSet {
+    height: 450px;
+  }
+  #skillContainer {
+    width: 60%;
+  }
+  #cursor {
+    width: 10px;
+    height: 20px;
+    background: white;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  .line {
+    font-size: 20px;
+    margin: 15px 15px 0px 15px;
+  }
+  .line p {
+    padding-right: 15px;
+  }
+
+  .folder {
+    width: 20%;
+  }
+  .skills {
+    font-size: 20px;
+  }
+  #skillSet i {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: yellow;
   }
 }

@@ -1,6 +1,7 @@
 <div id="wrapper">
   <div></div>
   <form
+    [@fadeIn]
     id="contactForm"
     #contactForm="ngForm"
     (ngSubmit)="submitForm(contactForm)"
@@ -37,7 +38,7 @@
     ></textarea>
     <button>SEND</button>
   </form>
-  <div id="personalContact">
+  <div id="personalContact" [@fadeIn]>
     <img src="./../../assets/bwProfile.jpeg" alt="" />
     <div id="socialHandles">
       <h3>Find me @</h3>

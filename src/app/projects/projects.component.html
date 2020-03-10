@@ -1,8 +1,8 @@
 <main>
   <div id="projectsContainer">
-    <h3 [@changeColor]>PROJECTS</h3>
-    <h5 [@changeColor]>Some of the things I've built</h5>
-    <div id="pillarsLeft">
+    <h3 [@fadeTitle]>PROJECTS</h3>
+    <h5 [@fadeTitle]>Some of the things I've built</h5>
+    <div id="pillars" [@fadeIn]>
       <div
         *ngFor="let pillar of pillars; index as i"
         class="{{ pillar.class }}"
@@ -14,11 +14,12 @@
       <div
         class="project flexColumn"
         *ngFor="let project of projects; index as i"
+        (click)="moreInfo(project.index)"
       >
         <div id="projectInfo" class="flexColumn">
-          <h4 (click)="moreInfo(project.index)">{{ project.projectName }}</h4>
+          <h4>{{ project.projectName }}</h4>
           <div id="elevatorPitch" class="hideMobile flexColumn">
-            <p (click)="moreInfo(project.index)">{{ project.elevator }}</p>
+            <p>{{ project.elevator }}</p>
             <div class="icons">
               <a href="{{ project.github }}"><i class="fab fa-github"></i></a>
               <a *ngIf="project.live === true" href="{{ project.link }}"
@@ -27,7 +28,7 @@
             </div>
           </div>
         </div>
-        <div class="computer" (click)="moreInfo(project.index)">
+        <div class="computer">
           <img class="coverPic" src="{{ project.coverPic }}" alt="" />
           <div *ngIf="project.mobile === true" class="phone">
             <img src="{{ project.mobilePic }}" alt="" class="phonePic" />
@@ -36,5 +37,23 @@
       </div>
     </div>
   </div>
-  <div id="skillSet"></div>
+  <div [@swingUp] id="skillContainer">
+    <h4>Skills</h4>
+    <div id="skillSet">
+      <div class="line" *ngFor="let command of commands; index as i">
+        <div id="showContainer" *ngIf="command.show">
+          <p class="position ">{{ command.position }}</p>
+          <p class="command" [@type]>{{ command.command }}</p>
+          <div class="{{ command.class }}" *ngIf="command.spread">
+            <p class="folder" *ngFor="let folder of command.folders">
+              {{ folder }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p id="cursor" *ngIf="cursor"></p>
+      <i *ngIf="playAgain" (click)="replay()" class="far fa-play-circle"></i>
+    </div>
+  </div>
 </main>
