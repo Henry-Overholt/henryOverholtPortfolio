@@ -5,23 +5,25 @@ h1 {
   left: 5%;
   top: 25%;
   font-size: 50px;
-  border: 6px solid rgb(0, 0, 56);
+  border: 6px solid transparent;
+  border-radius: 5px;
   padding: 8px;
+  background: white;
 }
 
 main {
   color: rgb(0, 0, 56);
   font-family: "Raleway";
   height: 70vh;
+  width: 100vw;
 }
 h2 {
   font-size: 15px;
   width: 70%;
   padding: 4px;
-  left: 20%;
+  left: 10%;
   position: absolute;
   z-index: 1;
-  background: white;
   top: 55%;
   border-radius: 10px;
 }
@@ -35,6 +37,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .blue {
   background: rgb(0, 0, 56);
@@ -43,13 +46,13 @@ h2 {
   background: yellow;
 }
 .lg {
-  width: 90vw;
+  width: 95vw;
 }
 .md {
-  width: 80vw;
+  width: 85vw;
 }
 .sm {
-  width: 70vw;
+  width: 75vw;
 }
 
 p {
@@ -73,11 +76,10 @@ p {
 @media screen and (min-width: 768px) {
   h1 {
     font-family: "Rock Salt";
-    border: 6px solid rgb(0, 0, 56);
+
     padding: 8px;
     font-size: 100px;
   }
-
   main {
     height: 75vh;
   }
@@ -86,7 +88,6 @@ p {
     width: 55%;
     padding: 4px;
     left: 20%;
-    border: 1px solid black;
     top: 55%;
   }
   #bubbleContainer {
