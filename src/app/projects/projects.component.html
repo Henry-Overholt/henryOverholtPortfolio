@@ -1,8 +1,16 @@
 <main>
   <div id="projectsContainer">
-    <h3>PROJECTS</h3>
-    <h5>Some of the things I've built</h5>
-    <div id="projects">
+    <h3 [@changeColor]>PROJECTS</h3>
+    <h5 [@changeColor]>Some of the things I've built</h5>
+    <div id="pillarsLeft">
+      <div
+        *ngFor="let pillar of pillars; index as i"
+        class="{{ pillar.class }}"
+        [@changePosition]="pillar.state"
+      ></div>
+    </div>
+
+    <div id="projects" [@swingUp]>
       <div
         class="project flexColumn"
         *ngFor="let project of projects; index as i"
