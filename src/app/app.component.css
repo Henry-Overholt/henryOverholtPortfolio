@@ -50,7 +50,7 @@ a {
 .hideHome {
   visibility: hidden;
 }
-#logoWrapper . #smallNav {
+#smallNav {
   visibility: hidden;
   display: flex;
   flex-direction: column;

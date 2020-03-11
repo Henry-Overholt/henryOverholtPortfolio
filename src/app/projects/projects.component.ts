@@ -13,9 +13,14 @@ import {
   templateUrl: "./projects.component.html",
   styleUrls: ["./projects.component.css"],
   animations: [
+    trigger("cursor", [
+      state("blinkOn", style({ visibility: "visible" })),
+      state("blinkOff", style({ visibility: "hidden" })),
+      transition("blinkOn<=>blinkOff", animate("100ms"))
+    ]),
     trigger("type", [
       state("void", style({ opacity: 0 })),
-      transition("void=>*", animate("500ms 1000ms"))
+      transition("void=>*", animate("100ms"))
     ]),
     trigger("swingUp", [
       state("void", style({ opacity: 0, top: "100vh" })),
@@ -63,66 +68,22 @@ export class ProjectsComponent implements OnInit {
     { class: "pillar ", index: 11, state: "initial" }
   ];
   currentState: string = "yellow";
-  commands: any[] = [
-    {
-      position: "Henrys-MacBook-Pro:~ henry-overholt$",
-      command: "cd Documents",
-      spread: false,
-      class: "",
-      folders: [],
-      show: false
-    },
-    {
-      position: "Henrys-MacBook-Pro:Documents henry-overholt$",
-      command: "ls",
-      spread: false,
-      class: "",
-      folders: [],
-      show: false
-    },
-    {
-      position: "",
-      command: "",
-      spread: true,
-      class: "spread",
-      folders: ["home", "contact", "projects", "story", "skills"],
-      show: false
-    },
-    {
-      position: "Henrys-MacBook-Pro:Documents henry-overholt$ ",
-      command: "cd skills",
-      spread: false,
-      class: "",
-      folders: [],
-      show: false
-    },
-    {
-      position: "Henrys-MacBook-Pro:skills henry-overholt$ ",
-      command: "ls",
-      spread: false,
-      class: "",
-      folders: [],
-      show: false
-    },
-    {
-      position: "",
-      command: "",
-      spread: true,
-      class: " skills",
-      folders: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Angular",
-        "Node.JS",
-        "Git/GitHub",
-        "TypeScript",
-        "SQL"
-      ],
-      show: false
-    }
+  startSkill: boolean = false;
+  skillsList: any[] = [
+    { skill: "HTML", last: false, write: false, cursor: false },
+    { skill: "CSS", last: false, write: false, cursor: false },
+    { skill: "JavaScript", last: false, write: false, cursor: false },
+    { skill: "Angular", last: false, write: false, cursor: false },
+    { skill: "Node.JS", last: false, write: false, cursor: false },
+    { skill: "Git/GitHub", last: false, write: false, cursor: false },
+    { skill: "TypeScript", last: false, write: false, cursor: false },
+    { skill: "postgres", last: false, write: false, cursor: false },
+    { skill: "SQL", last: true, write: false, cursor: false }
   ];
-  cursor: boolean = true;
+  lastSkill: object = this.skillsList[this.skillsList.length - 1];
+  skillsListNum: number = this.skillsList.length - 1;
+  cursor: string = "blinkOn";
+  interval: number = 0;
   playAgain: boolean = false;
   constructor(private projectsService: ProjectsService) {}
 
@@ -134,7 +95,6 @@ export class ProjectsComponent implements OnInit {
     this.projectsService.setProject(this.projects[i]);
   }
   startAnimations() {
-    // this.changeTitleColor();
     setTimeout(() => {
       this.changeState(0);
     }, 500);
@@ -172,8 +132,10 @@ export class ProjectsComponent implements OnInit {
     setTimeout(() => {
       this.changeState(11);
     }, 500);
+    setTimeout(() => {
+      this.writeSkills();
+    }, 1000);
     this.blinkCursor();
-    this.writeCommands();
   }
   changeState(i: number) {
     this.pillars[i].state =
@@ -185,35 +147,40 @@ export class ProjectsComponent implements OnInit {
   }
   blinkCursor(): void {
     setInterval(() => {
-      this.cursor = !this.cursor;
+      this.cursor = this.cursor === "blinkOn" ? "blinkOff" : "blinkOn";
     }, 500);
   }
-  writeCommands() {
+  writeSkills() {
     setTimeout(() => {
-      this.commands[0].show = true;
+      this.startSkill = true;
+      this.skillsList[0].cursor = true;
       setTimeout(() => {
-        this.commands[1].show = true;
-        setTimeout(() => {
-          this.commands[2].show = true;
+        this.skillsList[0].cursor = false;
+        this.skillsList[1].cursor = true;
+        this.skillsList[0].write = true;
+        for (let i = 1; i <= this.skillsListNum; i++) {
+          this.interval = this.interval + 2000;
           setTimeout(() => {
-            this.commands[3].show = true;
-            setTimeout(() => {
-              this.commands[4].show = true;
-              setTimeout(() => {
-                this.commands[5].show = true;
-                this.playAgain = true;
-              }, 1500);
-            }, 4000);
-          }, 4000);
-        }, 1500);
-      }, 4000);
+            this.skillsList[i - 1].cursor = false;
+            this.skillsList[i].cursor = true;
+            this.skillsList[i].write = true;
+            if (i === this.skillsListNum) {
+              this.playAgain = true;
+            }
+          }, this.interval);
+        }
+        this.skillsList[this.skillsListNum].cursor = false;
+      }, 2000);
     }, 4000);
   }
   replay() {
-    this.commands.forEach(command => {
-      command.show = false;
+    this.startSkill = false;
+    this.skillsList.forEach(skill => {
+      skill.write = false;
+      skill.cursor = false;
     });
-    this.writeCommands();
+    this.interval = 0;
+    this.writeSkills();
     this.playAgain = false;
   }
 }

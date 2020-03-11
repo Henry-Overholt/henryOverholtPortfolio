@@ -102,10 +102,13 @@ h5 {
 }
 #skillSet {
   width: 100%;
-  height: 300px;
+  height: 320px;
   background: rgb(0, 0, 56);
   border-radius: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 #skillContainer {
   margin-top: 20px;
@@ -116,58 +119,48 @@ h5 {
   align-items: center;
 }
 #cursor {
-  width: 5px;
-  height: 12px;
+  width: 13px;
+  height: 20px;
   background: white;
-  margin-top: 0;
-  margin-left: 5px;
+  margin: 5px;
 }
-#showContainer {
+.skill {
   color: yellow;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-}
-.line {
-  color: yellow;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  font-size: 12px;
-  font-family: "Turret Road", cursive;
-  margin: 5px 5px 0px 5px;
-}
-.line p {
-  padding-right: 5px;
-}
-.command {
-  transition: "500ms linear";
-}
-.spread {
+  font-family: "Turret Road";
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.folder {
-  width: 20%;
-}
-.skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
   font-size: 20px;
+  margin: 5px;
+  padding: 3px;
+  height: 10px;
 }
-.skills .folder {
-  width: 40%;
-  padding: 5px 5px 0px 5px;
-  border: 1px solid transparent;
+#lastSkill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-.skills .folder:hover {
-  border: 1px solid white;
+/* #lastSkill .class {
+  width: 20%;
+  border: 1px solid yellow;
+} */
+.hide {
+  display: none;
 }
+#skillContainer i {
+  font-size: 35px;
+  margin-top: 5px;
+}
+.hidePlay {
+  visibility: hidden;
+}
+.showPlay {
+  visibility: visible;
+  transition: "0.5s";
+}
+
 @media screen and (min-width: 768px) {
   .computer {
     width: 400px;
@@ -257,35 +250,32 @@ h5 {
 
   #skillSet {
     height: 450px;
+    justify-content: flex-start;
   }
   #skillContainer {
     width: 60%;
   }
   #cursor {
-    width: 10px;
-    height: 20px;
+    width: 20px;
+    height: 30px;
     background: white;
-    margin-top: 0;
-    margin-left: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
   }
-  .line {
-    font-size: 20px;
-    margin: 15px 15px 0px 15px;
+  .skill {
+    font-size: 30px;
+    margin: 5px;
+    padding: 6px;
+    height: 20px;
   }
-  .line p {
-    padding-right: 15px;
+  #lastSkill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
-
-  .folder {
-    width: 20%;
-  }
-  .skills {
-    font-size: 20px;
-  }
-  #skillSet i {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    color: yellow;
+  #skillContainer i {
+    font-size: 55px;
   }
 }
