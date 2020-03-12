@@ -13,9 +13,16 @@ import {
   templateUrl: "./contact.component.html",
   styleUrls: ["./contact.component.css"],
   animations: [
-    trigger("fadeIn", [
-      state("void", style({ opacity: 0 })),
-      transition("void=>*", animate("2000ms ease-in"))
+    trigger("fadeInRight", [
+      state("void", style({ opacity: 0, left: "100vh" })),
+      transition("void=>*", animate("1500ms ease-in"))
+    ]),
+    trigger("fadeInLeft", [
+      state(
+        "void",
+        style({ opacity: 0, right: "100vh", position: "relative" })
+      ),
+      transition("void=>*", animate("1500ms ease-in"))
     ])
   ]
 })

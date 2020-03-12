@@ -70,6 +70,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 40%;
   }
   img {
