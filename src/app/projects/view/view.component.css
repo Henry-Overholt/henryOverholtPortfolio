@@ -1,0 +1,70 @@
+#icon {
+  font-family: "Rock Salt";
+  font-size: 40px;
+  color: rgb(0, 0, 56);
+}
+#border {
+  border: 4px solid rgb(0, 0, 56);
+  height: 60px;
+  width: 50px;
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#outsideCircle {
+  display: flex;
+  background: rgb(139, 0, 0);
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  margin-left: 15px;
+}
+#circle {
+  height: 150px;
+  width: 150px;
+  font-size: 80px;
+  background: white;
+  border-radius: 100%;
+  color: rgb(139, 0, 0);
+  padding-bottom: 5px;
+  font-family: "Rock Salt";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#outsideBigCircle {
+  margin-top: 10px;
+  display: flex;
+  background: rgb(139, 0, 0);
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  margin-left: 15px;
+}
+#bigCircle {
+  height: 280px;
+  border: 20px solid white;
+  width: 280px;
+  font-size: 76px;
+  background: rgb(139, 0, 0);
+  border-radius: 100%;
+  color: white;
+  padding-bottom: 5px;
+  font-family: "Rock Salt";
+}
+#and {
+  position: relative;
+  bottom: 50px;
+}
+#idiots {
+  position: relative;
+  top: 50px;
+}

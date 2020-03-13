@@ -1,8 +1,3 @@
-/* 
-font-family: 'Rock Salt', ;
-font-family:'Raleway'
-*/
-
 header {
   position: relative;
   top: 0;
@@ -11,6 +6,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  height: 50px;
   color: rgb(0, 0, 56);
   font-family: "Raleway";
   margin: 5px 10px 10px 0px;
@@ -18,6 +14,10 @@ header {
 }
 #headerLogo {
   width: 110px;
+  display: none;
+}
+#smallLogo {
+  width: 60px;
 }
 nav {
   width: 50%;
@@ -49,6 +49,7 @@ a {
 }
 .hideHome {
   visibility: hidden;
+  transition: "1000ms";
 }
 #smallNav {
   visibility: hidden;
@@ -99,15 +100,15 @@ i {
     font-weight: bold;
     transition-duration: 0.5s;
   }
-  .activeRoute {
-    padding: 8px;
-    border-radius: 10px;
-  }
+
   #headerLogo:hover {
     transform: scale(1.05);
   }
   a {
     font-size: 20px;
+  }
+  header {
+    height: 100px;
   }
   #bigNav {
     display: flex;
@@ -126,6 +127,11 @@ i {
   }
   #headerLogo {
     width: 200px;
+    /* display: initial; */
+  }
+  #smallLogo {
+    width: 100px;
+    /* display: none; */
   }
   #linkedIn {
     width: 50px;

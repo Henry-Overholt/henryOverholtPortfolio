@@ -1,11 +1,17 @@
 <header>
   <div id="logoWrapper">
-    <a routerLinkActive="hideHome" routerLink="/home">
+    <a routerLink="/home" id="logo">
       <img
         id="headerLogo"
         class="logo"
         src="./../assets/henryOLogoTransparent.png"
         alt="Henry Overholt's Logo"
+      />
+      <img
+        id="smallLogo"
+        class="logo"
+        src="./../assets/favicon.png"
+        alt="Henry O icon image"
       />
     </a>
   </div>
@@ -44,7 +50,7 @@
   <a href="https://www.linkedin.com/in/henry-overholt/"
     ><i class="fab fa-linkedin"></i
   ></a>
-  <a routerLink="/home"
+  <a routerLinkActive="hideHome" routerLink="/home"
     ><img
       src="./../assets/henryOLogoTransparent.png"
       alt="Henry O Logo"
