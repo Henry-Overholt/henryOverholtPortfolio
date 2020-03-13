@@ -11,7 +11,7 @@ export class StoryComponent implements OnInit {
       logo: "./../../assets/careerTimeline/gcLogo.png",
       company: "Grand Circus",
       alt: "Grand Circus Bootcamp Logo",
-      position: "Front-end Bootcamp",
+      position: "Frontend Bootcamp",
       date: "July 2019 - September 2019",
       body: [
         "This is my most recent experience. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore, velit repellat, eos repellendus amet vel fuga numquam ipsam distinctio ab ducimus non dolorum, eum dolores necessitatibus natus nisi repudiandae.",

@@ -1,4 +1,11 @@
 <div id="wrapper">
+  <div id="myStory">
+    <h1>My Story</h1>
+    <div id="story">
+      <p>I'm a Frontend Developer with a background in non-profit work.</p>
+    </div>
+  </div>
+
   <div id="timeline">
     <h2>Timeline</h2>
     <div id="timelineContainer">
@@ -16,8 +23,8 @@
           <div id="timelineTitle">
             <h3 id="date">{{ currentTimeline.date }}</h3>
             <h4 id="company">
-              <em>{{ currentTimeline.company }}</em> ~
               {{ currentTimeline.position }}
+              ~ <em>{{ currentTimeline.company }}</em>
             </h4>
           </div>
           <div id="body" *ngFor="let string of strings; index as i">

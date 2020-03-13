@@ -1,15 +1,23 @@
 h1 {
   font-family: "Rock Salt";
-  position: relative;
-  top: 18%;
-  z-index: 2;
+  z-index: 1;
   font-size: 50px;
   border: 6px solid transparent;
   border-radius: 5px;
   padding: 8px;
   background: white;
 }
-
+#hello {
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 700;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 main {
   color: rgb(0, 0, 56);
   font-family: "Raleway";
@@ -17,16 +25,20 @@ main {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-h2 {
-  font-size: 15px;
-  width: 70%;
+#textHolder {
+  font-size: 12px;
+  width: 90%;
   padding: 4px;
-  position: relative;
+
   z-index: 1;
-  top: 21%;
+  top: 15%;
   border-radius: 10px;
+}
+h2 {
+  width: 100%;
 }
 #bubbleContainer {
   height: 50vh;
@@ -67,34 +79,37 @@ p {
   left: 100vw;
 }
 
-#test {
-  background: red;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-}
-
 @media screen and (min-width: 768px) {
   h1 {
     font-family: "Rock Salt";
-    position: absolute;
     padding: 8px;
     font-size: 100px;
-    left: 5%;
-    top: 25%;
+  }
+  #hello {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  #main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   main {
     height: 75vh;
+
+    justify-content: center;
   }
-  h2 {
-    font-size: 30px;
-    width: 55%;
-    padding: 4px;
-    position: absolute;
-    left: 20%;
-    top: 55%;
+
+  #textHolder {
+    font-size: 20px;
+    width: 45%;
+    z-index: 1;
+    top: 20%;
+    border-radius: 10px;
+    margin-left: 10px;
   }
+
   #bubbleContainer {
     position: absolute;
     top: 150px;

@@ -71,7 +71,7 @@ button {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 40%;
+    width: 45%;
   }
   img {
     width: 200px;
@@ -80,7 +80,7 @@ button {
   }
   #socialHandles {
     margin-left: 10px;
-    width: 50%;
+    width: 60%;
   }
   h1 {
     margin-bottom: 30px;

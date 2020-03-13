@@ -36,7 +36,7 @@ export class ProjectsService {
       index: 2,
       extension: "/listy-project",
       elevator:
-        "Listy is a day-to-day event and task manager application, that gave you current weather information, along with estimated drive time stats for events.",
+        "Listy is a day-to-day event and task manager application, that gave you current weather information, along with estimated drive time stats for your events.  I built this application with three teammates for our final project at Grand Circus.  It utilizes a postgres database and two APIs, the OpenWeather API and the Google Map's Distance Matrix API.",
       mobile: true,
       live: true,
       mobilePic: "./../../assets/projects/Listy/listyMobile.jpg",
