@@ -74,8 +74,14 @@ export class StoryComponent implements OnInit {
   strings: any = this.currentTimeline.body;
   up: boolean = false;
   down: boolean = true;
-  dots: number[] = [0, 1, 2, 3, 4];
+  dots: any[] = [
+    { number: 0, id: "ohio" },
+    { number: 1, id: "cityYear" },
+    { number: 2, id: "fayrouz" },
+    { number: 3, id: "forOurFuture" },
 
+    { number: 4, id: "grandCircus" }
+  ];
   constructor() {}
 
   ngOnInit() {}
