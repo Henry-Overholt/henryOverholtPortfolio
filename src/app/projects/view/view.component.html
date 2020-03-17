@@ -1,8 +1,17 @@
+<button (click)="moveLeft()">Move Left</button>
+<button (click)="moveRight()">Move Right</button>
 <div id="timelineSliderHolder">
-  <div id="line">
-    <div class="years">
-      <p><span>20</span>12</p>
+  <div id="dots">
+    <div *ngFor="let dot of dots; index as i">
+      <p
+        (click)="handleDotClick(i)"
+        id="{{ dot.id }}"
+        class="dot"
+        [ngClass]="currentTimeline.index === i ? 'selected' : 'unselected'"
+      ></p>
     </div>
+  </div>
+  <div id="line">
     <div class="years">
       <p><span>20</span>13</p>
     </div>
