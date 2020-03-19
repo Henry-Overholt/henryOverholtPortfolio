@@ -27,7 +27,7 @@ export class ProjectsService {
       mobile: true,
       live: true,
       mobilePic: "./../../assets/projects/portfolio/portfolioMobile.png",
-      link: "http://localhost:4200/home",
+      link: "http://henryoverholt.surge.sh",
       github: "https://github.com/Henry-Overholt/henryOverholtPortfolio"
     },
     {
