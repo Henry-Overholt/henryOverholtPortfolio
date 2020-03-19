@@ -110,7 +110,7 @@ button {
   border-radius: 5px;
   height: 0;
   border: 0.5px solid grey;
-  width: 80%;
+  width: 30%;
   margin: 10px 0px 10px 0px;
 }
 .hide {
@@ -120,7 +120,7 @@ button {
 .dot {
   width: 10px;
   height: 10px;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .selected {
   background: rgb(0, 0, 56);
@@ -174,72 +174,19 @@ button {
   }
   .dot {
     height: 15px;
+    width: 15px;
+    border-radius: 100%;
   }
   #dots {
-    width: 100%;
+    width: 20%;
     border: none;
     background: none;
     display: absolute;
-    justify-content: center;
-
+    justify-content: space-evenly;
+    border: 1px solid grey;
     z-index: 1;
   }
   .fas {
     font-size: 50px;
-  }
-
-  #timelineSliderHolder {
-    height: 100px;
-    width: 100%;
-    border: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-  }
-  #line {
-    width: 95%;
-    height: 1px;
-    border: 1px solid grey;
-    background: grey;
-
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .years {
-    font-family: "Raleway";
-    display: flex;
-    height: 42px;
-    width: 11%;
-    justify-content: center;
-    align-items: flex-end;
-    border-right: 1px solid red;
-    border-left: 1px solid red;
-  }
-  marker {
-    width: 100%;
-    height: 20px;
-    border: 5px solid black;
-  }
-  #grandCircus {
-    background: orange;
-  }
-  #forOurFuture {
-    background: blue;
-  }
-  #fayrouz {
-    background: navy;
-  }
-  #cityYear {
-    background: linear-gradient(to left, yellow, red);
-  }
-  #ohio {
-    background: green;
-    position: relative;
-    left: 5%;
   }
 }
