@@ -18,6 +18,7 @@ label {
 }
 #contactForm h1 {
   align-self: center;
+  font-family: "Rock Salt";
 }
 input {
   border: 2px solid rgb(0, 0, 56);
