@@ -44,6 +44,7 @@ h2 {
   height: 50vh;
   width: 100%;
   position: absolute;
+  top: 10%;
 }
 .bubble {
   height: 10%;

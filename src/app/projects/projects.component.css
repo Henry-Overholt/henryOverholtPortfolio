@@ -280,4 +280,7 @@ h5 {
     margin-top: 10px;
     font-size: 55px;
   }
+  #projectsContainer p {
+    text-indent: 10px;
+  }
 }

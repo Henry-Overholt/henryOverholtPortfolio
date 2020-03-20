@@ -11,7 +11,7 @@ export class ProjectsService {
 
       extension: "/marvel-march",
       elevator:
-        "This portfolio was a lot of fun to build. My goal was to create a simple site to showcase my skills as a Frontend Developer, and to create a one-stop shop for my projects, my background, and a simple way to get in contact with me.",
+        "Along with lots of people who were self-isolating in their homes during the Coronavirus outbreak, I was looking for ways to stay entertained.  As a Marvel fan I decided to watch through the Marvel Cinematic Universe in some sort of order, and as a developer I thought it would be fun to hack together a simple frontend to track my way through all the movies. I built a simple checklist, that stores your completed movies in local storage.",
       mobile: true,
       live: true,
       mobilePic: "./../../assets/projects/marvelMarch/marvelMarchMobile.png",
