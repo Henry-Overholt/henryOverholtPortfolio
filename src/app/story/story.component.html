@@ -1,7 +1,7 @@
 <div id="wrapper">
   <div id="myStory">
-    <h1>My Story</h1>
-    <div id="story">
+    <h1 [@fadeInLate]>About Me</h1>
+    <div [@fadeIn] id="story">
       <div class="body">
         <p>
           I'm a Frontend Developer with a background in non-profit and campaign
@@ -11,10 +11,11 @@
           exciting than building out an idea into a application.
         </p>
         <p>
-          I'm a graduate of Grand Circus' Frontend Bootcamp. I was hooked on
-          programming from the very first time I ran a line of my code, and saw
-          the result on the screen. I'm interested in working on ambitious
-          projects with positive solution-oriented people.
+          I was hooked on programming from the very first time I ran a line of
+          my code, and saw the result on the screen. I'm working towards
+          becoming a full-stack developer, trying to learn some backend
+          technologies as I develop my frontend skills. I'm interested in
+          working on ambitious projects with positive solution-oriented people.
         </p>
         <p>
           When I'm not writing code, I'm on the hunt for an incredible cup of
@@ -24,7 +25,7 @@
         </p>
         <p>
           Born and raised in Pennsylvania, went to school in Ohio, now living in
-          the beautiful Michigan.
+          beautiful Michigan.
         </p>
       </div>
       <div id="spaceHolder"></div>
@@ -32,8 +33,8 @@
   </div>
 
   <div id="timeline">
-    <h2>Timeline</h2>
-    <div id="timelineContainer">
+    <h2 [@fadeIn]>Timeline</h2>
+    <div [@fadeIn] id="timelineContainer">
       <button
         [ngClass]="up == true ? 'on' : 'off'"
         (click)="handleRightArrow()"
@@ -49,10 +50,13 @@
             <h3 id="date">{{ currentTimeline.date }}</h3>
             <h4 id="company">
               {{ currentTimeline.position }}
-              ~ <em>{{ currentTimeline.company }}</em>
+              <em>{{ currentTimeline.company }}</em>
             </h4>
           </div>
-          <div id="body" *ngFor="let string of strings; index as i">
+          <div
+            id="body"
+            *ngFor="let string of currentTimeline.strings; index as i"
+          >
             <p>{{ string }}</p>
           </div>
         </div>
@@ -64,7 +68,7 @@
         <i class="fas fa-arrow-circle-right"></i>
       </button>
     </div>
-    <div id="dots">
+    <div [@fadeIn] id="dots">
       <div *ngFor="let dot of dots; index as i">
         <p
           (click)="handleDotClick(i)"
