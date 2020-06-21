@@ -5,7 +5,7 @@ import {
   state,
   style,
   animate,
-  transition
+  transition,
 } from "@angular/animations";
 
 @Component({
@@ -15,27 +15,29 @@ import {
   animations: [
     trigger("fadeInRight", [
       state("void", style({ opacity: 0, left: "100vh" })),
-      transition("void=>*", animate("1500ms ease-in"))
+      transition("void=>*", animate("1500ms ease-in")),
     ]),
     trigger("fadeInLeft", [
       state(
         "void",
         style({ opacity: 0, right: "100vh", position: "relative" })
       ),
-      transition("void=>*", animate("1500ms ease-in"))
-    ])
-  ]
+      transition("void=>*", animate("1500ms ease-in")),
+    ]),
+  ],
 })
 export class ContactComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
   submitForm(form: NgForm): void {
-    let name: string = form.value.name;
-    let email: string = form.value.email;
-    let subject: string = form.value.subject;
-    let message: string = form.value.message;
-    console.log(`${name}, ${email}, ${subject}, ${message}`);
+    let email = {
+      name: form.value.name,
+      email: form.value.email,
+      subject: form.value.subject,
+      message: form.value.message,
+    };
+    console.log(email);
     document.querySelector("form").reset();
   }
 }
