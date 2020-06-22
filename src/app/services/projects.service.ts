@@ -40,7 +40,7 @@ export class ProjectsService {
       coverPic: "./../../assets/projects/mathHoops/mathHoopsCover.png ",
       extension: "/math-hoops",
       elevator:
-        "Math Hoops is originally a fast pase Math game for students, that uses WNBA and NBA player statistics to teach students about statistics and to practice quick single digit math. I had the opportunity to use the game while I was working in Detroit's Public Schools with City Year Detroit, and I loved it.  So, after I graduated from the Frontend Bootcamp at Grand Circus, I decided to transform this game, that I had a lot great memories playing, into a computer game. ",
+        "Math Hoops is originally a fast pace Math game for students, that uses WNBA and NBA player statistics to teach students about statistics and to practice quick single digit math. I had the opportunity to use the game while I was working in Detroit's Public Schools with City Year Detroit, and I loved it.  So, after I graduated from the Frontend Bootcamp at Grand Circus, I decided to transform this game, that I had a lot great memories playing, into a computer game. ",
       mobile: false,
       live: true,
       link: "https://math-hoops.surge.sh/",
