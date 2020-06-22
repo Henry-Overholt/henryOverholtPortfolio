@@ -160,6 +160,43 @@ h5 {
   visibility: visible;
   transition: "0.5s";
 }
+#elevatorPitch {
+  width: 90%;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  text-indent: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0px 2px 0px 10px;
+}
+i {
+  font-size: 30px;
+  color: black;
+}
+button {
+  border: 1px solid rgb(0, 0, 56);
+  background: rgb(0, 0, 56);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  width: 50%;
+  color: yellow;
+  font-size: 20px;
+}
+#moreInfo {
+  width: 100%;
+  margin-bottom: 5px;
+}
+span {
+  color: red;
+}
+#technology {
+  margin: 0px 5px 0px 5px;
+}
 
 @media screen and (min-width: 768px) {
   .computer {
@@ -169,6 +206,9 @@ h5 {
   }
   .hideMobile {
     display: flex;
+  }
+  .hideComputer {
+    display: none;
   }
   .pillar {
     width: 15%;
@@ -243,9 +283,9 @@ h5 {
     font-family: "Raleway", sans-serif;
   }
   .icons {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     width: 100%;
   }
 

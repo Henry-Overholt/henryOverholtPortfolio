@@ -5,7 +5,7 @@ import {
   state,
   style,
   animate,
-  transition
+  transition,
 } from "@angular/animations";
 
 @Component({
@@ -16,40 +16,40 @@ import {
     trigger("cursor", [
       state("blinkOn", style({ visibility: "visible" })),
       state("blinkOff", style({ visibility: "hidden" })),
-      transition("blinkOn<=>blinkOff", animate("100ms"))
+      transition("blinkOn<=>blinkOff", animate("100ms")),
     ]),
     trigger("type", [
       state("void", style({ opacity: 0 })),
-      transition("void=>*", animate("100ms"))
+      transition("void=>*", animate("100ms")),
     ]),
     trigger("swingUp", [
       state("void", style({ opacity: 0, top: "100vh" })),
-      transition("void=>*", animate("1000ms"))
+      transition("void=>*", animate("1000ms")),
     ]),
     trigger("fadeIn", [
       state("void", style({ opacity: 0 })),
-      transition("void=>*", animate("1000ms 500ms"))
+      transition("void=>*", animate("1000ms 500ms")),
     ]),
     trigger("changePosition", [
       state(
         "initial",
         style({
-          background: "white"
+          background: "white",
         })
       ),
       state(
         "final",
         style({
-          background: "rgb(0, 0, 56)"
+          background: "rgb(0, 0, 56)",
         })
       ),
-      transition("initial<=>final", animate("4000ms 1500ms"))
+      transition("initial<=>final", animate("4000ms 1500ms")),
     ]),
     trigger("fadeTitle", [
       state("void", style({ opacity: 0 })),
-      transition("void=>*", animate("2000ms 1000ms ease-in"))
-    ])
-  ]
+      transition("void=>*", animate("2000ms 1000ms ease-in")),
+    ]),
+  ],
 })
 export class ProjectsComponent implements OnInit {
   projects: any[];
@@ -65,7 +65,7 @@ export class ProjectsComponent implements OnInit {
     { class: "pillar ", index: 8, state: "initial" },
     { class: "pillar ", index: 9, state: "initial" },
     { class: "pillar ", index: 10, state: "initial" },
-    { class: "pillar ", index: 11, state: "initial" }
+    { class: "pillar ", index: 11, state: "initial" },
   ];
   currentState: string = "yellow";
   startSkill: boolean = false;
@@ -77,7 +77,7 @@ export class ProjectsComponent implements OnInit {
     { skill: "Node.JS", last: false, write: false, cursor: false },
     { skill: "Git/GitHub", last: false, write: false, cursor: false },
     { skill: "TypeScript", last: false, write: false, cursor: false },
-    { skill: "postgresSQL", last: true, write: false, cursor: false }
+    { skill: "postgresSQL", last: true, write: false, cursor: false },
   ];
   lastSkill: object = this.skillsList[this.skillsList.length - 1];
   skillsListNum: number = this.skillsList.length - 1;
@@ -91,7 +91,16 @@ export class ProjectsComponent implements OnInit {
     this.startAnimations();
   }
   moreInfo(i: number) {
-    this.projectsService.setProject(this.projects[i]);
+    if (this.projects[i].moreInfo === true) {
+      this.projects[i].moreInfo = !this.projects[i].moreInfo;
+    } else {
+      this.projects.forEach((project) => {
+        project.moreInfo = false;
+      });
+      this.projects[i].moreInfo = !this.projects[i].moreInfo;
+    }
+
+    console.log(i);
   }
   startAnimations() {
     setTimeout(() => {
@@ -174,7 +183,7 @@ export class ProjectsComponent implements OnInit {
   }
   replay() {
     this.startSkill = false;
-    this.skillsList.forEach(skill => {
+    this.skillsList.forEach((skill) => {
       skill.write = false;
       skill.cursor = false;
     });

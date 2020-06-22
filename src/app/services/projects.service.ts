@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class ProjectsService {
   projects: any[] = [
@@ -16,10 +16,12 @@ export class ProjectsService {
       live: true,
       mobilePic: "./../../assets/projects/marvelMarch/marvelMarchMobile.png",
       link: "https://marvel-march.surge.sh",
-      github: "https://github.com/Henry-Overholt/marvelMarch"
+      github: "https://github.com/Henry-Overholt/marvelMarch",
+      techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github, CookiesService",
+      moreInfo: false,
     },
     {
-      projectName: "The Site You're On Now",
+      projectName: "This Portfolio Site",
       coverPic: "./../../assets/projects/portfolio/portfolioCover.png ",
       extension: "/portfolio-site",
       elevator:
@@ -28,7 +30,10 @@ export class ProjectsService {
       live: true,
       mobilePic: "./../../assets/projects/portfolio/portfolioMobile.png",
       link: "http://henryoverholt.surge.sh",
-      github: "https://github.com/Henry-Overholt/henryOverholtPortfolio"
+      github: "https://github.com/Henry-Overholt/henryOverholtPortfolio",
+      techSpecs:
+        "Angular, HTML, CSS, surge.sh, Git/Github, Angular Animation, EmailJS",
+      moreInfo: false,
     },
     {
       projectName: "Math Hoops Desktop Game",
@@ -39,20 +44,25 @@ export class ProjectsService {
       mobile: false,
       live: true,
       link: "https://math-hoops.surge.sh/",
-      github: "https://github.com/Henry-Overholt/Math-Hoops"
+      github: "https://github.com/Henry-Overholt/Math-Hoops",
+      techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github",
+      moreInfo: false,
     },
     {
       projectName: "Listy Project",
       coverPic: "./../../assets/projects/Listy/listyCover.png ",
       extension: "/listy-project",
       elevator:
-        "Listy is a day-to-day event and task manager application, that gave you current weather information, along with estimated drive time stats for your events.  I built this application with three teammates for our final project at Grand Circus.  It utilizes a postgres database and two APIs, the OpenWeather API and the Google Map's Distance Matrix API.",
+        "Listy is a day-to-day event and task manager application, that gave you current weather information, along with estimated drive time stats for your events.  I built this application with three teammates for our final project at Grand Circus.",
       mobile: true,
       live: true,
       mobilePic: "./../../assets/projects/Listy/listyMobile.jpg",
       link: "http://listy-ui.herokuapp.com/",
-      github: "https://github.com/Henry-Overholt/LISTY-app"
-    }
+      github: "https://github.com/Henry-Overholt/LISTY-app",
+      techSpecs:
+        "Angular, HTML, CSS, postgresSQL, Google Distance Matrix API, OpenweatherAPI, node.js, express, Git/Github",
+      moreInfo: false,
+    },
   ];
   selectedProject: any;
   constructor() {}
