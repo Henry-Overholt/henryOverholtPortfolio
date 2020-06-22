@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
+import emailjs, { EmailJSResponseStatus } from "emailjs-com";
 import {
   trigger,
   state,
@@ -31,13 +32,21 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {}
   submitForm(form: NgForm): void {
-    let email = {
-      name: form.value.name,
-      email: form.value.email,
-      subject: form.value.subject,
-      message: form.value.message,
+    let templateParams = {
+      from_name: form.value.name,
+      from_email: form.value.email,
+      from_subject: form.value.subject,
+      message_html: form.value.message,
     };
-    console.log(email);
+    emailjs.send("gmail", "", templateParams, "").then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+    console.log(templateParams);
     document.querySelector("form").reset();
   }
 }
