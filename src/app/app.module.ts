@@ -8,15 +8,13 @@ import { StoryComponent } from "./story/story.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FormsModule } from "@angular/forms";
-import { ViewComponent } from "./projects/view/view.component";
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "story", component: StoryComponent },
   { path: "projects", component: ProjectsComponent },
   { path: "contact", component: ContactComponent },
-  { path: "projects/view", component: ViewComponent },
   { path: "**", component: HomeComponent },
-  { path: "", redirectTo: "/home", pathMatch: "full" }
+  { path: "", redirectTo: "/home", pathMatch: "full" },
 ];
 @NgModule({
   declarations: [
@@ -25,15 +23,14 @@ const appRoutes: Routes = [
     StoryComponent,
     ProjectsComponent,
     ContactComponent,
-    ViewComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
