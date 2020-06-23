@@ -14,6 +14,7 @@
       <div
         class="project flexColumn"
         *ngFor="let project of projects; index as i"
+        (click)="moreInfo(i)"
       >
         <div id="projectInfo" class="flexColumn">
           <h4>{{ project.projectName }}</h4>
@@ -21,10 +22,12 @@
             <p>{{ project.elevator }}</p>
             <p><span>Technologies: </span> {{ project.techSpecs }}</p>
             <div class="icons">
-              <a href="{{ project.github }}"><i class="fab fa-github"></i></a>
-              <a *ngIf="project.live === true" href="{{ project.link }}"
-                ><i class="far fa-eye"></i
-              ></a>
+              <i class="fab fa-github" (click)="goToLink(project.github)"></i>
+              <i
+                class="far fa-eye"
+                *ngIf="project.live === true"
+                (click)="goToLink(project.link)"
+              ></i>
             </div>
           </div>
         </div>
@@ -36,17 +39,18 @@
         </div>
         <!-- Elevator pitch shows up when clicked in mobile only -->
         <div id="moreInfo" class="hideComputer flexColumn">
-          <button (click)="moreInfo(i)">...</button>
           <div *ngIf="project.moreInfo" id="elevatorPitch" class="flexColumn">
             <p>{{ project.elevator }}</p>
             <p id="technology">
               <span>Technologies: </span> {{ project.techSpecs }}
             </p>
             <div class="icons">
-              <a href="{{ project.github }}"><i class="fab fa-github"></i></a>
-              <a *ngIf="project.live === true" href="{{ project.link }}"
-                ><i class="far fa-eye"></i
-              ></a>
+              <i class="fab fa-github" (click)="goToLink(project.github)"></i>
+              <i
+                class="far fa-eye"
+                *ngIf="project.live === true"
+                (click)="goToLink(project.link)"
+              ></i>
             </div>
           </div>
         </div>

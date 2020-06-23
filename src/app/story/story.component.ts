@@ -43,7 +43,7 @@ export class StoryComponent implements OnInit {
       position: "Field Organizer",
       date: "September 2018 - December 2018",
       strings: [
-        "For Our Future is a Political Action Committee, and I worked for the non-profit arm.  The goal of the non-profit arm of For Our Future is to go out a listen to Michigan Voters, and find out what the most important issues were for each individual we talked to. ",
+        "For Our Future is a Political Action Committee dedicated to Grassroots Organizing, and I worked for the non-profit arm.  The goal of the non-profit arm of For Our Future is to go out a listen to Michigan Voters, and find out what the most important issues were for each individual we talked to. ",
         "The goal of my position was voter engagement.  My main responsibility was to reach as many voters as I could through door-to-door contact.  I engaged voters in a conversation to figure out what issues were most important to them.  For Our Future would take that information and support local candidates who matched the issues of the community they were running to represent. ",
         "When we got closer to the election, my goal was to encourage them to vote, and vote for candidates whose platform matched the issues they cared about.  Throughout my time with For Our Future during the 2018 elections, I knocked on over two thousand doors, and talked to people about their vote and the power they carried, to elect the candidates who best represented their issues.",
         "After the election we mobilized to get voters to call their current representatives in the Michigan house and senate, to protect certain legislation that was on the floor to be repealed by representatives who were voted out.  I was calling, knocking on doors, and going to events to talk to as many voters as possible.",
@@ -52,12 +52,12 @@ export class StoryComponent implements OnInit {
     },
     {
       logo: "./../../assets/careerTimeline/saadCongressLogo.png",
-      company: "Faryouz for Congress",
+      company: "Saad for Congress",
       alt: "For Our Future MI Logo",
       position: "Regional Field Director",
       date: "July 2018 - August 2018",
       strings: [
-        "THis was a campiagn for local offices",
+        "Saad for Congress was a campiagn to represent Michigan's 11th Congressional District during ",
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?",
       ],
       index: 2,
