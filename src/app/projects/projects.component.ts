@@ -90,6 +90,9 @@ export class ProjectsComponent implements OnInit {
     this.projects = this.projectsService.projects;
     this.startAnimations();
   }
+  goToLink(url: string) {
+    window.open(url, "_blank");
+  }
   moreInfo(i: number) {
     if (this.projects[i].moreInfo === true) {
       this.projects[i].moreInfo = !this.projects[i].moreInfo;
