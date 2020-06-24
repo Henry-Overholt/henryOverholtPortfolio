@@ -19,8 +19,11 @@
         <div id="projectInfo" class="flexColumn">
           <h4>{{ project.projectName }}</h4>
           <div id="elevatorPitch" class="hideMobile flexColumn">
+            <h4>{{ project.date }}</h4>
             <p>{{ project.elevator }}</p>
-            <p><span>Technologies: </span> {{ project.techSpecs }}</p>
+            <p id="technology">
+              <span>Technologies: </span> {{ project.techSpecs }}
+            </p>
             <div class="icons">
               <i class="fab fa-github" (click)="goToLink(project.github)"></i>
               <i
@@ -40,6 +43,7 @@
         <!-- Elevator pitch shows up when clicked in mobile only -->
         <div id="moreInfo" class="hideComputer flexColumn">
           <div *ngIf="project.moreInfo" id="elevatorPitch" class="flexColumn">
+            <p id="date">{{ project.date }}</p>
             <p>{{ project.elevator }}</p>
             <p id="technology">
               <span>Technologies: </span> {{ project.techSpecs }}
@@ -59,7 +63,7 @@
     </div>
   </div>
   <div [@swingUp] id="skillContainer">
-    <h4>Skills</h4>
+    <h4>Technical Skills</h4>
     <div id="skillSet">
       <p id="cursor" [@cursor]="cursor" *ngIf="!startSkill"></p>
       <div

@@ -6,21 +6,6 @@ import { Injectable } from "@angular/core";
 export class ProjectsService {
   projects: any[] = [
     {
-      projectName: "Marvel March",
-      coverPic: "./../../assets/projects/marvelMarch/marchMarvelLarge.png ",
-
-      extension: "/marvel-march",
-      elevator:
-        "Along with lots of people who were self-isolating in their homes during the Coronavirus outbreak, I was looking for ways to stay entertained.  As a Marvel fan I decided to watch through the Marvel Cinematic Universe in some sort of order, and as a developer I thought it would be fun to hack together a simple frontend to track my way through all the movies. I built a simple checklist, that stores your completed movies in local storage.",
-      mobile: true,
-      live: true,
-      mobilePic: "./../../assets/projects/marvelMarch/marvelMarchMobile.png",
-      link: "https://marvel-march.surge.sh",
-      github: "https://github.com/Henry-Overholt/marvelMarch",
-      techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github, CookiesService",
-      moreInfo: false,
-    },
-    {
       projectName: "This Portfolio Site",
       coverPic: "./../../assets/projects/portfolio/portfolioCover.png ",
       extension: "/portfolio-site",
@@ -34,6 +19,23 @@ export class ProjectsService {
       techSpecs:
         "Angular, HTML, CSS, surge.sh, Git/Github, Angular Animation, EmailJS",
       moreInfo: false,
+      date: "June '20",
+    },
+    {
+      projectName: "Marvel March",
+      coverPic: "./../../assets/projects/marvelMarch/marchMarvelLarge.png ",
+
+      extension: "/marvel-march",
+      elevator:
+        "Along with lots of people who were self-isolating in their homes during the Coronavirus outbreak, I was looking for ways to stay entertained.  As a Marvel fan I decided to watch through the Marvel Cinematic Universe in some sort of order, and as a developer I thought it would be fun to hack together a simple frontend to track my way through all the movies. I built a simple checklist, that stores your completed movies in local storage.",
+      mobile: true,
+      live: true,
+      mobilePic: "./../../assets/projects/marvelMarch/marvelMarchMobile.png",
+      link: "https://marvel-march.surge.sh",
+      github: "https://github.com/Henry-Overholt/marvelMarch",
+      techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github, CookiesService",
+      moreInfo: false,
+      date: "March '20",
     },
     {
       projectName: "Math Hoops Desktop Game",
@@ -47,6 +49,7 @@ export class ProjectsService {
       github: "https://github.com/Henry-Overholt/Math-Hoops",
       techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github",
       moreInfo: false,
+      date: "January '20",
     },
     {
       projectName: "Listy Project",
@@ -62,12 +65,12 @@ export class ProjectsService {
       techSpecs:
         "Angular, HTML, CSS, postgresSQL, Google Distance Matrix API, OpenweatherAPI, node.js, express, Git/Github",
       moreInfo: false,
+      date: "September '19",
     },
   ];
   selectedProject: any;
   constructor() {}
   setProject(project: any): void {
     this.selectedProject = project;
-    console.log(this.selectedProject);
   }
 }
