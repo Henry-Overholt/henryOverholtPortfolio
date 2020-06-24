@@ -191,11 +191,21 @@ button {
   width: 100%;
   margin-bottom: 5px;
 }
-span {
-  color: red;
-}
+
 #technology {
-  margin: 0px 5px 0px 5px;
+  padding: 10px 0px 10px 0px;
+}
+#technology span {
+  color: yellow;
+  background: rgb(0, 0, 56);
+  padding: 2px;
+  border-radius: 4px;
+  margin-right: 3px;
+  font-weight: bold;
+}
+#date {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -271,7 +281,8 @@ span {
   }
   h4 {
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 56);
   }
   h5 {
     font-size: 25px;
@@ -322,5 +333,14 @@ span {
   }
   #projectsContainer p {
     text-indent: 10px;
+    font-size: 15px;
+  }
+  .date {
+    font-size: 30px;
+  }
+  #elevatorPitch h4 {
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: bold;
   }
 }

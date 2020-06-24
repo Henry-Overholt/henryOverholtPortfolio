@@ -102,8 +102,6 @@ export class ProjectsComponent implements OnInit {
       });
       this.projects[i].moreInfo = !this.projects[i].moreInfo;
     }
-
-    console.log(i);
   }
   startAnimations() {
     setTimeout(() => {
