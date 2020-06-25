@@ -86,18 +86,18 @@ export class StoryComponent implements OnInit {
       ],
       index: 4,
     },
-    {
-      logo: "./../../assets/careerTimeline/ohioLogo.png",
-      company: " ~ Ohio University",
-      alt: "For Our Future MI Logo",
-      position: "World Religions Major",
-      date: "August 2012 - August 2016",
-      strings: [
-        "This is my most recent experience",
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?",
-      ],
-      index: 5,
-    },
+    // {
+    //   logo: "./../../assets/careerTimeline/ohioLogo.png",
+    //   company: " ~ Ohio University",
+    //   alt: "For Our Future MI Logo",
+    //   position: "World Religions Major",
+    //   date: "August 2012 - August 2016",
+    //   strings: [
+    //     "This is my most recent experience",
+    //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?",
+    //   ],
+    //   index: 5,
+    // },
   ];
   currentTimeline: any = this.timeline[0];
   lastTimeLine: any = this.timeline[0];
@@ -109,7 +109,7 @@ export class StoryComponent implements OnInit {
     { number: 2 },
     { number: 3 },
     { number: 4 },
-    { number: 5 },
+    // { number: 5 },
   ];
   constructor() {}
 
