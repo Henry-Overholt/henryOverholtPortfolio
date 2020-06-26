@@ -57,11 +57,9 @@ export class StoryComponent implements OnInit {
       position: "Regional Field Director",
       date: "July 2018 - August 2018",
       strings: [
-        "Persuasively provided information to potential voters concerning the 2018 Democratic Primary, through the use of programs, and excellent interpersonal skills. ",
-        "Constantly reached and surpassed personal daily and weekly contact goals.",
-        "Represented the campaign at local Democratic Party events, indivisible meetings, and community festivals throughout the 11th Congressional District in Michigan.",
-        "Recruited, managed and trained volunteers to make direct voter contact.",
-        "Managed more than 150 ‘Get Out the Vote’ shifts, launching ‘Get Out the Vote’ canvasses and phone banks.",
+        "Saad for Congress was a campaign for the House of Representatives to represent Michigan’s 11th congressional district. As one of the Regional Field Directors for Campaign, it was my role to reach the voters in my assigned areas of the district, as well as train and organize volunteers to maximize our reach in the district ",
+        "Throughout my time with the Saad for Congress Campaign I represented the campaign and it’s message at local events, meetings, and community festivals throughout the 11th District.  I created training documents for new volunteers as well as ran training sessions.  In the closing phases of the campaign, to get our supporters out and vote, I managed 150 “Get Out the Vote” shifts, launching canvasses as well as phone banks.",
+        "My time with the campaign was a true highlight of my young career at that point.  The people I worked with were amazing.  The pace at which we worked, and amount we got done in the day left me feeling truly inspired.  When I’ve been looking for projects since my time with the Saad for Congress campaign, I look for the same things I had there, a great collaborative environment, solution oriented peers, and shared values that help us get the job done. ",
       ],
       index: 2,
     },
@@ -72,10 +70,9 @@ export class StoryComponent implements OnInit {
       position: "Team Leader",
       date: "July 2017 - June 2018",
       strings: [
-        "Mentored and coached a team of six diverse AmeriCorps Members through 11 months of service to provide academic and socio-emotional support to 100+ students in grades 3 thru 8.",
-        "Designed and implemented an after-school program for 30+ students focused on improving student’s math and reading levels.",
-        "Formed relationships between City Year Detroit and 30+ administration, teachers, staff, and community partners to ensure student and team success.",
-        "Collected and analyzed data for 120+ students to monitor student progress in math and reading.",
+        " City Year is a national nonprofit that is located in 29 cities across the United States.  Their goal is to assist students in lower performing schools get to tenth grade on time, and on track so that they can graduate.  I served in Detroit for two years, and in my second year I came back as a Team Leader.  My job was to lead a team of six diverse AmeriCorps members through their 11 months of service, as they provided academic and socio-emotional support to 100+ students in grades 3 thru 8 at J.E. Clark Preparatory Academy.  ",
+        "City Year places young adults, ages 18-24, inside schools for a whole year. They partner with a teacher to focus on an assigned list of students, in order to tutor, mentor, and coach students. As the Team Leader, alongside my Manager, I was the go-between for our team, and the administration at our school. I build relationships with 30+ faculty members in order to achieve our teams goals. I also collected, entered, and managed our teams data on 120+ students. ",
+        "During my second year with City Year Detroit, I designed an afterschool program for 20 students, with support from Learn Fresh and the Detroit Pistons, where they used the sport of basketball and their favorite NBA and WNBA players to improve their math skills. I also led a computer programming course for third thru sixth graders to introduce them to very basic programming concepts like if/else statements.  Finally I created and implemented a school wide reading challenge, where the school surpassed the initial goal of reading 23,000 minutes, instead read almost 49,000 minutes. ",
       ],
       index: 3,
     },
@@ -93,18 +90,24 @@ export class StoryComponent implements OnInit {
       ],
       index: 4,
     },
-    // {
-    //   logo: "./../../assets/careerTimeline/ohioLogo.png",
-    //   company: " ~ Ohio University",
-    //   alt: "For Our Future MI Logo",
-    //   position: "World Religions Major",
-    //   date: "August 2012 - August 2016",
-    //   strings: [
-    //     "This is my most recent experience",
-    //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusamus, rerum quisquam, accusantium cupiditate nulla ipsum incidunt pariatur consequatur animi architecto cumque neque hic quo inventore laudantium totam quia reiciendis?",
-    //   ],
-    //   index: 5,
-    // },
+  ];
+  courses: any[] = [
+    {
+      school: "Grand Circus",
+      subject: "Frontend Programming",
+      date: "July '19 - September '19",
+      location: "Detroit, MI",
+      logo: "./../../assets/careerTimeline/gcLogo.png",
+      pictureAlt: "Grand Circus Logo",
+    },
+    {
+      school: "Ohio University",
+      subject: "World Religions",
+      date: "August '12 - August '16",
+      location: "Athens, OH",
+      logo: "./../../assets/careerTimeline/ohioLogo.png",
+      pictureAlt: "Ohio Unversity Logo",
+    },
   ];
   currentTimeline: any = this.timeline[0];
   lastTimeLine: any = this.timeline[0];

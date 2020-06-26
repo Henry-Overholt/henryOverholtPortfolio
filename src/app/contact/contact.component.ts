@@ -31,6 +31,13 @@ export class ContactComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+  goToLink(number: number) {
+    if (number === 1) {
+      window.open("https://www.linkedin.com/in/henry-overholt/", "_blank");
+    } else {
+      window.open("https://github.com/Henry-Overholt", "_blank");
+    }
+  }
   submitForm(form: NgForm): void {
     let templateParams = {
       from_name: form.value.name,

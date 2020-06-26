@@ -12,7 +12,7 @@ export class ProjectsService {
       elevator:
         "This portfolio was a lot of fun to build. My goal was to create a simple site to showcase my skills as a Frontend Developer, and to create a one-stop shop for my projects, my background, and a simple way to get in contact with me.",
       mobile: true,
-      live: true,
+      live: false,
       mobilePic: "./../../assets/projects/portfolio/portfolioMobile.png",
       link: "http://henryoverholt.surge.sh",
       github: "https://github.com/Henry-Overholt/henryOverholtPortfolio",
@@ -66,6 +66,21 @@ export class ProjectsService {
         "Angular, HTML, CSS, postgresSQL, Google Distance Matrix API, OpenweatherAPI, node.js, express, Git/Github",
       moreInfo: false,
       date: "September 2019",
+    },
+    {
+      projectName: "JavaScript Matching Game",
+      coverPic: "./../../assets/projects/matchingGame.jpeg",
+      extension: "/matching-game",
+      elevator:
+        "This matching game was my first mid-term project at Grand Circus. Looking back on at it, it was very simple, but at the time it was a challenging project that forced my teammates and I to implement a lot of what we had learned so far at Grand Circus.",
+      mobile: false,
+      live: true,
+      // mobilePic: "./../../assets/projects/Listy/listyMobile.jpg",
+      link: "http://sly-snakes-matching.surge.sh/",
+      github: "https://github.com/Henry-Overholt/Sly-Snakes-Matching-Game",
+      techSpecs: "JavaScript, HTML, CSS",
+      moreInfo: false,
+      date: "August 2019",
     },
   ];
   selectedProject: any;
