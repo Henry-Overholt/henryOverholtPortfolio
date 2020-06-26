@@ -172,6 +172,7 @@ button {
   #timelineContainer {
     justify-content: space-around;
     align-items: center;
+    height: 600px;
     width: 100%;
   }
   #currentTimeline {
