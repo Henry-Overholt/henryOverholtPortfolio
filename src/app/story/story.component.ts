@@ -83,8 +83,8 @@ export class StoryComponent implements OnInit {
       position: "AmeriCorps Member",
       date: "August 2016 - June 2017",
       strings: [
-        "Devoted over 1700 hours to tutoring and mentoring 6 th grade students fulltime in math, reading, behavior, and attendance coaching.",
-        "Led structured group activities designed to increase positive interaction students have at whole class, and small group levels.",
+        " City Year is a national nonprofit that is located in 29 cities across the United States.  Their goal is to assist students in lower performing schools get to tenth grade on time, and on track so that they can graduate. I served my first of two years with City Year Detroit on Detroit’s west side, at Noble Elementary-Middle School. ",
+        "My responsibilities as a AmeriCorps member, was to tutor, mentor, and coach a focused list of 6th grade students full-time in math, reading, behavior, and attendance, in order to help them get back on track.  In order to achieve the goals the students and I set, I led structured group activities designed to increase positive interactions students have at the whole class, and small group levels. ",
         "Coordinated school-wide events to celebrate student achievement and engage the community.",
         "Worked and collaborated with a diverse team of Corps Members to provide academic support to students.",
       ],
