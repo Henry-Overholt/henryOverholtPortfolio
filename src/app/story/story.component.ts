@@ -147,6 +147,9 @@ export class StoryComponent implements OnInit {
   handleDotClick(i: number) {
     this.currentTimeline = this.timeline[i];
   }
+  goToLink(url: string) {
+    window.open(url, "_blank");
+  }
   scroll(index: number, direction: boolean) {
     let element = document.getElementById("timelineHolder");
     element.style.position = "relative";
