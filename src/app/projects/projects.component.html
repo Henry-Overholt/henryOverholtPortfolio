@@ -91,4 +91,18 @@
       class="far fa-play-circle"
     ></i>
   </div>
+  <footer [@swingUp]>
+    <a (click)="goToLink('https://www.linkedin.com/in/henry-overholt/')"
+      ><i class="fab fa-linkedin"></i
+    ></a>
+    <a routerLinkActive="hideHome" routerLink="/home"
+      ><img
+        src="./../assets/henryOLogoW.png"
+        alt="Henry O Logo"
+        id="footerLogo"
+    /></a>
+    <a (clcik)="goToLink('https://github.com/Henry-Overholt')"
+      ><i id="linkedIn" class="fab fa-github-square"></i
+    ></a>
+  </footer>
 </main>

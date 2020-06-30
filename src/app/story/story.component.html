@@ -19,8 +19,9 @@
         </p>
         <p>
           When I'm not writing code, I'm on the hunt for an incredible cup of
-          coffee, or enjoying a great soccer game. I can also finish almost any
-          quote from the 1984 classic, <em>Ghostbusters</em>.
+          coffee, or enjoying a great soccer game. Along with my technical
+          skills, I can also finish almost any quote from the 1984 classic,
+          <em>Ghostbusters</em>.
         </p>
         <p>
           Born and raised in Pennsylvania, went to school in Ohio, now living in
@@ -78,4 +79,18 @@
       </div>
     </div>
   </div>
+  <footer>
+    <a (click)="goToLink('https://www.linkedin.com/in/henry-overholt/')"
+      ><i class="fab fa-linkedin"></i
+    ></a>
+    <a routerLinkActive="hideHome" routerLink="/home"
+      ><img
+        src="./../assets/henryOLogoW.png"
+        alt="Henry O Logo"
+        id="footerLogo"
+    /></a>
+    <a (clcik)="goToLink('https://github.com/Henry-Overholt')"
+      ><i id="linkedIn" class="fab fa-github-square"></i
+    ></a>
+  </footer>
 </div>
