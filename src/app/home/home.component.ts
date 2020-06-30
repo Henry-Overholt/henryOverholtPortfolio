@@ -4,7 +4,7 @@ import {
   state,
   style,
   animate,
-  transition
+  transition,
 } from "@angular/animations";
 
 @Component({
@@ -16,38 +16,38 @@ import {
       state(
         "void",
         style({
-          opacity: 0
+          opacity: 0,
         })
       ),
-      transition("void=>*", animate(2000))
+      transition("void=>*", animate(2000)),
     ]),
     trigger("fadeInP", [
       state(
         "void",
         style({
-          opacity: 0
+          opacity: 0,
         })
       ),
-      transition("void =>*", animate("1s 2000ms ease-in"))
+      transition("void =>*", animate("1s 2000ms ease-in")),
     ]),
     trigger("changePosition", [
       state(
         "initial",
         style({
-          left: "100%"
+          left: "100%",
         })
       ),
       state(
         "final",
         style({
           left: "-100%",
-          background: "yellow"
+          background: "yellow",
         })
       ),
       transition("initial=>final", animate("6000ms 500ms")),
-      transition("final=>initial", animate("6000ms 500ms"))
-    ])
-  ]
+      transition("final=>initial", animate("6000ms 500ms")),
+    ]),
+  ],
 })
 export class HomeComponent implements OnInit {
   currentState = "initial";
@@ -63,14 +63,14 @@ export class HomeComponent implements OnInit {
     {
       class: " md bubble ",
       index: 8,
-      state: "initial"
+      state: "initial",
     },
     { class: " lg bubble ", index: 9, state: "final" },
     { class: " lg bubble ", index: 10, state: "initial" },
     { class: " md bubble ", index: 11, state: "final" },
     { class: " md bubble ", index: 12, state: "initial" },
     { class: " sm bubble ", index: 13, state: "final" },
-    { class: "sm bubble", index: 14, state: "initial" }
+    { class: "sm bubble", index: 14, state: "initial" },
   ];
   randomInterval: number;
 
@@ -142,16 +142,16 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       title.style.transition = "0.5s linear";
       setTimeout(() => {
-        title.style.borderTop = "6px solid rgb(0, 0, 56)";
+        title.style.borderTop = "6px solid white";
       }, 400);
       setTimeout(() => {
-        title.style.borderRight = "6px solid rgb(0, 0, 56)";
+        title.style.borderRight = "6px solid white";
       }, 500);
       setTimeout(() => {
-        title.style.borderBottom = "6px solid rgb(0, 0, 56)";
+        title.style.borderBottom = "6px solid white";
       }, 600);
       setTimeout(() => {
-        title.style.borderLeft = "6px solid rgb(0, 0, 56)";
+        title.style.borderLeft = "6px solid white";
       }, 700);
     }, 1000);
   }
