@@ -85,8 +85,8 @@ export class StoryComponent implements OnInit {
       strings: [
         " City Year is a national nonprofit that is located in 29 cities across the United States.  Their goal is to assist students in lower performing schools get to tenth grade on time, and on track so that they can graduate. I served my first of two years with City Year Detroit on Detroit’s west side, at Noble Elementary-Middle School. ",
         "My responsibilities as a AmeriCorps member, was to tutor, mentor, and coach a focused list of 6th grade students full-time in math, reading, behavior, and attendance, in order to help them get back on track.  In order to achieve the goals the students and I set, I led structured group activities designed to increase positive interactions students have at the whole class, and small group levels. ",
-        "Coordinated school-wide events to celebrate student achievement and engage the community.",
-        "Worked and collaborated with a diverse team of Corps Members to provide academic support to students.",
+        "My role in our team was as the Attendance Coordinator.  Meaning I was in charge of planning, organizing, and executing school-wide initiatives that encouraged and rewarded good attendance.  During my time we created the 95% club, where students who held a 95% attendance for the month, was allowed to attend movie and popcorn parties, hot chocolate parties, as well as open gym times.  As attendance coordinator, I had access to little resources, so materials and snacks needed to be obtained through donations that I would reach out to local organizations to receive.",
+        "City Year Detroit brought me from Ohio to Michigan, but it was the people and the city that encourage me to stay, and I’ve loved it ever since.",
       ],
       index: 4,
     },
