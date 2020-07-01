@@ -172,6 +172,9 @@ footer {
     background: white;
     height: 600px;
   }
+  #timelineBody {
+    background: none;
+  }
   #timelineContainer {
     justify-content: space-around;
     align-items: center;
@@ -196,6 +199,7 @@ footer {
     width: 100px;
     height: 300px;
     flex: 1;
+    background: none;
   }
   #logo {
     width: 250px;
