@@ -52,10 +52,11 @@ button {
   margin: 5px;
 }
 #info input {
-  flex: 1;
+  width: 50%;
 }
 #info {
   display: flex;
+  width: 100%;
 }
 #personalContact {
   display: none;
