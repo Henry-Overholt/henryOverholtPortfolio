@@ -108,6 +108,7 @@ i {
   }
   .activeRoute {
     background-color: yellow;
+
     padding: 16px 10px 16px 10px;
     border-radius: 10px;
     transition-duration: 0.5s;

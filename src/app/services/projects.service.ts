@@ -10,7 +10,7 @@ export class ProjectsService {
       coverPic: "./../../assets/projects/portfolio/portfolioCover.png ",
       extension: "/portfolio-site",
       elevator:
-        "This portfolio was a lot of fun to build. My goal was to create a simple site to showcase my skills as a Frontend Developer, and to create a one-stop shop for my projects, my background, and a simple way to get in contact with me.",
+        "This portfolio was a lot of fun to build. My goal was to create a simple site to showcase my skills as a Frontend Developer, and to create a one-stop shop for my projects, my background, and a simple contact form.",
       mobile: true,
       live: false,
       mobilePic: "./../../assets/projects/portfolio/portfolioMobile.png",
@@ -27,7 +27,7 @@ export class ProjectsService {
 
       extension: "/marvel-march",
       elevator:
-        "Along with lots of people who were self-isolating in their homes during the Coronavirus outbreak, I was looking for ways to stay entertained.  As a Marvel fan I decided to watch through the Marvel Cinematic Universe in some sort of order, and as a developer I thought it would be fun to hack together a simple frontend to track my way through all the movies. I built a simple checklist, that stores your completed movies in local storage.",
+        "Along with lots of people who were self-isolating in their homes during the Coronavirus outbreak, I was looking for ways to stay entertained.  As a Marvel fan I decided to watch through the Marvel Cinematic Universe in some sort of order, and as a developer I thought it would be fun to hack together a simple frontend to track my way through all the movies. I built a simple checklist that keeps track of what movies you have watched by storing your the movies you watched local storage. I also provided a suggested order for the Marvel movies, what current streaming platforms they are on, number of post-credit scenes, as well as the famous cameos of the late great Stan Lee.",
       mobile: true,
       live: true,
       mobilePic: "./../../assets/projects/marvelMarch/marvelMarchMobile.png",
@@ -42,7 +42,7 @@ export class ProjectsService {
       coverPic: "./../../assets/projects/mathHoops/mathHoopsCover.png ",
       extension: "/math-hoops",
       elevator:
-        "Math Hoops is originally a fast pace Math game for students, that uses WNBA and NBA player statistics to teach students about statistics and to practice quick single digit math. I had the opportunity to use the game while I was working in Detroit's Public Schools with City Year Detroit, and I loved it.  So, after I graduated from the Frontend Bootcamp at Grand Circus, I decided to transform this game, that I had a lot great memories playing, into a computer game. ",
+        "Math Hoops is originally a fast pace Math board game for students, that uses WNBA and NBA player statistics to teach students about statistics and to practice quick single digit math. I had the opportunity to use the game while I was working in Detroit's Public Schools with City Year Detroit, and I loved it.  So, after I graduated from the Frontend Bootcamp at Grand Circus I decided to transform this game from a board game into a computer game designed to be played on iPad sized screens or larger. ",
       mobile: false,
       live: true,
       link: "https://math-hoops.surge.sh/",
@@ -56,7 +56,7 @@ export class ProjectsService {
       coverPic: "./../../assets/projects/Listy/listyCover.png ",
       extension: "/listy-project",
       elevator:
-        "Listy is a day-to-day event and task manager application, that gave you current weather information, along with estimated drive time stats for your events.  I built this application with three teammates for our final project at Grand Circus.",
+        "Listy is a day-to-day event and task manager application, that gave you current weather information, along with estimated drive time stats for your events.  I built this application with three teammates for our final project at Grand Circus.  We followed the Scrum and Agile frameworks in order to complete our project, with daily scrums, and small sprints. ",
       mobile: true,
       live: true,
       mobilePic: "./../../assets/projects/Listy/listyMobile.jpg",

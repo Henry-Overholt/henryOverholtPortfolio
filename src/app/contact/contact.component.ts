@@ -45,7 +45,7 @@ export class ContactComponent implements OnInit {
       from_subject: form.value.subject,
       message_html: form.value.message,
     };
-    emailjs.send("gmail", "", templateParams, " ").then(
+    emailjs.send("gmail", "", templateParams, "").then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
       },
