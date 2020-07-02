@@ -149,10 +149,10 @@ export class ProjectsComponent implements OnInit {
   changeState(i: number) {
     this.pillars[i].state =
       this.pillars[i].state === "initial" ? "final" : "initial";
-    setInterval(() => {
-      this.pillars[i].state =
-        this.pillars[i].state === "initial" ? "final" : "initial";
-    }, 6500);
+    // setInterval(() => {
+    //   this.pillars[i].state =
+    //     this.pillars[i].state === "initial" ? "final" : "initial";
+    // }, 6500);
   }
   blinkCursor(): void {
     setInterval(() => {
