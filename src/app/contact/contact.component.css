@@ -95,10 +95,19 @@ h2 {
     width: 45%;
     margin-right: 10px;
   }
-  img {
+  #profilePic {
+    background: url("./../../assets/bwFull.jpeg");
+    background-size: cover;
+    background-position: center;
     width: 200px;
+    height: 200px;
     border: 5px solid yellow;
     border-radius: 100%;
+  }
+  #profilePic:hover {
+    background: url("./../../assets/styledME.jpg");
+    background-size: cover;
+    background-position: center;
   }
   #socialHandles {
     margin-left: 10px;

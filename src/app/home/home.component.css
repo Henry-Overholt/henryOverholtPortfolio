@@ -17,7 +17,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 100%;
 }
 main {
   background: linear-gradient(
@@ -39,9 +39,11 @@ main {
 }
 #textHolder {
   font-size: 12px;
+  margin-top: 10px;
   width: 90%;
   padding: 4px;
   color: rgb(0, 0, 56);
+  background: rgba(255, 255, 255, 0.671);
   z-index: 1;
   top: 15%;
   border-radius: 10px;
@@ -62,8 +64,8 @@ a {
   font-family: "Rock Salt";
   text-decoration: none;
   padding: 10px;
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -83,10 +85,11 @@ a {
     align-items: center;
     /* background: rgba(3, 3, 3, 0.336); */
     padding: 10px 0px 10px 0px;
+    height: 100vh;
   }
 
   main {
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(
         rgba(247, 245, 245, 0.336),
         rgba(247, 245, 245, 0.336)
@@ -103,6 +106,7 @@ a {
     top: 20%;
     border-radius: 10px;
     margin-left: 10px;
+    background: none;
   }
   h3 {
     margin-top: 10px;
@@ -110,7 +114,7 @@ a {
   a {
     font-size: 20px;
     border: 3px solid rgb(0, 0, 56);
-    position: fixed;
+    position: relative;
     bottom: 10px;
   }
 }
