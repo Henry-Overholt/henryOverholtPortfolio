@@ -5,21 +5,21 @@ import { Injectable } from "@angular/core";
 })
 export class ProjectsService {
   projects: any[] = [
-    {
-      projectName: "Daily UI Challenges",
-      coverPic: "./../../assets/projects/dailyUI/dailyUIDesktop.png ",
-      extension: "/dailyUI",
-      elevator:
-        "Daily UI is a series of daily design challenges sent to my indox everyday of the week, to try and get better as a frontend developer. I've decided to put most on a single site, and hopefully keep doing as many as I can.  It is a fun way to build quick apps to showcase some skills and be creative.",
-      mobile: true,
-      live: true,
-      mobilePic: "./../../assets/projects/dailyUI/dailyUIMobile.png",
-      link: "http://dailyuichallenges.surge.sh",
-      github: "https://github.com/Henry-Overholt/dailyUIchallenge",
-      techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github",
-      moreInfo: false,
-      date: "Beginning July 2020",
-    },
+    // {
+    //   projectName: "Daily UI Challenges",
+    //   coverPic: "./../../assets/projects/dailyUI/dailyUIDesktop.png ",
+    //   extension: "/dailyUI",
+    //   elevator:
+    //     "Daily UI is a series of daily design challenges sent to my indox everyday of the week, to try and get better as a frontend developer. I've decided to put most on a single site, and hopefully keep doing as many as I can.  It is a fun way to build quick apps to showcase some skills and be creative.",
+    //   mobile: true,
+    //   live: true,
+    //   mobilePic: "./../../assets/projects/dailyUI/dailyUIMobile.png",
+    //   link: "http://dailyuichallenges.surge.sh",
+    //   github: "https://github.com/Henry-Overholt/dailyUIchallenge",
+    //   techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github",
+    //   moreInfo: false,
+    //   date: "Beginning July 2020",
+    // },
     {
       projectName: "This Portfolio Site",
       coverPic: "./../../assets/projects/portfolio/portfolioCover.png ",
