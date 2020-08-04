@@ -275,7 +275,7 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     background: white;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
   #projects {
     width: 80%;
