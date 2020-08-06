@@ -72,10 +72,10 @@ a {
   h1 {
     font-family: "Rock Salt";
     padding: 8px;
-    font-size: 100px;
+    font-size: 65px;
   }
   #hello {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 10px;
   }
   #main {
@@ -100,7 +100,7 @@ a {
   }
 
   #textHolder {
-    font-size: 20px;
+    font-size: 15px;
     width: 45%;
     z-index: 1;
     top: 20%;
@@ -118,6 +118,18 @@ a {
     bottom: 10px;
   }
 }
+
+@media screen and (min-width: 1100px) {
+  h1 {
+    font-size: 100px;
+  }
+  #hello {
+    font-size: 30px;
+  }
+  #textHolder {
+    font-size: 20px;
+  }
+}
 /* black: rbg(0, 0, 0)
  navy blue: rgb(20, 33, 61)
  yellow: rgb(252, 163, 17)
@@ -125,7 +137,7 @@ a {
  white: rgb(255, 255, 255)
  */
 
- /* cursor:pointer
+/* cursor:pointer
  background-attachment:fixed
  parallax scrolling
  content for TA position */
