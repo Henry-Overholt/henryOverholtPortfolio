@@ -77,7 +77,8 @@ export class ProjectsComponent implements OnInit {
     { skill: "Node.JS", last: false, write: false, cursor: false },
     { skill: "Git/GitHub", last: false, write: false, cursor: false },
     { skill: "TypeScript", last: false, write: false, cursor: false },
-    { skill: "postgresSQL", last: true, write: false, cursor: false },
+    { skill: "postgresSQL", last: false, write: false, cursor: false },
+    { skill: "express.js", last: true, write: false, cursor: false },
   ];
   lastSkill: object = this.skillsList[this.skillsList.length - 1];
   skillsListNum: number = this.skillsList.length - 1;

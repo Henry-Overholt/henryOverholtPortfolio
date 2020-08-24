@@ -34,12 +34,12 @@
             </div>
           </div>
         </div>
-        <div class="computer">
-          <img class="coverPic" src="{{ project.coverPic }}" alt="" />
-          <div *ngIf="project.mobile === true" class="phone">
+
+        <img class="coverPic" src="{{ project.coverPic }}" alt="" />
+        <!-- <div *ngIf="project.mobile === true" class="phone">
             <img src="{{ project.mobilePic }}" alt="" class="phonePic" />
-          </div>
-        </div>
+          </div> -->
+
         <!-- Elevator pitch shows up when clicked in mobile only -->
         <div id="moreInfo" class="hideComputer flexColumn">
           <div *ngIf="project.moreInfo" id="elevatorPitch" class="flexColumn">

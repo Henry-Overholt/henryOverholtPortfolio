@@ -42,19 +42,20 @@ h4 {
   align-self: center;
   width: 250px;
   height: 200px;
-  background-image: url("./../../assets/emptyLaptopScreen.jpeg");
+  /* background-image: url("./../../assets/emptyLaptopScreen.jpeg");
   background-position: center;
-  background-size: 250px;
+  background-size: 250px; */
   background-repeat: no-repeat;
 }
 .coverPic {
-  position: relative;
   z-index: 1;
   left: 42.5%;
-  transform: translateX(-75px);
-  top: 26px;
-  width: 186px;
-  height: 117px;
+  /* transform: translateX(-75px); */
+  /* top: 26px; */
+  width: 100%;
+  /* height: 200px; */
+  /* width: 186px;
+  height: 117px; */
 }
 #projects {
   width: 100%;
@@ -71,27 +72,7 @@ h4 {
   background: white;
   z-index: 1;
 }
-.phonePic {
-  position: relative;
-  left: 6px;
-  top: 18px;
-  width: 36px;
-  height: 62px;
-  border-right: 1px solid black;
-  border-radius: 1px;
-}
-.phone {
-  position: relative;
-  bottom: 35px;
-  left: 200px;
-  width: 50px;
-  height: 100px;
-  background-image: url("./../../assets/iphoneBlank.png");
-  background-position: center;
-  background-size: 100px;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
+
 .hideMobile {
   display: none;
 }
@@ -222,11 +203,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .computer {
-    width: 400px;
-    height: 300px;
-    background-size: 400px;
-  }
   .hideMobile {
     display: flex;
   }
@@ -248,44 +224,37 @@ footer {
   .coverPic {
     top: 30px;
     width: 300px;
-    transform: translateX(-150.5px);
-    left: 200px;
-    height: 190px;
+    /* width: 40%; */
+    /* transform: translateX(-150.5px);
+    left: 200px; */
+    margin-bottom: 10px;
+    border: 1px solid red;
+    /* height: 190px; */
   }
-  .phonePic {
-    left: 13px;
-    top: 36px;
-    width: 68.5px;
-    height: 123px;
-  }
-  .phone {
-    position: relative;
-    bottom: 100px;
-    left: 310px;
-    width: 100px;
-    height: 200px;
-    background-size: 200px;
-  }
+
   i {
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(0, 0, 56);
     z-index: 2;
   }
   .project {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: center;
     background: white;
     padding-bottom: 15px;
+    height: 400px;
   }
   #projects {
-    width: 80%;
+    width: 90%;
   }
   .project:hover {
     transform: scale(1.05);
   }
   #projectInfo {
-    width: 50%;
+    border: 1px solid blue;
+    flex: 1;
+    /* width: 70%; */
   }
   h3 {
     font-size: 60px;
@@ -293,10 +262,11 @@ footer {
     margin-top: 100px;
   }
   h4 {
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 5px;
     color: rgb(0, 0, 56);
   }
+
   h5 {
     font-size: 25px;
     color: yellow;
@@ -373,5 +343,16 @@ footer {
     font-size: 20px;
     border: 3px solid rgb(0, 0, 56);
     margin: 10px 0px 40px 0px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .coverPic {
+    width: 550px;
+
+    margin-bottom: 10px;
+    /* height: 190px; */
+  }
+  .project {
+    height: 400px;
   }
 }
