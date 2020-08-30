@@ -50,16 +50,16 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       title.style.transition = "0.5s linear";
       setTimeout(() => {
-        title.style.borderTop = "6px solid rgb(0,0,56)";
+        title.style.borderTop = "5px solid rgb(0,0,56)";
       }, 400);
       setTimeout(() => {
-        title.style.borderRight = "6px solid rgb(0,0,56)";
+        title.style.borderRight = "5px solid rgb(0,0,56)";
       }, 500);
       setTimeout(() => {
-        title.style.borderBottom = "6px solid rgb(0,0,56)";
+        title.style.borderBottom = "5px solid rgb(0,0,56)";
       }, 600);
       setTimeout(() => {
-        title.style.borderLeft = "6px solid rgb(0,0,56)";
+        title.style.borderLeft = "5px solid rgb(0,0,56)";
       }, 700);
     }, 1000);
   }

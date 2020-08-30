@@ -17,8 +17,32 @@ header {
   width: 110px;
   display: none;
 }
-#smallLogo {
+/* #smallLogo {
   width: 60px;
+} */
+.tinyPath {
+  stroke-dasharray: 93;
+  animation: continueDash 20s linear 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes continueDash {
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+#smallLogo {
+  border: 3px solid rgb(0, 0, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 5px;
+  margin-left: 10px;
+}
+#mediumLogo {
+  display: none;
+}
+#largeLogo {
+  display: none;
 }
 nav {
   width: 50%;
@@ -76,6 +100,17 @@ i {
 }
 
 @media screen and (min-width: 768px) {
+  #smallLogo {
+    display: none;
+  }
+  #mediumLogo {
+    border: 3px solid rgb(0, 0, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    margin-left: 10px;
+  }
   nav {
     width: 50%;
     display: flex;
@@ -118,7 +153,8 @@ i {
     /* display: initial; */
   }
   #smallLogo {
-    width: 100px;
+    margin-left: 20px;
+    /* width: 100px; */
     /* display: none; */
   }
   #contact {
