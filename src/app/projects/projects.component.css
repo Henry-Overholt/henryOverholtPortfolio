@@ -30,13 +30,13 @@ main {
   justify-content: center;
 }
 h3 {
-  font-family: "Rock Salt";
+  font-family: "Rock Salt", cursive;
   font-size: 25px;
   padding: 50px 0px 10px 0px;
   color: yellow;
 }
 h4 {
-  font-family: "Rock Salt";
+  font-family: "Rock Salt", cursive;
   text-align: center;
 }
 .computer {
@@ -79,7 +79,7 @@ h4 {
 }
 h5 {
   padding-bottom: 50px;
-  font-family: "Raleway";
+  font-family: "Roboto";
   color: yellow;
 }
 #skillSet {
@@ -145,9 +145,12 @@ h5 {
 }
 #elevatorPitch {
   width: 90%;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   text-indent: 10px;
+}
+#elevatorPitch h4 {
+  font-family: "Fugaz One";
 }
 
 .icons {
@@ -262,7 +265,7 @@ footer {
     margin-top: 100px;
   }
   h4 {
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 5px;
     color: rgb(0, 0, 56);
   }
