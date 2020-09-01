@@ -30,7 +30,7 @@ main {
   justify-content: center;
 }
 h3 {
-  font-family: "Rock Salt", cursive;
+  font-family: "Fugaz One", cursive;
   font-size: 25px;
   padding: 50px 0px 10px 0px;
   color: yellow;
@@ -201,11 +201,28 @@ footer {
   color: rgb(0, 0, 56);
   border-radius: 30px;
   font-size: 12px;
-  font-family: "Rock Salt";
+  font-family: "Fugaz One";
   text-decoration: none;
   padding: 10px;
 }
-
+#mediumLogo {
+  border: 3px solid rgb(0, 0, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  margin-left: 10px;
+}
+.tinyPath {
+  stroke-dasharray: 93;
+  animation: continueDash 20s linear 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes continueDash {
+  to {
+    stroke-dashoffset: 200;
+  }
+}
 @media screen and (min-width: 768px) {
   .hideMobile {
     display: flex;
@@ -260,7 +277,7 @@ footer {
     /* width: 70%; */
   }
   h3 {
-    font-size: 60px;
+    font-size: 70px;
     color: yellow;
     margin-top: 100px;
   }
@@ -354,6 +371,9 @@ footer {
 
     margin-bottom: 10px;
     /* height: 190px; */
+  }
+  h3 {
+    font-size: 90px;
   }
   h4 {
     font-size: 25px;

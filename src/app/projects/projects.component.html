@@ -1,7 +1,7 @@
 <main>
   <div id="projectsContainer">
     <h3 [@fadeTitle]>PROJECTS</h3>
-    <h5 [@fadeTitle]>Projects I've worked on</h5>
+    <h5 [@fadeTitle]></h5>
     <div id="pillars" [@fadeIn]>
       <div
         *ngFor="let pillar of pillars; index as i"
@@ -97,12 +97,39 @@
     <a (click)="goToLink('https://www.linkedin.com/in/henry-overholt/')"
       ><i class="fab fa-linkedin"></i
     ></a>
-    <a routerLinkActive="hideHome" routerLink="/home"
-      ><img
+    <a routerLinkActive="hideHome" id="miniLogo" routerLink="/home">
+      <div id="mediumLogo">
+        <svg
+          width="34.1"
+          height="36"
+          viewBox="0 0 35.1 36"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            id="svgGroup"
+            stroke-linecap="round"
+            fill-rule="evenodd"
+            font-size="9pt"
+            stroke="rgb(0, 0, 56)"
+            stroke-width="0.25mm"
+            fill="none"
+            style="stroke: yellow; stroke-width: 1; fill: rgb(0, 0, 56);"
+          >
+            <path
+              class="tinyPath"
+              d="M 25.1 0 L 34.1 0 L 27.8 36 L 18.75 36 L 21.05 23 L 11.3 23 L 9.05 36 L 0 36 L 6.35 0 L 15.35 0 L 12.65 15.2 L 22.4 15.2 L 25.1 0 Z"
+              id="0"
+              vector-effect="non-scaling-stroke"
+            />
+          </g>
+        </svg>
+      </div>
+      <!-- <img
         src="./../assets/henryOLogoW.png"
         alt="Henry O Logo"
         id="footerLogo"
-    /></a>
+    /> -->
+    </a>
     <a (click)="goToLink('https://github.com/Henry-Overholt')"
       ><i id="linkedIn" class="fab fa-github-square"></i
     ></a>
