@@ -13,6 +13,12 @@
   align-items: center;
   height: 100px;
 }
+h3 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
 #story {
   width: 90%;
   font-size: 18px;
@@ -159,13 +165,31 @@ footer {
   color: rgb(0, 0, 56);
   border-radius: 30px;
   font-size: 12px;
-  font-family: "Rock Salt";
+  font-family: "Fugaz One";
   text-decoration: none;
   padding: 10px;
   margin: 10px;
 }
 
 @media screen and (min-width: 768px) {
+  #mediumLogo {
+    border: 3px solid rgb(0, 0, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    margin-left: 10px;
+  }
+  .tinyPath {
+    stroke-dasharray: 93;
+    animation: continueDash 20s linear 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes continueDash {
+    to {
+      stroke-dashoffset: 200;
+    }
+  }
   .hide {
     display: none;
   }
@@ -181,6 +205,7 @@ footer {
     flex-direction: column;
     background: white;
     height: 600px;
+    margin-top: 25px;
   }
   #timelineBody {
     background: none;
