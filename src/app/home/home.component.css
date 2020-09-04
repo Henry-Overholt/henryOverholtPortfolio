@@ -12,7 +12,6 @@ h1 {
   stroke-dashoffset: 1000;
   animation: dash 5s linear 1s forwards;
 }
-
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
@@ -145,6 +144,14 @@ a {
     border: 2px solid rgb(0, 0, 56);
     position: relative;
     bottom: 10px;
+    background: white;
+  }
+  a:hover {
+    transform: scale(1.4);
+    border-color: yellow;
+    background: rgb(0, 0, 56);
+    color: yellow;
+    transition: all 0.5s ease-in-out;
   }
 }
 
