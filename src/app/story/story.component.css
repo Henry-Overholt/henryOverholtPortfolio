@@ -325,4 +325,11 @@ footer {
     border: 3px solid rgb(0, 0, 56);
     margin: 20px 0px 40px 0px;
   }
+  #contact:hover {
+    transform: scale(1.4);
+    border-color: yellow;
+    background: rgb(0, 0, 56);
+    color: yellow;
+    transition: all 0.5s ease-in-out;
+  }
 }
