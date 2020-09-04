@@ -104,11 +104,7 @@ h2 {
     border: 5px solid yellow;
     border-radius: 100%;
   }
-  #profilePic:hover {
-    background: url("./../../assets/styledME.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+
   #socialHandles {
     margin-left: 10px;
     width: 60%;
