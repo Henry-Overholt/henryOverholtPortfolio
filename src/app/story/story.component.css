@@ -30,11 +30,12 @@ h4 {
   border-radius: 10px;
 }
 h1 {
-  font-family: "Rock Salt";
+  font-family: "Fugaz One";
   margin: 40px 0px 40px 0px;
   border: 3px solid yellow;
   padding: 3px 8px 3px 8px;
   color: yellow;
+  font-size: 40px;
 }
 p {
   text-indent: 8px;
@@ -93,8 +94,8 @@ h2 {
   color: rgb(0, 0, 56);
 }
 #date {
-  font-size: 11px;
-  font-family: "Rock Salt";
+  font-size: 18px;
+  font-family: "Fugaz One";
 }
 #company {
   font-size: 12px;
@@ -194,7 +195,7 @@ footer {
     display: none;
   }
   h1 {
-    font-size: 60px;
+    font-size: 80px;
     border: 0px;
     color: rgb(0, 0, 56);
   }
@@ -204,7 +205,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     background: white;
-    height: 600px;
+
     margin-top: 25px;
   }
   #timelineBody {
@@ -213,7 +214,7 @@ footer {
   #timelineContainer {
     justify-content: space-around;
     align-items: center;
-    height: 600px;
+
     width: 100%;
   }
   #currentTimeline {
@@ -247,7 +248,7 @@ footer {
     margin-bottom: 10px;
   }
   #date {
-    font-size: 25px;
+    font-size: 35px;
   }
   .dot {
     height: 15px;
