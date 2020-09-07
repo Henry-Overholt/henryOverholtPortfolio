@@ -3,23 +3,59 @@ body {
   height: 100%;
   position: relative;
 }
-.bar {
-  height: 100px;
-  border-radius: 0px 5px 5px 0px;
-  margin: 20px 0px;
+.show {
+  visibility: visible;
 }
-#first {
-  width: 0;
-  background: rgb(0, 0, 56);
-  transition: all 1s linear;
+.hide {
+  visibility: hidden;
 }
-#second {
-  width: 0;
-  background: rgb(0, 191, 255);
-  transition: all 1s linear;
+
+.fullAirplane {
+  left: 0;
+  animation: straightToRight 5s infinite linear;
+  color: rgb(0, 0, 56);
 }
-#third {
-  width: 0;
-  background: yellow;
-  transition: all 1s linear;
+.halfAirplane {
+  left: 0;
+  animation: moveright 6s infinite linear;
+  color: rgb(0, 191, 255);
+}
+.fullLetter {
+  left: 0;
+  animation: moveleft 7s infinite linear;
+  color: rgb(0, 191, 255);
+}
+.halfLetter {
+  left: 0;
+  color: yellow;
+  animation: moveleft 4s infinite linear;
+}
+i {
+  font-size: 70px;
+  position: relative;
+}
+@keyframes moveright {
+  from {
+    right: 100%;
+    transform: rotate(-45deg);
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes moveleft {
+  from {
+    left: 100%;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes straightToRight {
+  from {
+    right: 100%;
+  }
+  to {
+    left: 100%;
+  }
 }

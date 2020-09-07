@@ -41,7 +41,7 @@ h1 {
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 5s linear 1s forwards;
+  animation: dash 5s linear 2s forwards;
 }
 @keyframes complete {
   to {
