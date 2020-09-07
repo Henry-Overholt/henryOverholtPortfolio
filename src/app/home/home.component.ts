@@ -41,9 +41,23 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.start();
+    this.runBars();
   }
   start() {
     this.nameIntro();
+  }
+  runBars() {
+    setTimeout(() => {
+      setTimeout(() => {
+        document.getElementById("first").style.width = "80%";
+      }, 200);
+      setTimeout(() => {
+        document.getElementById("second").style.width = "60%";
+      }, 600);
+      setTimeout(() => {
+        document.getElementById("third").style.width = "40%";
+      }, 1000);
+    }, 500);
   }
   nameIntro() {
     let title = document.querySelector("h1");
