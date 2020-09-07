@@ -8,7 +8,7 @@ export class ProjectsService {
     {
       projectName: "Weather App",
       coverPic: "./../../assets/projects/weatherApp.png ",
-      extension: "/weaterApp",
+      extension: "/weatherApp",
       elevator:
         "This Weather app grabs a user's location, then displays current weather conditions, the forecast for two days into the future, and the sunrise and sunset times.  This application was a lot of fun to build, I used the color schemes generator from coolors.co to generate a color pallette that looked good. Then I kept adding tools like a moving sun and moon as the day goes by, then a minute by minute rain forecast for the next 60 minutes. ",
       mobile: false,

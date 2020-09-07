@@ -4,8 +4,34 @@ h1 {
   font-size: 50px;
   border: 6px solid transparent;
   border-radius: 5px;
-  padding: 8px;
+  padding: 8px 8px 6px 8px;
   /* background: rgba(255, 255, 255, 0.479); */
+}
+.bar {
+  height: 150px;
+  border-radius: 0px 5px 5px 0px;
+  position: absolute;
+}
+#first {
+  top: 20%;
+  left: 0;
+  width: 0;
+  background: rgb(0, 0, 56);
+  transition: all 1s linear;
+}
+#second {
+  top: 40%;
+  left: 0;
+  width: 0;
+  background: rgb(0, 191, 255);
+  transition: all 1s linear;
+}
+#third {
+  top: 60%;
+  left: 0;
+  width: 0;
+  background: yellow;
+  transition: all 1s linear;
 }
 .path {
   stroke-dasharray: 1000;
@@ -39,13 +65,6 @@ h1 {
   height: 100%;
 }
 main {
-  background: linear-gradient(
-      rgba(247, 245, 245, 0.336),
-      rgba(247, 245, 245, 0.336)
-    ),
-    url("./../../assets/worldPaint.jpg");
-  background-size: cover;
-  background-position: center;
   /* color: rgb(0, 0, 56); */
   color: rgb(0, 0, 56);
   font-family: "Roboto";
@@ -112,19 +131,7 @@ a {
     justify-content: center;
     align-items: center;
     /* background: rgba(3, 3, 3, 0.336); */
-    padding: 10px 0px 10px 0px;
-    height: 100vh;
-  }
-
-  main {
-    height: 100%;
-    background: linear-gradient(
-        rgba(247, 245, 245, 0.336),
-        rgba(247, 245, 245, 0.336)
-      ),
-      url("./../../assets/worldPaint.jpg");
-    background-size: cover;
-    justify-content: center;
+    padding: 10px 0px 0px 0px;
   }
 
   #textHolder {
@@ -143,7 +150,7 @@ a {
     font-size: 20px;
     border: 2px solid rgb(0, 0, 56);
     position: relative;
-    bottom: 10px;
+    bottom: 15vh;
     background: white;
   }
   a:hover {
@@ -152,6 +159,18 @@ a {
     background: rgb(0, 0, 56);
     color: yellow;
     transition: all 0.5s ease-in-out;
+  }
+  .bar {
+    height: 170px;
+  }
+  #first {
+    top: 24%;
+  }
+  #second {
+    top: 50%;
+  }
+  #third {
+    top: 76%;
   }
 }
 
@@ -173,6 +192,18 @@ a {
   }
   #smallScreen {
     display: none;
+  }
+  .bar {
+    height: 170px;
+  }
+  #first {
+    top: 23%;
+  }
+  #second {
+    top: 49%;
+  }
+  #third {
+    top: 75%;
   }
 }
 /* black: rbg(0, 0, 0)

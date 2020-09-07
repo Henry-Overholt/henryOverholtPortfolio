@@ -36,7 +36,8 @@ h3 {
   color: yellow;
 }
 h4 {
-  font-family: "Rock Salt", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
   text-align: center;
 }
 .computer {
@@ -144,7 +145,7 @@ h5 {
   text-indent: 10px;
 }
 #elevatorPitch h4 {
-  font-family: "Fugaz One";
+  font-family: "Roboto";
 }
 
 .icons {
@@ -276,7 +277,7 @@ footer {
     margin-top: 100px;
   }
   h4 {
-    font-size: 25px;
+    font-size: 45px;
     margin-bottom: 5px;
     color: rgb(0, 0, 56);
   }
@@ -377,7 +378,8 @@ footer {
     font-size: 90px;
   }
   h4 {
-    font-size: 25px;
+    font-size: 35px;
+    font-family: "Fugaz One";
   }
   .project {
   }
