@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.start();
-    this.runBars();
+    // this.runBars();
   }
   start() {
     this.nameIntro();
