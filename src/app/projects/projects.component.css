@@ -259,7 +259,6 @@ footer {
     justify-content: center;
     background: white;
     padding-bottom: 15px;
-    height: 400px;
   }
   #projects {
     width: 90%;
@@ -277,8 +276,9 @@ footer {
     margin-top: 100px;
   }
   h4 {
-    font-size: 45px;
+    font-size: 25px;
     margin-bottom: 5px;
+    font-family: "Fugaz One";
     color: rgb(0, 0, 56);
   }
 
@@ -380,7 +380,5 @@ footer {
   h4 {
     font-size: 35px;
     font-family: "Fugaz One";
-  }
-  .project {
   }
 }

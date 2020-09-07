@@ -8,36 +8,47 @@ h1 {
   /* background: rgba(255, 255, 255, 0.479); */
 }
 .bar {
-  height: 150px;
+  height: 28%;
   border-radius: 0px 5px 5px 0px;
   position: absolute;
 }
 #first {
-  top: 20%;
+  top: 5%;
   left: 0;
   width: 0;
   background: rgb(0, 0, 56);
   transition: all 1s linear;
+  animation: complete 1s linear 0.5s forwards;
 }
+
 #second {
-  top: 40%;
+  top: 35%;
   left: 0;
   width: 0;
   background: rgb(0, 191, 255);
   transition: all 1s linear;
+  animation: complete 1s linear 1s forwards;
 }
 #third {
-  top: 60%;
+  top: 65%;
+  height: 44%;
   left: 0;
   width: 0;
   background: yellow;
   transition: all 1s linear;
+  animation: complete 1s linear 1.5s forwards;
 }
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 5s linear 1s forwards;
+  animation: dash 5s linear 2s forwards;
 }
+@keyframes complete {
+  to {
+    width: 100%;
+  }
+}
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
@@ -103,7 +114,7 @@ a {
   text-decoration: none;
   padding: 10px;
   position: relative;
-  bottom: 0px;
+  bottom: 10vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -165,12 +176,31 @@ a {
   }
   #first {
     top: 24%;
+    animation: first 1s linear 0.5s forwards;
   }
   #second {
     top: 50%;
+    animation: second 1s linear 1s forwards;
   }
   #third {
     top: 76%;
+    height: 170px;
+    animation: third 1s linear 1.5s forwards;
+  }
+  @keyframes first {
+    to {
+      width: 80%;
+    }
+  }
+  @keyframes second {
+    to {
+      width: 60%;
+    }
+  }
+  @keyframes third {
+    to {
+      width: 40%;
+    }
   }
 }
 

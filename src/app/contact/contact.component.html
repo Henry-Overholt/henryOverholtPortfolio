@@ -1,10 +1,16 @@
 <div id="wrapper">
+  <div id="airplaneContainer">
+    <i class="halfAirplane airplane far fa-paper-plane"></i>
+    <div id="strokeRight"></div>
+  </div>
+
   <form
     [@fadeInRight]
     id="contactForm"
     #contactForm="ngForm"
     (ngSubmit)="submitForm(contactForm)"
   >
+    <div id="strokeLeft"></div>
     <h1>SAY 'HELLO'</h1>
     <h2>
       Feel free to reach out regarding new opportunites, or projects that I
@@ -43,17 +49,23 @@
   </form>
 
   <div id="personalContact" [@fadeInLeft]>
-    <div id="profilePic"></div>
+    <div id="letterContainer">
+      <i class="far fa-envelope letter"></i>
+      <img src="./../../assets/bwProfile.jpeg" alt="" id="profilePicture" />
+    </div>
+
     <div id="socialHandles">
       <h3>FIND ME @</h3>
-      <a (click)="goToLink(1)">
-        <i class="fab fa-linkedin"></i>
-        <h4 class="showLargeScreen">/henry-overholt</h4>
-      </a>
-      <a (click)="goToLink(2)">
-        <i id="github" class="fab fa-github-square"></i>
-        <h4 class="showLargeScreen">/henry-overholt</h4>
-      </a>
+      <div id="links">
+        <a (click)="goToLink(1)">
+          <i class="fab fa-linkedin"></i>
+          <h4 class="showLargeScreen">/henry-overholt</h4>
+        </a>
+        <a (click)="goToLink(2)">
+          <i id="github" class="fab fa-github-square"></i>
+          <h4 class="showLargeScreen">/henry-overholt</h4>
+        </a>
+      </div>
     </div>
   </div>
 </div>

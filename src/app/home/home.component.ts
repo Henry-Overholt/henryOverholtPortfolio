@@ -40,24 +40,8 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.start();
-    this.runBars();
-  }
-  start() {
     this.nameIntro();
-  }
-  runBars() {
-    setTimeout(() => {
-      setTimeout(() => {
-        document.getElementById("first").style.width = "80%";
-      }, 200);
-      setTimeout(() => {
-        document.getElementById("second").style.width = "60%";
-      }, 600);
-      setTimeout(() => {
-        document.getElementById("third").style.width = "40%";
-      }, 1000);
-    }, 500);
+    // this.runBars();
   }
   nameIntro() {
     let title = document.querySelector("h1");
@@ -68,13 +52,13 @@ export class HomeComponent implements OnInit {
       }, 400);
       setTimeout(() => {
         title.style.borderRight = "5px solid rgb(0,0,56)";
-      }, 500);
-      setTimeout(() => {
-        title.style.borderBottom = "5px solid rgb(0,0,56)";
       }, 600);
       setTimeout(() => {
+        title.style.borderBottom = "5px solid rgb(0,0,56)";
+      }, 800);
+      setTimeout(() => {
         title.style.borderLeft = "5px solid rgb(0,0,56)";
-      }, 700);
-    }, 1000);
+      }, 1000);
+    }, 1500);
   }
 }
