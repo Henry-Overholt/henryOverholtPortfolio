@@ -36,6 +36,7 @@ h1 {
   padding: 3px 8px 3px 8px;
   color: yellow;
   font-size: 40px;
+  z-index: 1;
 }
 p {
   text-indent: 8px;
@@ -148,10 +149,6 @@ button {
 #myStory {
   width: 100%;
   height: 600px;
-  background: url("./../../assets/recordBackgroundTall.jpeg");
-  background-position: top;
-  background-size: 300px;
-  background-repeat: no-repeat;
 }
 .body {
   background: white;
@@ -170,6 +167,138 @@ footer {
   text-decoration: none;
   padding: 10px;
   margin: 10px;
+}
+#interestsWheel {
+  position: absolute;
+  top: -200px;
+
+  width: 400px;
+  height: 400px;
+  transform: translateX(-200px);
+  transform: rotate(-90deg);
+  background: rgb(0, 191, 255);
+  border-radius: 100%;
+  border: 2px solid rgb(0, 0, 56);
+}
+.spinWheel {
+  animation: spinWheel 15s infinite 3s linear;
+}
+#interestsWheel .fas {
+  position: absolute;
+  font-size: 25px;
+  color: rgb(0, 0, 56);
+  background: rgb(0, 191, 255);
+}
+.topBottom {
+  left: 50%;
+  transform: translateX(-12.5px);
+}
+.middle {
+  top: 50%;
+  transform: translateY(-12.5px);
+}
+#record {
+  bottom: 20px;
+}
+#code {
+  transform: rotate(90deg);
+  left: 20px;
+}
+#coffee {
+  left: 45%;
+  transform: translate(-62.5px);
+  top: 20px;
+  transform: rotate(180deg);
+}
+#football {
+  right: 20px;
+}
+#hole {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  transform: translate(-2.5px, -2.5px);
+  background: rgb(0, 0, 56);
+}
+.ring {
+  border: 2px solid rgb(0, 0, 56);
+  border-radius: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+#zero {
+  width: 50px;
+  height: 50px;
+  transform: translate(-25px, -25px);
+}
+#one {
+  width: 100px;
+  height: 100px;
+  transform: translate(-50px, -50px);
+}
+#two {
+  width: 150px;
+  height: 150px;
+  transform: translate(-75px, -75px);
+}
+#three {
+  width: 200px;
+  height: 200px;
+  transform: translate(-100px, -100px);
+}
+#four {
+  width: 250px;
+  height: 250px;
+  transform: translate(-125px, -125px);
+}
+#five {
+  width: 300px;
+  height: 300px;
+  transform: translate(-150px, -150px);
+}
+#six {
+  width: 350px;
+  height: 350px;
+  transform: translate(-175px, -175px);
+}
+#recordArm {
+  position: absolute;
+  right: 0;
+  top: -150px;
+  display: flex;
+  transform: rotate(-180deg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: playRecord 3s linear forwards;
+}
+#needle {
+  height: 60px;
+  width: 30px;
+  border-radius: 10px;
+  background: rgb(63, 63, 63);
+}
+#arm {
+  height: 100px;
+  width: 20px;
+  background: rgb(63, 63, 63);
+}
+#backend {
+  height: 160px;
+}
+@keyframes spinWheel {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes playRecord {
+  to {
+    transform: rotate(-155deg);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -204,8 +333,8 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: white;
 
+    width: 100vw;
     margin-top: 25px;
   }
   #timelineBody {
@@ -214,8 +343,8 @@ footer {
   #timelineContainer {
     justify-content: space-around;
     align-items: center;
-
-    width: 100%;
+    background: white;
+    z-index: 1;
   }
   #currentTimeline {
     width: 40%;
@@ -276,11 +405,9 @@ footer {
   }
   #myStory {
     height: 600px;
-    z-index: 1;
-    background: url("./../../assets/recordBackground.png");
-    background-position: right center;
-    background-size: 900px;
-    background-repeat: no-repeat;
+    width: 100vw;
+    /* z-index: 1; */
+    overflow: hidden;
   }
   #myStory h1 {
     z-index: 2;
@@ -297,13 +424,7 @@ footer {
   .fas {
     font-size: 50px;
   }
-  #record {
-    height: 600px;
-    position: relative;
-    right: 0;
-    top: 15%;
-    z-index: 0;
-  }
+
   footer {
     display: flex;
     flex-direction: row;
@@ -332,5 +453,134 @@ footer {
     background: rgb(0, 0, 56);
     color: yellow;
     transition: all 0.5s ease-in-out;
+  }
+  #interestsWheel {
+    position: absolute;
+    top: 107px;
+    right: -400px;
+    width: 800px;
+    height: 800px;
+    background: rgb(0, 191, 255);
+    border-radius: 100%;
+    border: 2px solid rgb(0, 0, 56);
+  }
+  .spinWheel {
+    animation: spinWheel 15s infinite 3s linear;
+  }
+  #interestsWheel .fas {
+    position: absolute;
+    font-size: 125px;
+    color: rgb(0, 0, 56);
+    background: rgb(0, 191, 255);
+  }
+  .topBottom {
+    left: 50%;
+    transform: translateX(-62.5px);
+  }
+  .middle {
+    top: 50%;
+    transform: translateY(-62.5px);
+  }
+  #record {
+    bottom: 20px;
+  }
+  #code {
+    left: 20px;
+  }
+  #coffee {
+    left: 45%;
+    transform: translate(-62.5px);
+    top: 40px;
+    transform: rotate(90deg);
+  }
+  #football {
+    right: 20px;
+  }
+  #hole {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    transform: translate(-5px, -5px);
+    background: rgb(0, 0, 56);
+  }
+  .ring {
+    border: 2px solid rgb(0, 0, 56);
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  #zero {
+    width: 100px;
+    height: 100px;
+    transform: translate(-50px, -50px);
+  }
+  #one {
+    width: 200px;
+    height: 200px;
+    transform: translate(-100px, -100px);
+  }
+  #two {
+    width: 300px;
+    height: 300px;
+    transform: translate(-150px, -150px);
+  }
+  #three {
+    width: 400px;
+    height: 400px;
+    transform: translate(-200px, -200px);
+  }
+  #four {
+    width: 500px;
+    height: 500px;
+    transform: translate(-250px, -250px);
+  }
+  #five {
+    width: 600px;
+    height: 600px;
+    transform: translate(-300px, -300px);
+  }
+  #six {
+    width: 700px;
+    height: 700px;
+    transform: translate(-350px, -350px);
+  }
+  #recordArm {
+    position: absolute;
+    right: -80px;
+    bottom: -620px;
+    display: flex;
+    transform: rotate(-90deg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: playRecord 3s linear forwards;
+  }
+  #needle {
+    height: 120px;
+    width: 70px;
+    border-radius: 10px;
+    background: rgb(63, 63, 63);
+  }
+  #arm {
+    height: 300px;
+    width: 40px;
+    background: rgb(63, 63, 63);
+  }
+  #backend {
+    height: 420px;
+  }
+  @keyframes spinWheel {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes playRecord {
+    to {
+      transform: rotate(-45deg);
+    }
   }
 }
