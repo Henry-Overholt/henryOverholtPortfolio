@@ -1,0 +1,74 @@
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 3px solid grey;
+  padding-top: 10px;
+  margin: 20px 0px;
+}
+#mediumLogo {
+  display: none;
+}
+i {
+  font-size: 40px;
+  color: rgb(0, 0, 56);
+  margin: 0px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 3px solid grey;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  #mediumLogo {
+    border: 3px solid rgb(0, 0, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px 10px;
+    overflow: hidden;
+  }
+  #mediumLogo svg {
+    z-index: 1;
+  }
+
+  .strokeFromLeft {
+    position: absolute;
+    left: -10px;
+    width: 0;
+    height: 70%;
+    background: rgb(0, 191, 255);
+    z-index: 0;
+    transform: skew(25deg);
+    animation: strokeFromLeft 0.2s forwards linear;
+  }
+  .tinyPath {
+    stroke-dasharray: 93;
+    animation: continueDash 20s linear 2s;
+    animation-iteration-count: infinite;
+  }
+  i {
+    font-size: 60px;
+    color: rgb(0, 0, 56);
+    margin: 0px 120px;
+  }
+  i:hover {
+    color: rgb(0, 191, 255);
+    transition: all 0.5s ease-in-out;
+  }
+  @keyframes continueDash {
+    to {
+      stroke-dashoffset: 200;
+    }
+  }
+  @keyframes strokeFromLeft {
+    to {
+      width: 99%;
+    }
+  }
+}

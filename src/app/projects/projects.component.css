@@ -10,7 +10,6 @@ main {
 .pillar {
   width: 20%;
 }
-
 #pillars {
   display: flex;
   height: 50vh;
@@ -20,9 +19,6 @@ main {
   top: 10px;
 }
 #projectsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 
@@ -44,89 +40,13 @@ h5 {
   font-family: "Roboto";
   color: yellow;
 }
-.computer {
-  align-self: center;
-  width: 250px;
-  height: 200px;
-  background-repeat: no-repeat;
-}
-.coverPic {
-  z-index: 1;
-  width: 80%;
-}
-#projects {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid rgb(0, 0, 56);
-  border-bottom: 1px solid rgb(0, 0, 56);
-}
+
 .project {
   width: 85%;
   background: white;
   z-index: 1;
 }
 
-.hideMobile {
-  display: none;
-}
-
-#elevatorPitch {
-  width: 90%;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  text-indent: 10px;
-}
-#elevatorPitch h4 {
-  font-family: "Roboto";
-}
-
-.icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
-  margin: 0px 2px 0px 10px;
-}
-i {
-  font-size: 30px;
-  color: black;
-}
-button {
-  border: 1px solid rgb(0, 0, 56);
-  background: rgb(0, 0, 56);
-  border-radius: 10px;
-  margin-bottom: 5px;
-  width: 50%;
-  color: yellow;
-  font-size: 20px;
-}
-#moreInfo {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-#technology {
-  padding: 10px 0px 10px 0px;
-}
-#technology span {
-  color: yellow;
-  background: rgb(0, 0, 56);
-  padding: 2px;
-  border-radius: 4px;
-  margin-right: 3px;
-  font-weight: bold;
-}
-#date {
-  font-size: 20px;
-  font-weight: bold;
-}
-footer {
-  display: none;
-}
 #about {
   border: 2px solid rgb(0, 0, 56);
   color: rgb(0, 0, 56);
@@ -136,31 +56,8 @@ footer {
   text-decoration: none;
   padding: 10px;
 }
-#mediumLogo {
-  border: 3px solid rgb(0, 0, 56);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 10px;
-  margin-left: 10px;
-}
-.tinyPath {
-  stroke-dasharray: 93;
-  animation: continueDash 20s linear 2s;
-  animation-iteration-count: infinite;
-}
-@keyframes continueDash {
-  to {
-    stroke-dashoffset: 200;
-  }
-}
+
 @media screen and (min-width: 768px) {
-  .hideMobile {
-    display: flex;
-  }
-  .hideComputer {
-    display: none;
-  }
   .pillar {
     width: 15%;
   }
@@ -179,43 +76,10 @@ footer {
     z-index: -1;
     top: 10px;
   }
-  .coverPic {
-    top: 30px;
-    width: 50%;
-    /* width: 40%; */
-    /* transform: translateX(-150.5px);
-    left: 200px; */
-    margin-bottom: 10px;
-
-    /* height: 190px; */
-  }
-
-  i {
-    font-size: 40px;
-    color: rgb(0, 0, 56);
-    z-index: 2;
-  }
-
-  #projects {
-    width: 90%;
-  }
-  .project:hover {
-    transform: scale(1.05);
-  }
-  #projectInfo {
-    width: 55%;
-    /* width: 70%; */
-  }
   h3 {
     font-size: 70px;
     color: yellow;
     margin-top: 100px;
-  }
-  h4 {
-    font-size: 25px;
-    margin-bottom: 5px;
-    font-family: "Fugaz One";
-    color: rgb(0, 0, 56);
   }
 
   h5 {
@@ -223,33 +87,7 @@ footer {
     color: yellow;
     margin-bottom: 100px;
   }
-  #elevatorPitch {
-    width: 80%;
-    font-family: "Raleway", sans-serif;
-  }
-  .icons {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-    width: 100%;
-  }
 
-  .date {
-    font-size: 30px;
-  }
-  footer {
-    display: flex;
-    width: 50%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  #footerLogo {
-    height: 60px;
-    margin: 0;
-    padding: 0;
-  }
   #about {
     font-size: 20px;
     border: 3px solid rgb(0, 0, 56);
@@ -264,17 +102,7 @@ footer {
   }
 }
 @media screen and (min-width: 1100px) {
-  .coverPic {
-    width: 450px;
-
-    margin-bottom: 10px;
-    /* height: 190px; */
-  }
   h3 {
     font-size: 90px;
-  }
-  h4 {
-    font-size: 35px;
-    font-family: "Fugaz One";
   }
 }
