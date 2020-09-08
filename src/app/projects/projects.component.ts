@@ -94,16 +94,7 @@ export class ProjectsComponent implements OnInit {
   goToLink(url: string) {
     window.open(url, "_blank");
   }
-  moreInfo(i: number) {
-    if (this.projects[i].moreInfo === true) {
-      this.projects[i].moreInfo = !this.projects[i].moreInfo;
-    } else {
-      this.projects.forEach((project) => {
-        project.moreInfo = false;
-      });
-      this.projects[i].moreInfo = !this.projects[i].moreInfo;
-    }
-  }
+
   startAnimations() {
     setTimeout(() => {
       this.changeState(0);
@@ -146,9 +137,5 @@ export class ProjectsComponent implements OnInit {
   changeState(i: number) {
     this.pillars[i].state =
       this.pillars[i].state === "initial" ? "final" : "initial";
-    // setInterval(() => {
-    //   this.pillars[i].state =
-    //     this.pillars[i].state === "initial" ? "final" : "initial";
-    // }, 6500);
   }
 }

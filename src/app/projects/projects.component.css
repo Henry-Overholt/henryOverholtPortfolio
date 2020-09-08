@@ -4,15 +4,16 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.pillar {
-  width: 20%;
-}
 #skillsDisplay {
   width: 100%;
 }
+.pillar {
+  width: 20%;
+}
+
 #pillars {
   display: flex;
-  height: 100vh;
+  height: 50vh;
   width: 80%;
   position: absolute;
   z-index: -1;
@@ -22,7 +23,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95%;
+  width: 100%;
 }
 
 .flexColumn {
@@ -60,11 +61,11 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid rgb(0, 0, 56);
+  border-top: 1px solid rgb(0, 0, 56);
+  border-bottom: 1px solid rgb(0, 0, 56);
 }
 .project {
-  border-top: 2px solid rgb(0, 0, 56);
-  width: 100%;
+  width: 85%;
   background: white;
   z-index: 1;
 }
@@ -163,7 +164,13 @@ footer {
   .pillar {
     width: 15%;
   }
-
+  #projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   #pillars {
     display: flex;
     height: 100vh;
@@ -188,13 +195,7 @@ footer {
     color: rgb(0, 0, 56);
     z-index: 2;
   }
-  .project {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    background: white;
-    padding-bottom: 15px;
-  }
+
   #projects {
     width: 90%;
   }
@@ -233,17 +234,8 @@ footer {
     width: 100%;
   }
 
-  #projectsContainer p {
-    text-indent: 10px;
-    font-size: 15px;
-  }
   .date {
     font-size: 30px;
-  }
-  #elevatorPitch h4 {
-    font-size: 20px;
-    font-family: "Raleway";
-    font-weight: bold;
   }
   footer {
     display: flex;

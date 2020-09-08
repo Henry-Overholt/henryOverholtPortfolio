@@ -18,7 +18,7 @@ export class ProjectsService {
       techSpecs:
         "Angular, HTML, CSS, surge.sh, OpenWeather's One Call API, GeoLocation, Git/Github",
       moreInfo: false,
-      date: "July 2020",
+      date: "JULY 2020",
     },
     {
       projectName: "Portfolio Site",
@@ -33,7 +33,7 @@ export class ProjectsService {
       techSpecs:
         "Angular, HTML, CSS, surge.sh, Git/Github, Angular Animation, EmailJS",
       moreInfo: false,
-      date: "June 2020",
+      date: "JUNE 2020",
     },
     {
       projectName: "Marvel March",
@@ -49,7 +49,7 @@ export class ProjectsService {
       github: "https://github.com/Henry-Overholt/marvelMarch",
       techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github, CookiesService",
       moreInfo: false,
-      date: "March 2020",
+      date: "MARCH 2020",
     },
     {
       projectName: "Math Hoops Desktop Game",
@@ -63,7 +63,7 @@ export class ProjectsService {
       github: "https://github.com/Henry-Overholt/Math-Hoops",
       techSpecs: "Angular, HTML, CSS, surge.sh, Git/Github",
       moreInfo: false,
-      date: "January 2020",
+      date: "JANUARY 2020",
     },
     {
       projectName: "Listy Project",
@@ -78,7 +78,7 @@ export class ProjectsService {
       techSpecs:
         "Angular, HTML, CSS, postgresSQL, Google Distance Matrix API, OpenweatherAPI, node.js, express, Git/Github",
       moreInfo: false,
-      date: "September 2019",
+      date: "SEPTEMBER 2019",
     },
   ];
   selectedProject: any;

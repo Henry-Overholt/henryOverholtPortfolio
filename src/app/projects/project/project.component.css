@@ -1,0 +1,124 @@
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  border-top: 1px solid rgb(0, 0, 56);
+  border-bottom: 1px solid rgb(0, 0, 56);
+  width: 100%;
+  background: white;
+  z-index: 1;
+}
+#elevatorPitch {
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-indent: 10px;
+}
+h4 {
+  font-size: 20px;
+  color: rgb(0, 0, 56);
+  font-family: "Fugaz One";
+}
+#elevatorPitch h4 {
+  font-family: "Fugaz One";
+  color: rgb(0, 191, 255);
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0px 2px 0px 10px;
+}
+i {
+  font-size: 30px;
+  color: black;
+}
+#moreInfo {
+  width: 100%;
+  margin-bottom: 5px;
+}
+#technology {
+  padding: 10px 0px 10px 0px;
+}
+#technology span {
+  color: yellow;
+  background: rgb(0, 0, 56);
+  padding: 2px;
+  border-radius: 4px;
+  margin-right: 3px;
+  font-weight: bold;
+}
+#date {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(0, 191, 255);
+}
+
+.hideMobile {
+  display: none;
+}
+.coverPic {
+  z-index: 1;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .hideMobile {
+    display: flex;
+  }
+  .hideComputer {
+    display: none;
+  }
+  .coverPic {
+    top: 30px;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  i {
+    font-size: 40px;
+    color: rgb(0, 0, 56);
+    z-index: 2;
+  }
+  .project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background: white;
+    padding: 25px 0px;
+    width: 100%;
+  }
+  .project:hover {
+    transform: scale(1.02);
+    border-bottom: none;
+  }
+
+  #elevatorPitch {
+    width: 80%;
+    font-family: "Raleway", sans-serif;
+  }
+  h4 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-family: "Fugaz One";
+    text-align: CENTER;
+    color: rgb(0, 0, 56);
+  }
+  #elevatorPitch h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #elevatorPitch p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .coverPic {
+    top: 30px;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
