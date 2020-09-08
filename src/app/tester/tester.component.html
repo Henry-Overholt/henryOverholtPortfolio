@@ -1,21 +1,35 @@
 <main>
-  <div id="airplaneContainer">
-    <i class="fas fa-envelope fullLetter"></i>
-    <i class="far fa-envelope halfLetter"></i>
-    <i class="fullAirplane airplane fas fa-paper-plane left"></i>
-    <i class="halfAirplane airplane far fa-paper-plane"></i>
-  </div>
-
   <div>
     <i class="fab fa-js-square"></i>
     <i class="fab fa-angular"></i>
     <i class="fab fa-html5"></i>
     <i class="fab fa-css3-alt"></i>
   </div>
-  <div>
-    <i class="fas fa-compact-disc"></i>
-    <i class="fas fa-coffee"></i>
-    <i class="fas fa-futbol"></i>
-    <i class="fas fa-laptop-code"></i>
+  <div id="interestsWheel" class="spinWheel" (click)="handleWheelSpin()">
+    <div id="hole"></div>
+
+    <div id="six" class="ring flex">
+      <div id="five" class="ring flex">
+        <div id="four" class="ring flex">
+          <div id="three" class="ring flex">
+            <div id="two" class="ring flex">
+              <div id="one" class="ring flex">
+                <div id="zero" class="ring flex"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <i id="record" class="fas fa-compact-disc topBottom"></i>
+    <i id="coffee" class="fas fa-coffee"></i>
+    <i id="football" class="fas fa-futbol middle"></i>
+    <i id="code" class="fas fa-laptop-code middle"></i>
+  </div>
+  <div id="recordArm">
+    <div id="needle"></div>
+    <div id="arm"></div>
+    <div id="backend"></div>
   </div>
 </main>
