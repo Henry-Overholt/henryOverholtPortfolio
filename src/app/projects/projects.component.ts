@@ -142,10 +142,6 @@ export class ProjectsComponent implements OnInit {
     setTimeout(() => {
       this.changeState(11);
     }, 500);
-    setTimeout(() => {
-      this.writeSkills();
-    }, 1000);
-    this.blinkCursor();
   }
   changeState(i: number) {
     this.pillars[i].state =
@@ -154,43 +150,5 @@ export class ProjectsComponent implements OnInit {
     //   this.pillars[i].state =
     //     this.pillars[i].state === "initial" ? "final" : "initial";
     // }, 6500);
-  }
-  blinkCursor(): void {
-    setInterval(() => {
-      this.cursor = this.cursor === "blinkOn" ? "blinkOff" : "blinkOn";
-    }, 500);
-  }
-  writeSkills() {
-    setTimeout(() => {
-      this.startSkill = true;
-      this.skillsList[0].cursor = true;
-      setTimeout(() => {
-        this.skillsList[0].cursor = false;
-        this.skillsList[1].cursor = true;
-        this.skillsList[0].write = true;
-        for (let i = 1; i <= this.skillsListNum; i++) {
-          this.interval = this.interval + 2000;
-          setTimeout(() => {
-            this.skillsList[i - 1].cursor = false;
-            this.skillsList[i].cursor = true;
-            this.skillsList[i].write = true;
-            if (i === this.skillsListNum) {
-              this.playAgain = true;
-            }
-          }, this.interval);
-        }
-        this.skillsList[this.skillsListNum].cursor = false;
-      }, 2000);
-    }, 4000);
-  }
-  replay() {
-    this.startSkill = false;
-    this.skillsList.forEach((skill) => {
-      skill.write = false;
-      skill.cursor = false;
-    });
-    this.interval = 0;
-    this.writeSkills();
-    this.playAgain = false;
   }
 }

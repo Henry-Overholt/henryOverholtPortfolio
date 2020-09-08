@@ -62,36 +62,7 @@
       </div>
     </div>
   </div>
-
-  <div [@swingUp] id="skillContainer">
-    <h4>Technical Skills</h4>
-    <div id="skillSet">
-      <p id="cursor" [@cursor]="cursor" *ngIf="!startSkill"></p>
-      <div
-        class="skill"
-        *ngFor="let skill of skillsList; index as i"
-        [class.hide]="skill.last == true"
-      >
-        <p *ngIf="!skill.last && skill.write" [@type]>
-          {{ skill.skill }}
-        </p>
-        <p
-          id="cursor"
-          [@cursor]="cursor"
-          *ngIf="skill.cursor && !skill.last"
-        ></p>
-      </div>
-      <div id="lastSkill">
-        <p *ngIf="lastSkill.write" class="skill">{{ lastSkill.skill }}</p>
-        <p id="cursor" *ngIf="lastSkill.write" [@cursor]="cursor"></p>
-      </div>
-    </div>
-    <i
-      [ngClass]="playAgain == true ? 'showPlay' : 'hidePlay'"
-      (click)="replay()"
-      class="far fa-play-circle"
-    ></i>
-  </div>
+  <app-sills-display [@swingUp] id="skillsDisplay"></app-sills-display>
   <a [@swingUp] id="about" routerLink="/story">ABOUT ME</a>
   <footer [@swingUp]>
     <a (click)="goToLink('https://www.linkedin.com/in/henry-overholt/')"
@@ -113,7 +84,7 @@
             stroke="rgb(0, 0, 56)"
             stroke-width="0.25mm"
             fill="none"
-            style="stroke: yellow; stroke-width: 1; fill: rgb(0, 0, 56);"
+            style="stroke: yellow; stroke-width: 1; fill: rgb(0, 0, 56)"
           >
             <path
               class="tinyPath"

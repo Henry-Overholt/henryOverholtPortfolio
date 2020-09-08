@@ -1,0 +1,204 @@
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#skillContainer {
+  margin-top: 20px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4 {
+  font-family: "Fugaz One";
+  color: rgb(0, 0, 56);
+  font-size: 25px;
+  text-align: center;
+}
+#skillSet {
+  width: 100%;
+  height: 320px;
+  background: rgb(0, 0, 56);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px grey;
+}
+#cursor {
+  width: 13px;
+  height: 20px;
+  background: white;
+  margin: 5px;
+}
+.skill {
+  color: yellow;
+  font-family: "Turret Road";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  margin: 5px;
+  padding: 3px;
+  height: 10px;
+}
+#lastSkill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.hide {
+  display: none;
+}
+#skillContainer i {
+  font-size: 35px;
+  margin-top: 5px;
+}
+.hidePlay {
+  visibility: hidden;
+}
+.showPlay {
+  visibility: visible;
+  transition: "0.5s";
+}
+#skillCrawler /* skillCrawler */ {
+  width: 90%;
+  height: 50px;
+  bottom: 0;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+}
+
+#skillCrawler i /* skillCrawler */ {
+  position: absolute;
+  right: -100px;
+  font-size: 40px;
+}
+.fa-angular /* skillCrawler */ {
+  color: red;
+  /* right: -100px; */
+  animation: slideOutRight 18s infinite linear;
+}
+.fa-js-square /* skillCrawler */ {
+  color: rgb(0, 191, 255);
+  /* right: -100px; */
+  animation: slideOutRight 18s infinite 3s linear;
+}
+
+.fa-html5 /* skillCrawler */ {
+  color: orange;
+  /* right: -100px; */
+  animation: slideOutRight 18s infinite 6s linear;
+}
+.fa-css3-alt /* skillCrawler */ {
+  color: yellow;
+  /* right: -100px; */
+  animation: slideOutRight 18s infinite 9s linear;
+}
+.fa-github {
+  color: rgb(0, 0, 56);
+  /* right: -100px; */
+  animation: slideOutRight 18s infinite 12s linear;
+}
+.fa-code-branch {
+  color: rgb(0, 191, 255);
+  animation: slideOutRight 18s infinite 15s linear;
+}
+@keyframes slideOutRight /* skillCrawler */ {
+  from {
+    right: 100%;
+  }
+  to {
+    right: -100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #skillCrawler /* skillCrawler */ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+  }
+
+  #skillCrawler i /* skillCrawler */ {
+    right: auto;
+    font-size: 70px;
+    top: -100px;
+  }
+  .fa-angular/* skillCrawler */ {
+    animation: slideOut 30s infinite linear;
+  }
+  .fa-js-square /* skillCrawler */ {
+    animation: slideOut 30s infinite 5s linear;
+  }
+  .fa-html5 /* skillCrawler */ {
+    animation: slideOut 30s infinite 10s linear;
+  }
+  .fa-css3-alt /* skillCrawler */ {
+    animation: slideOut 30s infinite 15s linear;
+  }
+  .fa-github {
+    color: rgb(0, 0, 56);
+    animation: slideOut 30s infinite 20s linear;
+  }
+  .fa-code-branch {
+    color: rgb(0, 191, 255);
+    animation: slideOut 30s infinite 25s linear;
+  }
+  h4 {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  #skillSet {
+    height: 450px;
+    justify-content: flex-start;
+  }
+  #skillContainer {
+    width: 60%;
+  }
+  #cursor {
+    width: 20px;
+    height: 30px;
+    background: white;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .skill {
+    font-size: 30px;
+    margin: 5px;
+    padding: 6px;
+    height: 20px;
+  }
+  #lastSkill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #skillContainer i {
+    margin-top: 10px;
+    font-size: 55px;
+  }
+  @keyframes slideOut /* skillCrawler */ {
+    from {
+      bottom: 100%;
+    }
+    to {
+      top: 100%;
+    }
+  }
+}

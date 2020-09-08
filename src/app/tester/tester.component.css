@@ -4,7 +4,7 @@ main {
   overflow: hidden;
   background: white;
 }
-#interestsWheel {
+/* #interestsWheel {
   position: absolute;
   top: -100px;
   right: 50%;
@@ -134,5 +134,48 @@ main {
 @keyframes playRecord {
   to {
     transform: rotate(-155deg);
+  }
+} */
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 500px;
+  border: 4px solid black;
+  position: relative;
+}
+
+i {
+  position: absolute;
+  font-size: 100px;
+}
+.fa-angular {
+  color: red;
+  top: -100px;
+  animation: slideOut 12s infinite linear;
+}
+.fa-js-square {
+  color: rgb(0, 191, 255);
+  top: -100px;
+  animation: slideOut 12s infinite 3s linear;
+}
+.fa-html5 {
+  color: orange;
+  top: -100px;
+  animation: slideOut 12s infinite 6s linear;
+}
+.fa-css3-alt {
+  color: yellow;
+  top: -100px;
+  animation: slideOut 12s infinite 9s linear;
+}
+@keyframes slideOut {
+  from {
+    bottom: 100%;
+  }
+  to {
+    top: 100%;
   }
 }
