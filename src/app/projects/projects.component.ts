@@ -67,32 +67,12 @@ export class ProjectsComponent implements OnInit {
     { class: "pillar ", index: 10, state: "initial" },
     { class: "pillar ", index: 11, state: "initial" },
   ];
-  currentState: string = "yellow";
-  startSkill: boolean = false;
-  skillsList: any[] = [
-    { skill: "HTML", last: false, write: false, cursor: false },
-    { skill: "CSS", last: false, write: false, cursor: false },
-    { skill: "JavaScript", last: false, write: false, cursor: false },
-    { skill: "Angular", last: false, write: false, cursor: false },
-    { skill: "Node.JS", last: false, write: false, cursor: false },
-    { skill: "Git/GitHub", last: false, write: false, cursor: false },
-    { skill: "TypeScript", last: false, write: false, cursor: false },
-    { skill: "postgresSQL", last: false, write: false, cursor: false },
-    { skill: "express.js", last: true, write: false, cursor: false },
-  ];
-  lastSkill: object = this.skillsList[this.skillsList.length - 1];
-  skillsListNum: number = this.skillsList.length - 1;
-  cursor: string = "blinkOn";
-  interval: number = 0;
-  playAgain: boolean = false;
+
   constructor(private projectsService: ProjectsService) {}
 
   ngOnInit() {
     this.projects = this.projectsService.projects;
     this.startAnimations();
-  }
-  goToLink(url: string) {
-    window.open(url, "_blank");
   }
 
   startAnimations() {
