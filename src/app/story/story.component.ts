@@ -13,11 +13,11 @@ import {
   animations: [
     trigger("fadeIn", [
       state("void", style({ opacity: 0 })),
-      transition("void=>*", animate("1000ms 100ms")),
+      transition("void=>*", animate("1000ms 200ms")),
     ]),
     trigger("fadeInLate", [
       state("void", style({ opacity: 0 })),
-      transition("void=>*", animate("1000ms 2s")),
+      transition("void=>*", animate("1000ms 1.5s")),
     ]),
   ],
 })
@@ -118,6 +118,7 @@ export class StoryComponent implements OnInit {
       pictureAlt: "Ohio University Logo",
     },
   ];
+  spin: boolean = true;
   currentTimeline: any = this.timeline[0];
   lastTimeLine: any = this.timeline[0];
   up: boolean = true;
@@ -133,6 +134,15 @@ export class StoryComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+  handleWheelSpin() {
+    if (this.spin === true) {
+      document.getElementById("interestsWheel").classList.remove("spinWheel");
+      this.spin = !this.spin;
+    } else {
+      document.getElementById("interestsWheel").classList.add("spinWheel");
+      this.spin = !this.spin;
+    }
+  }
   handleRightArrow(): void {
     let index: number = this.currentTimeline.index;
     this.down = true;

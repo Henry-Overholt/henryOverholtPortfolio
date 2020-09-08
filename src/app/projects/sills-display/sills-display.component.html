@@ -1,0 +1,39 @@
+<main>
+  <div id="skillContainer">
+    <h4>Technical Skills</h4>
+    <div id="skillSet">
+      <p id="cursor" [@cursor]="cursor" *ngIf="!startSkill"></p>
+      <div
+        class="skill"
+        *ngFor="let skill of skillsList; index as i"
+        [class.hide]="skill.last == true"
+      >
+        <p *ngIf="!skill.last && skill.write" [@type]>
+          {{ skill.skill }}
+        </p>
+        <p
+          id="cursor"
+          [@cursor]="cursor"
+          *ngIf="skill.cursor && !skill.last"
+        ></p>
+      </div>
+      <div id="lastSkill">
+        <p *ngIf="lastSkill.write" class="skill">{{ lastSkill.skill }}</p>
+        <p id="cursor" *ngIf="lastSkill.write" [@cursor]="cursor"></p>
+      </div>
+    </div>
+    <i
+      [ngClass]="playAgain == true ? 'showPlay' : 'hidePlay'"
+      (click)="replay()"
+      class="far fa-play-circle"
+    ></i>
+  </div>
+  <div id="skillCrawler">
+    <i class="fab fa-js-square"></i>
+    <i class="fab fa-angular"></i>
+    <i class="fas fa-code-branch"></i>
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-github"></i>
+  </div>
+</main>

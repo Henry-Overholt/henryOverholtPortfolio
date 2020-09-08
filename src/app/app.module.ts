@@ -9,6 +9,7 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FormsModule } from "@angular/forms";
 import { TesterComponent } from "./tester/tester.component";
+import { SillsDisplayComponent } from './projects/sills-display/sills-display.component';
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
     ProjectsComponent,
     ContactComponent,
     TesterComponent,
+    SillsDisplayComponent,
   ],
   imports: [
     BrowserModule,

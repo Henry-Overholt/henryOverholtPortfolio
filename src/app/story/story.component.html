@@ -59,7 +59,10 @@
   </div>
 
   <div id="timeline">
-    <h2 [@fadeIn]>My Career Timeline</h2>
+    <h2 [@fadeIn]>
+      <div id="strokeFromLeft"></div>
+      My Career Timeline
+    </h2>
     <div [@fadeIn] id="timelineContainer">
       <button
         [ngClass]="up == true ? 'on' : 'off'"
