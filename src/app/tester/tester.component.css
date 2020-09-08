@@ -6,10 +6,12 @@ main {
 }
 #interestsWheel {
   position: absolute;
-  top: 200px;
-  right: -400px;
-  width: 800px;
-  height: 800px;
+  top: -100px;
+  right: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translateX(-200px);
+  transform: rotate(-90deg);
   background: rgb(0, 191, 255);
   border-radius: 100%;
   border: 2px solid rgb(0, 0, 56);
@@ -19,29 +21,30 @@ main {
 }
 .fas {
   position: absolute;
-  font-size: 125px;
+  font-size: 25px;
   color: rgb(0, 0, 56);
   background: rgb(0, 191, 255);
 }
 .topBottom {
   left: 50%;
-  transform: translateX(-62.5px);
+  transform: translateX(-12.5px);
 }
 .middle {
   top: 50%;
-  transform: translateY(-62.5px);
+  transform: translateY(-12.5px);
 }
 #record {
   bottom: 20px;
 }
 #code {
+  transform: rotate(90deg);
   left: 20px;
 }
 #coffee {
   left: 45%;
   transform: translate(-62.5px);
-  top: 40px;
-  transform: rotate(90deg);
+  top: 20px;
+  transform: rotate(180deg);
 }
 #football {
   right: 20px;
@@ -50,10 +53,10 @@ main {
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 10px;
-  width: 10px;
+  height: 5px;
+  width: 5px;
   border-radius: 100%;
-  transform: translate(-5px, -5px);
+  transform: translate(-2.5px, -2.5px);
   background: rgb(0, 0, 56);
 }
 .ring {
@@ -64,72 +67,72 @@ main {
   left: 50%;
 }
 #zero {
+  width: 50px;
+  height: 50px;
+  transform: translate(-25px, -25px);
+}
+#one {
   width: 100px;
   height: 100px;
   transform: translate(-50px, -50px);
 }
-#one {
+#two {
+  width: 150px;
+  height: 150px;
+  transform: translate(-75px, -75px);
+}
+#three {
   width: 200px;
   height: 200px;
   transform: translate(-100px, -100px);
 }
-#two {
+#four {
+  width: 250px;
+  height: 250px;
+  transform: translate(-125px, -125px);
+}
+#five {
   width: 300px;
   height: 300px;
   transform: translate(-150px, -150px);
 }
-#three {
-  width: 400px;
-  height: 400px;
-  transform: translate(-200px, -200px);
-}
-#four {
-  width: 500px;
-  height: 500px;
-  transform: translate(-250px, -250px);
-}
-#five {
-  width: 600px;
-  height: 600px;
-  transform: translate(-300px, -300px);
-}
 #six {
-  width: 700px;
-  height: 700px;
-  transform: translate(-350px, -350px);
+  width: 350px;
+  height: 350px;
+  transform: translate(-175px, -175px);
 }
 #recordArm {
   position: absolute;
-  right: -80px;
-  bottom: -720px;
+  left: 70%;
+  top: -100px;
   display: flex;
-  transform: rotate(-90deg);
+  transform: rotate(-180deg);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: playRecord 3s linear forwards;
 }
 #needle {
-  height: 120px;
-  width: 70px;
+  height: 60px;
+  width: 30px;
   border-radius: 10px;
   background: rgb(63, 63, 63);
 }
 #arm {
-  height: 300px;
-  width: 40px;
+  height: 100px;
+  width: 20px;
   background: rgb(63, 63, 63);
 }
 #backend {
-  height: 420px;
+  height: 160px;
 }
 @keyframes spinWheel {
   to {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes playRecord {
   to {
-    transform: rotate(-45deg);
+    transform: rotate(-155deg);
   }
 }

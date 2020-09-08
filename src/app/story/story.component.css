@@ -36,6 +36,7 @@ h1 {
   padding: 3px 8px 3px 8px;
   color: yellow;
   font-size: 40px;
+  z-index: 1;
 }
 p {
   text-indent: 8px;
@@ -166,6 +167,138 @@ footer {
   text-decoration: none;
   padding: 10px;
   margin: 10px;
+}
+#interestsWheel {
+  position: absolute;
+  top: -200px;
+
+  width: 400px;
+  height: 400px;
+  transform: translateX(-200px);
+  transform: rotate(-90deg);
+  background: rgb(0, 191, 255);
+  border-radius: 100%;
+  border: 2px solid rgb(0, 0, 56);
+}
+.spinWheel {
+  animation: spinWheel 15s infinite 3s linear;
+}
+#interestsWheel .fas {
+  position: absolute;
+  font-size: 25px;
+  color: rgb(0, 0, 56);
+  background: rgb(0, 191, 255);
+}
+.topBottom {
+  left: 50%;
+  transform: translateX(-12.5px);
+}
+.middle {
+  top: 50%;
+  transform: translateY(-12.5px);
+}
+#record {
+  bottom: 20px;
+}
+#code {
+  transform: rotate(90deg);
+  left: 20px;
+}
+#coffee {
+  left: 45%;
+  transform: translate(-62.5px);
+  top: 20px;
+  transform: rotate(180deg);
+}
+#football {
+  right: 20px;
+}
+#hole {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  transform: translate(-2.5px, -2.5px);
+  background: rgb(0, 0, 56);
+}
+.ring {
+  border: 2px solid rgb(0, 0, 56);
+  border-radius: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+#zero {
+  width: 50px;
+  height: 50px;
+  transform: translate(-25px, -25px);
+}
+#one {
+  width: 100px;
+  height: 100px;
+  transform: translate(-50px, -50px);
+}
+#two {
+  width: 150px;
+  height: 150px;
+  transform: translate(-75px, -75px);
+}
+#three {
+  width: 200px;
+  height: 200px;
+  transform: translate(-100px, -100px);
+}
+#four {
+  width: 250px;
+  height: 250px;
+  transform: translate(-125px, -125px);
+}
+#five {
+  width: 300px;
+  height: 300px;
+  transform: translate(-150px, -150px);
+}
+#six {
+  width: 350px;
+  height: 350px;
+  transform: translate(-175px, -175px);
+}
+#recordArm {
+  position: absolute;
+  right: 0;
+  top: -150px;
+  display: flex;
+  transform: rotate(-180deg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: playRecord 3s linear forwards;
+}
+#needle {
+  height: 60px;
+  width: 30px;
+  border-radius: 10px;
+  background: rgb(63, 63, 63);
+}
+#arm {
+  height: 100px;
+  width: 20px;
+  background: rgb(63, 63, 63);
+}
+#backend {
+  height: 160px;
+}
+@keyframes spinWheel {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes playRecord {
+  to {
+    transform: rotate(-155deg);
+  }
 }
 
 @media screen and (min-width: 768px) {
