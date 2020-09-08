@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  selector: "app-footer",
+  templateUrl: "./footer.component.html",
+  styleUrls: ["./footer.component.css"],
 })
 export class FooterComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  goToLink(url: string) {
+    window.open(url, "_blank");
   }
-
+  handleLogoHover() {
+    document.getElementById("strokeAnimation").classList.add("strokeFromLeft");
+  }
+  handleLogoHoverLeave() {
+    document
+      .getElementById("strokeAnimation")
+      .classList.remove("strokeFromLeft");
+  }
 }
