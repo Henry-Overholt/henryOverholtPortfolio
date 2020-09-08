@@ -5,13 +5,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+
+  z-index: 1;
+  width: 100vw;
 }
 #myStory {
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-direction: column;
   align-items: center;
   height: 100px;
+  overflow: hidden;
+
+  position: relative;
 }
 h3 {
   text-align: center;
@@ -84,11 +91,29 @@ p {
 }
 h2 {
   font-size: 25px;
-  border: 3px solid rgb(0, 0, 56);
   padding: 4px 12px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-family: "Fugaz One";
   text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+#strokeFromLeft {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  top: 0;
+  left: -10px;
+  height: 45px;
+  transform: skew(25deg);
+  background: yellow;
+  animation: strokeFromLeft 0.2s linear 2s forwards;
+}
+@keyframes strokeFromLeft {
+  to {
+    width: 90%;
+  }
 }
 .fas {
   font-size: 20px;
@@ -170,8 +195,7 @@ footer {
 }
 #interestsWheel {
   position: absolute;
-  top: -200px;
-
+  top: -250px;
   width: 400px;
   height: 400px;
   transform: translateX(-200px);
@@ -198,20 +222,20 @@ footer {
   transform: translateY(-12.5px);
 }
 #record {
-  bottom: 20px;
+  bottom: 10px;
 }
 #code {
   transform: rotate(90deg);
-  left: 20px;
+  left: 10px;
 }
 #coffee {
   left: 45%;
   transform: translate(-62.5px);
-  top: 20px;
+  top: 10px;
   transform: rotate(180deg);
 }
 #football {
-  right: 20px;
+  right: 10px;
 }
 #hole {
   position: absolute;
@@ -268,7 +292,7 @@ footer {
 #recordArm {
   position: absolute;
   right: 0;
-  top: -150px;
+  top: -175px;
   display: flex;
   transform: rotate(-180deg);
   flex-direction: column;
@@ -290,9 +314,10 @@ footer {
 #backend {
   height: 160px;
 }
+
 @keyframes spinWheel {
   to {
-    transform: rotate(360deg);
+    transform: rotate(450deg);
   }
 }
 @keyframes playRecord {
@@ -301,6 +326,7 @@ footer {
   }
 }
 
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 768px) {
   #mediumLogo {
     border: 3px solid rgb(0, 0, 56);
@@ -372,8 +398,9 @@ footer {
   }
   h2 {
     font-size: 40px;
-    border: 4px solid rgb(0, 0, 56);
+
     padding: 5px 20px;
+    width: 500px;
     margin-bottom: 10px;
   }
   #date {
@@ -455,12 +482,14 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   #interestsWheel {
+    z-index: 0;
     position: absolute;
-    top: 107px;
+    top: 0;
     right: -400px;
     width: 800px;
     height: 800px;
     background: rgb(0, 191, 255);
+
     border-radius: 100%;
     border: 2px solid rgb(0, 0, 56);
   }
@@ -486,6 +515,7 @@ footer {
   }
   #code {
     left: 20px;
+    transform: rotate(0deg);
   }
   #coffee {
     left: 45%;
@@ -550,10 +580,10 @@ footer {
   }
   #recordArm {
     position: absolute;
-    right: -80px;
-    bottom: -620px;
+    right: 40px;
+    top: -340px;
     display: flex;
-    transform: rotate(-90deg);
+    transform: rotate(-120deg);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -566,21 +596,29 @@ footer {
     background: rgb(63, 63, 63);
   }
   #arm {
-    height: 300px;
+    height: 200px;
     width: 40px;
     background: rgb(63, 63, 63);
   }
   #backend {
-    height: 420px;
+    height: 320px;
+  }
+  #strokeFromLeft {
+    height: 100%;
   }
   @keyframes spinWheel {
     to {
-      transform: rotate(-360deg);
+      transform: rotate(-450deg);
     }
   }
   @keyframes playRecord {
     to {
-      transform: rotate(-45deg);
+      transform: rotate(-140deg);
+    }
+  }
+  @keyframes strokeFromLeft {
+    to {
+      width: 100%;
     }
   }
 }
