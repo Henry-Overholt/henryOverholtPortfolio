@@ -9,59 +9,15 @@
         [@changePosition]="pillar.state"
       ></div>
     </div>
-
-    <div id="projects" [@swingUp]>
-      <div
-        class="project flexColumn"
-        *ngFor="let project of projects; index as i"
-        (click)="moreInfo(i)"
-      >
-        <div id="projectInfo" class="flexColumn">
-          <h4>{{ project.projectName }}</h4>
-          <div id="elevatorPitch" class="hideMobile flexColumn">
-            <h4>{{ project.date }}</h4>
-            <p>{{ project.elevator }}</p>
-            <p id="technology">
-              <span>Technologies: </span> {{ project.techSpecs }}
-            </p>
-            <div class="icons">
-              <i class="fab fa-github" (click)="goToLink(project.github)"></i>
-              <i
-                class="far fa-eye"
-                *ngIf="project.live === true"
-                (click)="goToLink(project.link)"
-              ></i>
-            </div>
-          </div>
-        </div>
-
-        <img class="coverPic" src="{{ project.coverPic }}" alt="" />
-        <!-- <div *ngIf="project.mobile === true" class="phone">
-            <img src="{{ project.mobilePic }}" alt="" class="phonePic" />
-          </div> -->
-
-        <!-- Elevator pitch shows up when clicked in mobile only -->
-        <div id="moreInfo" class="hideComputer flexColumn">
-          <div *ngIf="project.moreInfo" id="elevatorPitch" class="flexColumn">
-            <p id="date">{{ project.date }}</p>
-            <p>{{ project.elevator }}</p>
-            <p id="technology">
-              <span>Technologies: </span> {{ project.techSpecs }}
-            </p>
-            <div class="icons">
-              <i class="fab fa-github" (click)="goToLink(project.github)"></i>
-              <i
-                class="far fa-eye"
-                *ngIf="project.live === true"
-                (click)="goToLink(project.link)"
-              ></i>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-      </div>
+    <div id="projectsContainer" [@swingUp]>
+      <app-project
+        *ngFor="let project of projects"
+        [project]="project"
+        class="project"
+      ></app-project>
     </div>
   </div>
+
   <app-sills-display [@swingUp] id="skillsDisplay"></app-sills-display>
   <a [@swingUp] id="about" routerLink="/story">ABOUT ME</a>
   <footer [@swingUp]>

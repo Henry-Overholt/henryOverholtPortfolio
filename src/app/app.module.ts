@@ -10,6 +10,8 @@ import { ContactComponent } from "./contact/contact.component";
 import { FormsModule } from "@angular/forms";
 import { TesterComponent } from "./tester/tester.component";
 import { SillsDisplayComponent } from './projects/sills-display/sills-display.component';
+import { ProjectComponent } from './projects/project/project.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -29,6 +31,8 @@ const appRoutes: Routes = [
     ContactComponent,
     TesterComponent,
     SillsDisplayComponent,
+    ProjectComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
