@@ -1,1 +1,90 @@
-<p>header works!</p>
+<header>
+  <div id="logoWrapper">
+    <a routerLink="/home" id="logo">
+      <div id="smallLogo">
+        <svg
+          width="20.46"
+          height="21.6"
+          viewBox="0 0 27.28 28.8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            id="svgGroup"
+            stroke-linecap="round"
+            fill-rule="evenodd"
+            font-size="9pt"
+            stroke="#000"
+            stroke-width="0.25mm"
+            fill="none"
+            style="stroke: yellow; stroke-width: 1; fill: rgb(0, 0, 56)"
+          >
+            <path
+              class="tinyPath"
+              d="M 20.08 0 L 27.28 0 L 22.24 28.8 L 15 28.8 L 16.84 18.4 L 9.04 18.4 L 7.24 28.8 L 0 28.8 L 5.08 0 L 12.28 0 L 10.12 12.16 L 17.92 12.16 L 20.08 0 Z"
+              vector-effect="non-scaling-stroke"
+            />
+          </g>
+        </svg>
+      </div>
+      <div id="mediumLogo">
+        <svg
+          width="34.1"
+          height="36"
+          viewBox="0 0 35.1 36"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            id="svgGroup"
+            stroke-linecap="round"
+            fill-rule="evenodd"
+            font-size="9pt"
+            stroke="rgb(0, 0, 56)"
+            stroke-width="0.25mm"
+            fill="none"
+            style="stroke: yellow; stroke-width: 1; fill: rgb(0, 0, 56)"
+          >
+            <path
+              class="tinyPath"
+              d="M 25.1 0 L 34.1 0 L 27.8 36 L 18.75 36 L 21.05 23 L 11.3 23 L 9.05 36 L 0 36 L 6.35 0 L 15.35 0 L 12.65 15.2 L 22.4 15.2 L 25.1 0 Z"
+              id="0"
+              vector-effect="non-scaling-stroke"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </div>
+  <nav>
+    <div id="dropDownNav">
+      <i id="showNav" class="fas fa-bars"></i>
+      <ul id="smallNav">
+        <li>
+          <a routerLinkActive="activeRoute" routerLink="/projects">PROJECTS</a>
+        </li>
+        <li>
+          <a routerLinkActive="activeRoute" routerLink="/story">ABOUT ME</a>
+        </li>
+
+        <li>
+          <a routerLinkActive="activeRoute" routerLink="/contact"
+            >SAY 'HELLO'</a
+          >
+        </li>
+      </ul>
+    </div>
+    <ul id="bigNav">
+      <li>
+        <a routerLinkActive="activeRoute" routerLink="/projects">PROJECTS</a>
+      </li>
+      <li>
+        <a routerLinkActive="activeRoute" routerLink="/story">ABOUT ME</a>
+      </li>
+
+      <li>
+        <a routerLinkActive="activeRoute" id="contact" routerLink="/contact"
+          >SAY 'HELLO'</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
