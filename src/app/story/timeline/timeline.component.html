@@ -1,0 +1,54 @@
+<div id="timeline">
+  <h2>
+    <div id="strokeFromLeft"></div>
+    My Career Timeline
+  </h2>
+  <div id="timelineContainer">
+    <button [ngClass]="up == true ? 'on' : 'off'" (click)="handleRightArrow()">
+      <i class="fas fa-arrow-circle-left"></i>
+    </button>
+    <div id="timelineHolder">
+      <div id="currentTimeline">
+        <img
+          id="logo"
+          class="{{ currentTimeline.id }}"
+          src="{{ currentTimeline.logo }}"
+          alt=""
+        />
+      </div>
+      <div id="timelineBody">
+        <div id="timelineTitle">
+          <h3 id="date">
+            <div id="strokeFromRight" class="strokeFromRight"></div>
+            {{ currentTimeline.date }}
+          </h3>
+          <h4 class="company">
+            {{ currentTimeline.position }}
+          </h4>
+          <h4 class="company">
+            <em>{{ currentTimeline.company }}</em>
+          </h4>
+        </div>
+        <div
+          id="body"
+          *ngFor="let string of currentTimeline.strings; index as i"
+        >
+          <p>{{ string }}</p>
+        </div>
+      </div>
+    </div>
+    <button [ngClass]="down == true ? 'on' : 'off'" (click)="handleLeftArrow()">
+      <i class="fas fa-arrow-circle-right"></i>
+    </button>
+  </div>
+  <div id="dots">
+    <div *ngFor="let dot of dots; index as i">
+      <p
+        (click)="handleDotClick(i)"
+        id="{{ dot.id }}"
+        class="dot"
+        [ngClass]="currentTimeline.index === i ? 'selected' : 'unselected'"
+      ></p>
+    </div>
+  </div>
+</div>

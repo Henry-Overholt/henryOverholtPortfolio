@@ -1,0 +1,255 @@
+#timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+#timelineContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#logo {
+  width: 100%;
+  border: 1px solid rgb(0, 191, 255);
+  border-radius: 100%;
+  box-shadow: 6px 5px 5px rgb(0, 191, 255);
+}
+em {
+  color: rgb(0, 0, 56);
+  margin-top: 0;
+}
+#timelineHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px 0px 2px 0px solid rgb(0, 0, 56);
+}
+#currentTimeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+}
+#timelineTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#timelineBody {
+  width: 90%;
+  margin-top: 10px;
+}
+#body {
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-family: "Raleway";
+}
+
+h2 {
+  font-size: 25px;
+  padding: 4px 12px;
+  margin-bottom: 10px;
+  font-family: "Fugaz One";
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  color: rgb(0, 0, 56);
+}
+#strokeFromLeft {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  top: 0;
+  left: -10px;
+  height: 45px;
+  transform: skew(25deg);
+  background: yellow;
+  animation: strokeFromLeft 0.2s linear 2s forwards;
+}
+#date {
+  font-size: 18px;
+  font-family: "Fugaz One";
+  color: rgb(0, 0, 56);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  /* padding: 5px 10px; */
+}
+#strokeFromRight {
+  position: absolute;
+  transform: skew(-25deg);
+  height: 30px;
+  top: -3px;
+  right: -10px;
+  width: 0;
+  z-index: -1;
+  background: rgb(0, 191, 255);
+}
+.strokeFromRight {
+  animation: strokeFromRight 0.2s linear 2s forwards;
+}
+.fas {
+  font-size: 25px;
+  color: rgb(0, 0, 56);
+}
+
+.company {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: "Fugaz One";
+  color: rgb(0, 191, 255);
+  margin-top: 10px;
+}
+button {
+  background: white;
+  border: none;
+  margin: 0px 1px 0px 1px;
+  width: 8%;
+  z-index: 1;
+  outline: none;
+}
+.on {
+  visibility: visible;
+}
+.off {
+  visibility: hidden;
+}
+#dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  height: 0;
+  border: 0.5px solid grey;
+  width: 30%;
+  margin: 10px 0px 10px 0px;
+}
+.hide {
+  display: static;
+}
+p {
+  text-indent: 10px;
+  font-size: 18px;
+  font-family: "Raleway";
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.selected {
+  background: rgb(0, 0, 56);
+  transition: all 0.25s ease-in-out;
+}
+.unselected {
+  background: grey;
+}
+.hideMobile {
+  display: none;
+}
+@keyframes strokeFromLeft {
+  to {
+    width: 90%;
+  }
+}
+@keyframes strokeFromRight {
+  to {
+    width: 110%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 5px;
+  }
+  #timelineBody {
+    background: none;
+  }
+  #timelineContainer {
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    z-index: 1;
+  }
+  #currentTimeline {
+    width: 40%;
+  }
+  p {
+    text-indent: 15px;
+    font-size: 18px;
+    font-family: "Raleway" sans-serif;
+  }
+  #timelineHolder {
+    flex-direction: row;
+    width: 70%;
+  }
+  .company {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  button {
+    width: 100px;
+    height: 300px;
+    flex: 1;
+    background: none;
+  }
+  #logo {
+    width: 250px;
+    margin-right: 15px;
+  }
+  h2 {
+    font-size: 40px;
+
+    padding: 5px 20px;
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  #date {
+    font-size: 35px;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+  }
+
+  #dots {
+    width: 20%;
+    border: none;
+    background: none;
+    display: absolute;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+    z-index: 1;
+  }
+  .fas {
+    font-size: 60px;
+  }
+  #strokeFromLeft {
+    height: 65px;
+  }
+  #strokeFromRight {
+    height: 55px;
+  }
+  @keyframes strokeFromLeft {
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes strokeFromRight {
+    to {
+      width: 110%;
+    }
+  }
+}

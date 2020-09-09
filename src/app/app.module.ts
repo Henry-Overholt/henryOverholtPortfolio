@@ -12,6 +12,8 @@ import { TesterComponent } from "./tester/tester.component";
 import { SillsDisplayComponent } from './projects/sills-display/sills-display.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { FooterComponent } from './footer/footer.component';
+import { TimelineComponent } from './story/timeline/timeline.component';
+import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -33,6 +35,8 @@ const appRoutes: Routes = [
     SillsDisplayComponent,
     ProjectComponent,
     FooterComponent,
+    TimelineComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
