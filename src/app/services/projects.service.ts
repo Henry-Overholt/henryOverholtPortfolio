@@ -22,7 +22,7 @@ export class ProjectsService {
     },
     {
       projectName: "Portfolio Site",
-      coverPic: "./../../assets/projects/porfolio.png",
+      coverPic: "./../../assets/projects/portfolio.png",
       extension: "/portfolio-site",
       elevator:
         "This portfolio was a lot of fun to build. My goal was to create a simple site to showcase my skills as a Frontend Developer, and to create a one-stop shop for my projects, my background, and a simple contact form.",
