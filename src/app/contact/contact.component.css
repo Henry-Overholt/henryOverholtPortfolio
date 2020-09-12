@@ -14,7 +14,7 @@
 #airplaneContainer {
   position: absolute;
   width: 100%;
-  top: 17%;
+  top: 12%;
   display: flex;
   overflow: hidden;
   flex-direction: column;
