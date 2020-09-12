@@ -29,11 +29,13 @@
             <em>{{ currentTimeline.company }}</em>
           </h4>
         </div>
-        <div
-          id="body"
-          *ngFor="let string of currentTimeline.strings; index as i"
-        >
-          <p>{{ string }}</p>
+        <div class="bodyHolder">
+          <div
+            id="body"
+            *ngFor="let string of currentTimeline.strings; index as i"
+          >
+            <p>{{ string }}</p>
+          </div>
         </div>
       </div>
     </div>
