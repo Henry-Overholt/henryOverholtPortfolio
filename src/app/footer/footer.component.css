@@ -32,11 +32,17 @@ i {
     position: relative;
     padding: 15px 10px;
     overflow: hidden;
+    transition: all 0.5s ease-in-out;
   }
   #mediumLogo svg {
     z-index: 1;
   }
-
+  #mediumLogo:hover {
+    transform: scale(1.05);
+  }
+  #mediumLogo:hover > .strokeFromLeft {
+    animation: strokeFromLeft 0.2s forwards linear;
+  }
   .strokeFromLeft {
     position: absolute;
     left: -10px;
@@ -45,7 +51,6 @@ i {
     background: rgb(0, 191, 255);
     z-index: 0;
     transform: skew(25deg);
-    animation: strokeFromLeft 0.2s forwards linear;
   }
   .tinyPath {
     stroke-dasharray: 93;
@@ -59,6 +64,7 @@ i {
   }
   i:hover {
     color: rgb(0, 191, 255);
+    transform: scale(1.1);
     transition: all 0.5s ease-in-out;
   }
   @keyframes continueDash {
