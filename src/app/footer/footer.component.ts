@@ -12,12 +12,4 @@ export class FooterComponent implements OnInit {
   goToLink(url: string) {
     window.open(url, "_blank");
   }
-  handleLogoHover() {
-    document.getElementById("strokeAnimation").classList.add("strokeFromLeft");
-  }
-  handleLogoHoverLeave() {
-    document
-      .getElementById("strokeAnimation")
-      .classList.remove("strokeFromLeft");
-  }
 }
