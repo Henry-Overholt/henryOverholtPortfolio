@@ -32,6 +32,11 @@ header {
     stroke-dashoffset: 200;
   }
 }
+@keyframes strokeFromLeft {
+  to {
+    width: 99%;
+  }
+}
 #smallLogo {
   border: 3px solid rgb(0, 0, 56);
   display: flex;
@@ -106,8 +111,23 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     padding: 15px 10px;
     margin-left: 10px;
+    overflow: hidden;
+  }
+  #mediumLogo svg {
+    z-index: 1;
+  }
+  .strokeFromLeft {
+    position: absolute;
+    left: -10px;
+    width: 0;
+    height: 70%;
+    background: rgb(0, 191, 255);
+    z-index: 0;
+    transform: skew(25deg);
+    animation: strokeFromLeft 0.2s forwards linear;
   }
   nav {
     width: 50%;
@@ -116,12 +136,12 @@ i {
     margin-left: 10px;
   }
 
-  #mediumLogo:hover {
+  /* #mediumLogo:hover {
     transform: scale(1.05);
     transition: all 0.5s ease-in-out;
-  }
+  } */
   a {
-    font-size: 17px;
+    font-size: 20px;
     height: 0;
     padding: 0;
     border-radius: 10px;
