@@ -164,10 +164,10 @@ i {
   }
   a:hover {
     font-weight: bold;
-    color: rgb(0, 0, 56);
+    color: rgb(0, 191, 255);
     transition-duration: 0.5s;
-    background: rgb(0, 191, 255);
-    padding: 16px 10px 16px 10px;
+
+    /* padding: 16px 10px 16px 10px; */
   }
 
   header {

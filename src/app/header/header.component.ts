@@ -16,12 +16,4 @@ export class HeaderComponent implements OnInit {
   handleAnchorClicks(): void {
     this.show = false;
   }
-  handleLogoHover() {
-    document.getElementById("strokeAnimation").classList.add("strokeFromLeft");
-  }
-  handleLogoHoverLeave() {
-    document
-      .getElementById("strokeAnimation")
-      .classList.remove("strokeFromLeft");
-  }
 }
