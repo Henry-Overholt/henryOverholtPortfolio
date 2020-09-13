@@ -16,8 +16,4 @@ export class HeaderComponent implements OnInit {
   handleAnchorClicks(): void {
     this.show = false;
   }
-  openNav() {
-    document.getElementById("smallNav").style.top = "100%";
-  }
-  closeNav() {}
 }

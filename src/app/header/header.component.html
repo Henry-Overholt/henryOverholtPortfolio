@@ -56,7 +56,12 @@
   </div>
   <nav>
     <div id="dropDownNav">
-      <i id="showNav" class="fas fa-bars" (click)="handleNavClick()"></i>
+      <i
+        id="showNav"
+        class="fas fa-bars"
+        [ngClass]="{ selected: show }"
+        (click)="handleNavClick()"
+      ></i>
       <ul id="smallNav" *ngIf="show">
         <li>
           <a
