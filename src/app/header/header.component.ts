@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.css"],
 })
 export class HeaderComponent implements OnInit {
+  show: boolean = false;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  handleNavClick(): void {
+    this.show = !this.show;
   }
-
+  handleAnchorClicks(): void {
+    this.show = false;
+  }
+  openNav() {
+    document.getElementById("smallNav").style.top = "100%";
+  }
+  closeNav() {}
 }
