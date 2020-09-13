@@ -56,17 +56,30 @@
   </div>
   <nav>
     <div id="dropDownNav">
-      <i id="showNav" class="fas fa-bars"></i>
-      <ul id="smallNav">
+      <i id="showNav" class="fas fa-bars" (click)="handleNavClick()"></i>
+      <ul id="smallNav" *ngIf="show">
         <li>
-          <a routerLinkActive="activeRoute" routerLink="/projects">PROJECTS</a>
+          <a
+            routerLinkActive="activeRoute"
+            (click)="handleAnchorClicks()"
+            routerLink="/projects"
+            >PROJECTS</a
+          >
         </li>
         <li>
-          <a routerLinkActive="activeRoute" routerLink="/story">ABOUT ME</a>
+          <a
+            routerLinkActive="activeRoute"
+            (click)="handleAnchorClicks()"
+            routerLink="/story"
+            >ABOUT ME</a
+          >
         </li>
 
         <li>
-          <a routerLinkActive="activeRoute" routerLink="/contact"
+          <a
+            routerLinkActive="activeRoute"
+            (click)="handleAnchorClicks()"
+            routerLink="/contact"
             >SAY 'HELLO'</a
           >
         </li>

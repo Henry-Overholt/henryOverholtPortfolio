@@ -1,0 +1,10 @@
+#header {
+  z-index: 2;
+}
+#routerOutlet {
+  z-index: -1;
+}
+body {
+  display: flex;
+  flex-direction: column-reverse;
+}

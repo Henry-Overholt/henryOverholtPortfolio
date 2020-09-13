@@ -55,15 +55,7 @@ a {
   margin-right: 20px;
   font-size: 30px;
 }
-.fas:hover {
-  transform: scale(1.1);
-  background: yellow;
-  padding: 5px;
-  border-radius: 10px;
-}
-#dropDownNav:hover > #smallNav {
-  visibility: visible;
-}
+
 #bigNav {
   display: none;
 }
@@ -75,13 +67,16 @@ a {
   transition: "1000ms";
 }
 #smallNav {
-  visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  right: 20px;
+  overflow: hidden;
+  top: 100%;
+  right: 0;
+
   z-index: 2;
+  transition: all 2s ease-in-out;
 }
 #smallNav li {
   border: 1px solid rgb(0, 0, 56);
