@@ -83,6 +83,7 @@ i {
 #contactForm {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
   width: 95%;
   margin-top: 50px;
@@ -104,12 +105,18 @@ input {
   font-size: 12px;
   margin: 0px 2px 0px 2px;
   border-radius: 5px;
+  width: 90%;
+  outline-color: rgb(0, 191, 255);
 }
 textarea {
   border: 2px solid rgb(0, 0, 56);
   margin: 0px 2px 5px 2px;
+  width: 90%;
   border-radius: 5px;
   font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  outline-color: rgb(0, 191, 255);
+  resize: none;
 }
 textarea ::placeholder {
   font-size: 12px;
@@ -129,12 +136,13 @@ button {
 
 #info {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 #info input {
-  margin: 0;
+  width: 100%;
 }
 #personalContact {
   display: none;
@@ -226,6 +234,18 @@ h2 {
     /* padding-right: 10px;
     border-right: 4px solid rgb(0, 0, 56);
     margin-right: 15px; */
+  }
+  #info {
+    flex-direction: row;
+
+    width: 90%;
+  }
+  #info input {
+    width: 100%;
+    margin: 0;
+  }
+  #name {
+    margin-right: 2.5px;
   }
   a {
     display: flex;
