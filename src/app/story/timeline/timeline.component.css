@@ -23,6 +23,7 @@ em {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: none;
   width: 100%;
   border: 2px 0px 2px 0px solid rgb(0, 0, 56);
 }
