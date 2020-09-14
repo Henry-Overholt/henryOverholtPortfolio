@@ -106,7 +106,13 @@ h3 {
   h3 {
     font-size: 110px;
   }
+  .pillar {
+    width: 10%;
+  }
+  #pillars {
+    width: 60%;
+  }
   .project {
-    width: 80%;
+    width: 70%;
   }
 }
