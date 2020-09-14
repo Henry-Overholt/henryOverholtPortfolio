@@ -14,7 +14,7 @@
 #airplaneContainer {
   position: absolute;
   width: 100%;
-  top: 12%;
+  top: 9%;
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -86,10 +86,9 @@ i {
   align-items: center;
   position: relative;
   width: 95%;
-  margin-top: 50px;
+  margin-top: 100px;
   /* background: white; */
   border-radius: 20px;
-  padding: 5px;
 }
 label {
   text-indent: -10000px;
@@ -103,7 +102,7 @@ input {
   border: 2px solid rgb(0, 0, 56);
   height: 25px;
   font-size: 12px;
-  margin: 0px 2px 0px 2px;
+
   border-radius: 5px;
   width: 90%;
   outline-color: rgb(0, 191, 255);
@@ -129,7 +128,7 @@ button {
   font-family: "Fugaz One";
   font-size: 20px;
   background: rgb(0, 0, 56);
-
+  width: 50%;
   border-radius: 10px;
   margin: 5px;
 }
@@ -169,6 +168,7 @@ h2 {
     width: 40%;
     margin-top: 0;
   }
+
   #wrapper {
     position: relative;
     top: 50%;
@@ -182,9 +182,11 @@ h2 {
   input {
     height: 40px;
     font-size: 15px;
-    margin: 1px 5px 1px 5px;
+
+    width: 98%;
   }
   textarea {
+    width: 98%;
     font-size: 15px;
     margin: 1px 5px 5px 5px;
   }
@@ -236,14 +238,14 @@ h2 {
     margin-right: 15px; */
   }
   #info {
-    flex-direction: row;
-
-    width: 90%;
-  }
-  #info input {
+    align-items: center;
     width: 100%;
-    margin: 0;
+    flex-direction: row;
   }
+
+  /* #info:nth-child(2) {
+    margin-left: 5px;
+  } */
   #name {
     margin-right: 2.5px;
   }
@@ -317,6 +319,7 @@ h2 {
   #strokeLeft {
     background: yellow;
   }
+
   @keyframes loadLetterContainer {
     to {
       height: 100%;
@@ -352,6 +355,9 @@ h2 {
 @media screen and (min-width: 1100px) {
   .showLargeScreen {
     display: inline;
+  }
+  form {
+    width: 440px;
   }
   i {
     padding-right: 10px;
