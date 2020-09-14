@@ -134,6 +134,7 @@ button {
   width: 100%;
 }
 #info input {
+  width: auto;
   margin: 0;
 }
 #personalContact {
