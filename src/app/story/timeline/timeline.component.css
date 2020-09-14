@@ -112,7 +112,10 @@ h2 {
 button {
   background: white;
   border: none;
-  margin: 0px 1px 0px 1px;
+  /* margin: 0px 1px 0px 1px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 8%;
   z-index: 1;
   outline: none;

@@ -125,9 +125,6 @@ export class TimelineComponent implements OnInit {
 
   ngOnInit(): void {}
   handleRightArrow(): void {
-    document
-      .getElementById("strokeFromRight")
-      .classList.remove("strokeFromRight");
     let index: number = this.currentTimeline.index;
     this.down = true;
     if (index > 0) {
@@ -138,9 +135,6 @@ export class TimelineComponent implements OnInit {
     }
   }
   handleLeftArrow(): void {
-    document
-      .getElementById("strokeFromRight")
-      .classList.remove("strokeFromRight");
     let index: number = this.currentTimeline.index;
     this.up = true;
     if (index < this.timeline.length - 1) {
