@@ -32,15 +32,9 @@ main {
 }
 h3 {
   font-family: "Fugaz One", cursive;
-  font-size: 25px;
-  padding: 50px 0px 10px 0px;
+  font-size: 35px;
+  padding: 70px 0px 70px 0px;
   margin: 0;
-  color: yellow;
-}
-
-h5 {
-  padding-bottom: 50px;
-  font-family: "Roboto";
   color: yellow;
 }
 
@@ -48,6 +42,7 @@ h5 {
   width: 85%;
   background: white;
   z-index: 1;
+  transition: all 1s ease-in-out;
 }
 
 #about {
@@ -71,6 +66,9 @@ h5 {
     justify-content: center;
     width: 100%;
   }
+  .project {
+    width: 85%;
+  }
   #pillars {
     display: flex;
     height: 100vh;
@@ -80,9 +78,9 @@ h5 {
     top: 10px;
   }
   h3 {
-    font-size: 70px;
+    font-size: 90px;
     color: yellow;
-    margin-top: 100px;
+    margin: 100px 0px;
   }
 
   h5 {
@@ -106,6 +104,9 @@ h5 {
 }
 @media screen and (min-width: 1100px) {
   h3 {
-    font-size: 90px;
+    font-size: 110px;
+  }
+  .project {
+    width: 80%;
   }
 }

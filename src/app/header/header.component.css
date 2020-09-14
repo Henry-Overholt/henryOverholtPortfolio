@@ -13,6 +13,10 @@ header {
   margin: 0px 10px 0px 0px;
   border-bottom: 3px solid rgb(0, 0, 56);
 }
+#logoWrapper {
+  opacity: 0;
+  animation: fadeIn 0.25s linear 0.5s forwards;
+}
 #headerLogo {
   width: 110px;
   display: none;
@@ -37,6 +41,11 @@ header {
     width: 99%;
   }
 }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 #smallLogo {
   border: 3px solid rgb(0, 0, 56);
   display: flex;
@@ -55,6 +64,8 @@ nav {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  opacity: 0;
+  animation: fadeIn 0.5s linear 0.5s forwards;
 }
 a {
   color: rgb(0, 0, 56);
@@ -171,7 +182,9 @@ i {
   }
 
   header {
-    height: 100px;
+    height: 0px;
+    overflow: hidden;
+    animation: expand 0.5s linear 0.5s forwards;
   }
   #bigNav {
     display: flex;
@@ -194,6 +207,11 @@ i {
   }
   #smallLogo {
     margin-left: 20px;
+  }
+  @keyframes expand {
+    to {
+      height: 100px;
+    }
   }
 }
 
