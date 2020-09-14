@@ -269,3 +269,18 @@ p {
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  #body p {
+    font-size: 20px;
+  }
+  .bodyHolder {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  #body {
+    width: 70%;
+  }
+}

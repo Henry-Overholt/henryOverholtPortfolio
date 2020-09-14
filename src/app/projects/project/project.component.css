@@ -129,4 +129,7 @@ i {
     width: 40%;
     margin-bottom: 10px;
   }
+  #elevatorPitch p {
+    font-size: 20px;
+  }
 }
