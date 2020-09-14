@@ -13,9 +13,12 @@
 }
 #elevatorPitch {
   width: 90%;
+  opacity: 0;
+  overflow: hidden;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   text-indent: 10px;
+  animation: fadeIn 1s linear forwards;
 }
 h4 {
   font-size: 20px;
@@ -65,6 +68,11 @@ i {
   z-index: 1;
   width: 80%;
 }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hideMobile {
@@ -75,7 +83,7 @@ i {
   }
   .coverPic {
     top: 30px;
-    width: 50%;
+    width: 40%;
     margin-bottom: 10px;
   }
   i {
@@ -118,7 +126,7 @@ i {
 @media screen and (min-width: 1100px) {
   .coverPic {
     top: 30px;
-    width: 50%;
+    width: 40%;
     margin-bottom: 10px;
   }
 }
