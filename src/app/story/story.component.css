@@ -429,6 +429,7 @@ footer {
     height: 100%;
   }
   #story p {
+    font-size: 15px;
     margin-bottom: 5px;
   }
   #myStory {
