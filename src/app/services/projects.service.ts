@@ -1,10 +1,11 @@
 import { Injectable } from "@angular/core";
+import { Project } from "./../interfaces/project";
 
 @Injectable({
   providedIn: "root",
 })
 export class ProjectsService {
-  projects: any[] = [
+  projects: Project[] = [
     {
       projectName: "Weather App",
       coverPic: "./../../assets/projects/weatherApp.png ",
