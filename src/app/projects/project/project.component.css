@@ -123,13 +123,13 @@ i {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1400px) {
   .coverPic {
     top: 30px;
     width: 40%;
     margin-bottom: 10px;
   }
   #elevatorPitch p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
