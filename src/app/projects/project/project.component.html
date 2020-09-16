@@ -4,7 +4,7 @@
     <div id="elevatorPitch" class="hideMobile flexColumn">
       <h4>{{ project.date }}</h4>
       <p>{{ project.elevator }}</p>
-      <p id="technology"><span>Technologies: </span> {{ project.techSpecs }}</p>
+      <p id="technology"><span>Utilized:</span> {{ project.techSpecs }}</p>
       <div class="icons">
         <i class="fab fa-github" (click)="goToLink(project.github)"></i>
         <i
@@ -22,7 +22,7 @@
     <div *ngIf="moreInfo" id="elevatorPitch" class="flexColumn">
       <p id="date">{{ project.date }}</p>
       <p>{{ project.elevator }}</p>
-      <p id="technology"><span>Technologies: </span> {{ project.techSpecs }}</p>
+      <p id="technology"><span>Utilized:</span> {{ project.techSpecs }}</p>
       <div class="icons">
         <i class="fab fa-github" (click)="goToLink(project.github)"></i>
         <i
