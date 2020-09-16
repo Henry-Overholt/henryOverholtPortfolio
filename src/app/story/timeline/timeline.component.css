@@ -194,7 +194,7 @@ p {
   }
   p {
     text-indent: 15px;
-    font-size: 18px;
+    font-size: 15px;
     font-family: "Roboto" sans-serif;
   }
   #timelineHolder {
@@ -269,9 +269,9 @@ p {
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   #body p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .bodyHolder {
     width: 100%;
@@ -281,6 +281,6 @@ p {
     flex-direction: column;
   }
   #body {
-    width: 70%;
+    width: 80%;
   }
 }
