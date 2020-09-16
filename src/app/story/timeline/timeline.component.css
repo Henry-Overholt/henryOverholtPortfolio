@@ -109,6 +109,9 @@ h2 {
   color: rgb(0, 191, 255);
   margin-top: 2px;
 }
+.company + .company {
+  margin: 0px 0px 2px 0px;
+}
 button {
   background: white;
   border: none;

@@ -8,19 +8,17 @@ import { StoryComponent } from "./story/story.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FormsModule } from "@angular/forms";
-import { TesterComponent } from "./tester/tester.component";
-import { SillsDisplayComponent } from './projects/sills-display/sills-display.component';
-import { ProjectComponent } from './projects/project/project.component';
-import { FooterComponent } from './footer/footer.component';
-import { TimelineComponent } from './story/timeline/timeline.component';
-import { HeaderComponent } from './header/header.component';
+import { SillsDisplayComponent } from "./projects/sills-display/sills-display.component";
+import { ProjectComponent } from "./projects/project/project.component";
+import { FooterComponent } from "./footer/footer.component";
+import { TimelineComponent } from "./story/timeline/timeline.component";
+import { HeaderComponent } from "./header/header.component";
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "story", component: StoryComponent },
   { path: "projects", component: ProjectsComponent },
   { path: "contact", component: ContactComponent },
-  { path: "tester", component: TesterComponent },
   { path: "**", component: HomeComponent },
   { path: "", redirectTo: "/home", pathMatch: "full" },
 ];
@@ -31,7 +29,6 @@ const appRoutes: Routes = [
     StoryComponent,
     ProjectsComponent,
     ContactComponent,
-    TesterComponent,
     SillsDisplayComponent,
     ProjectComponent,
     FooterComponent,

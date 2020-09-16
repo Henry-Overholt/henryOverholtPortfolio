@@ -26,7 +26,7 @@ export class TimelineComponent implements OnInit {
       date: "JULY 2019 - SEPT 2019",
       strings: [
         "Grand Circus trains Michigan’s next generation of programmers and connects businesses to truly talented people.  Since 2015 they’ve graduated more than 1,500 bootcamp students, and have graduates at over 300 companies statewide. ",
-        "I attended Grand Circus’ Frontend Bootcamp from July to September of 2019.  During that time I was taught frontend development from the ground up. Starting with recreating web layouts from screen shots using CSS and HTML, to making sites functional with JavaScript, and eventually learning the Angular Framework to build responsive efficient web applications.",
+        "I attended Grand Circus’ Frontend Bootcamp from July to September of 2019.  During that time I was taught frontend development from the ground up. Starting with recreating web layouts from wireframes using CSS and HTML, to making sites functional with JavaScript, and eventually learning Angular to build responsive efficient web applications.",
         "While at Grand Circus I completed two to three mini projects a week, two mid-term projects, and graduated after completing my final project in a team of four using agile and scrum development principals.",
       ],
       index: 1,
@@ -39,10 +39,10 @@ export class TimelineComponent implements OnInit {
       position: "Field Organizer",
       date: "SEPT 2018 - DEC 2018",
       strings: [
-        "For Our Future is a Political Action Committee dedicated to Grassroots Organizing, and I worked for the non-profit arm.  The goal of the non-profit arm of For Our Future is to go out a listen to Michigan Voters, and find out what the most important issues were for each individual we talked to. ",
+        "For Our Future is a Political Action Committee dedicated to Grassroots Organizing.  I was involved with the non-profit side of the organization whose goal is to go out a listen to Michigan Voters, and find out what the most important issues were for each individual we talked to. ",
         "The goal of my position was voter engagement.  My main responsibility was to reach as many voters as I could through door-to-door contact.  I engaged voters in a conversation to figure out what issues were most important to them.  For Our Future would take that information and support local candidates who matched the issues of the community they were running to represent. ",
         "As we got closer to the election, my goal was to encourage them to vote, and vote for candidates whose platform matched the issues they cared about.  Throughout my time with For Our Future during the 2018 elections, I knocked on over two thousand doors, and talked to people about their vote and the power they carried, to elect the candidates who best represented their issues.",
-        "After the election we mobilized to get voters to call their current representatives in the Michigan house and senate, to protect certain legislation that was on the floor to be repealed by representatives who were voted out.  I was calling, knocking on doors, and going to events to talk to as many voters as possible.",
+        "After the election we mobilized to get voters to use voice to tell their current representatives in the Michigan house and senate, to protect the certain legislation that was on the floor to be repealed by representatives who were voted out.  I was calling, knocking on doors, and going to events to talk to as many voters as possible.",
       ],
       index: 2,
     },
@@ -54,9 +54,9 @@ export class TimelineComponent implements OnInit {
       position: "Regional Field Director",
       date: "JULY 2018 - AUGUST 2018",
       strings: [
-        "Saad for Congress was a campaign for the House of Representatives to represent Michigan’s 11th congressional district. As one of the Regional Field Directors for Campaign, it was my role to reach the voters in my assigned areas of the district, as well as train and organize volunteers to maximize our reach in the district ",
+        "Saad for Congress was a campaign for the House of Representatives to represent Michigan’s 11th congressional district. As one of the Regional Field Directors for the Campaign, it was my role to reach the voters in my assigned areas of the district, as well as train and organize volunteers to maximize our reach in the district ",
         "Throughout my time with the Saad for Congress Campaign I represented the campaign and it’s message at local events, meetings, and community festivals throughout the 11th District.  I created training documents for new volunteers as well as ran training sessions.  In the closing phases of the campaign, to get our supporters out and vote, I managed 150 “Get Out the Vote” shifts, launching canvasses as well as phone banks.",
-        "My time with the campaign was a true highlight of my young career at that point.  The people I worked with were amazing.  The pace at which we worked, and amount we got done in the day left me feeling truly inspired.  When I’ve been looking for projects since my time with the Saad for Congress campaign, I look for the same things I had there, a great collaborative environment, solution oriented peers, and shared values that help us get the job done. ",
+        "My time with the campaign was a true highlight of my young career at that point.  The people I worked with were amazing, the pace at which we worked, and amount we got done in the day left me feeling truly inspired.  When I’ve been looking for projects since my time with the Saad for Congress campaign, I look for the same things I had there, a great collaborative environment, solution oriented peers, and shared values that help us get the job done. ",
       ],
       index: 3,
     },
