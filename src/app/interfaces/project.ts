@@ -2,7 +2,7 @@ export interface Project {
   projectName: string;
   coverPic: string;
   extension: string;
-  elevator: string;
+  elevators: string[];
   mobile: boolean;
   live: boolean;
   link: string;
