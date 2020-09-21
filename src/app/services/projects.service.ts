@@ -29,7 +29,8 @@ export class ProjectsService {
       coverPic: "./../../assets/projects/portfolio.png",
       extension: "/portfolio-site",
       elevators: [
-        "This portfolio was a lot of fun to build. My goal was to create a simple site to showcase my skills as a Frontend Developer, and to create a one-stop shop for my projects, my background, and a simple contact form.",
+        "My goal for my Portfolio site was to create a simple site that would showcase my skills as a Frontend Developer. I wanted a one-stop shop for a visitor to get a quick glance at who I am as a developer. I wanted to display my some projects, my career path to where I am today, and a very simple way for someone to get in touch with me about opportunities and projects.",
+        "My biggest challenge with this portfolio site was the design. The goal was to create a cohesive design throughout each component. At first, I liked the components I had designed individually but not as a whole site. I struggled to create a theme that runs through every component.  Eventually I came to the idea of adding a third color to the palette, a lighter blue, then started building some animations that would run on different components.  The palette and the animations combined to create a design and theme that I was very happy with.",
       ],
       mobile: true,
       live: false,
@@ -47,6 +48,7 @@ export class ProjectsService {
       extension: "/marvel-march",
       elevators: [
         "Along with lots of people who were self-isolating in their homes during the Coronavirus outbreak, I was looking for ways to stay entertained.  As a Marvel fan I decided to watch through the Marvel Cinematic Universe in some sort of order, and as a developer I thought it would be fun to hack together a simple frontend to track my way through all the movies. I built a simple checklist that keeps track of what movies you have watched by storing the movies you watched locally. I also provided a suggested order for the Marvel movies, what current streaming platforms they are on, number of post-credit scenes, as well as the famous cameos of the late great Stan Lee.",
+        "This project was a lot of fun to build. It was rather simple to create, but I felt connected to everyone who was searching for entertainment during the early weeks of the Coronavirus pandemic, and now it can be used by anyone who would like an app to track their progress through the marvel cinematic universe.",
       ],
       mobile: true,
       live: true,
@@ -63,6 +65,7 @@ export class ProjectsService {
       extension: "/math-hoops",
       elevators: [
         "Math Hoops is originally a fast pace Math board game for students, that uses WNBA and NBA player statistics to teach students about statistics and to practice quick single digit math. I had the opportunity to use the game while I was working in Detroit's Public Schools with City Year Detroit, and I loved it.  So after I graduated from the Frontend Bootcamp at Grand Circus I decided to transform this game from a board game into a computer game designed to be played on iPad-sized screens or larger. ",
+        "My biggest hurdle in building out this idea was how to take a board game, where each turn was a couple steps, and turn it into a player versus the machine, computer game. It was an interesting process of writing the code for this project. I would write code, then come back to that code a day or two later, and start seeing simpler ways to write it. Basically, everytime I came back to the project I was refactoring my code from earlier.  I would like to come back to this project, and add player versus player functionality, but at this moment I’m happy with how this game runs currently. ",
       ],
       mobile: false,
       live: true,

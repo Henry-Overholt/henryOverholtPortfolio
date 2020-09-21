@@ -29,6 +29,9 @@ h4 {
   font-family: "Fugaz One";
   color: rgb(0, 191, 255);
 }
+.elevatorPitch + .elevatorPitch {
+  margin-top: 5px;
+}
 .icons {
   display: flex;
   justify-content: space-around;
@@ -87,6 +90,7 @@ i {
     margin-bottom: 10px;
   }
   i {
+    cursor: pointer;
     font-size: 40px;
     color: rgb(0, 0, 56);
     z-index: 2;

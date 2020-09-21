@@ -260,12 +260,17 @@ h2 {
     text-align: center;
     color: rgb(0, 0, 56);
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
   }
   .fa-linkedin {
     color: blue;
+    background: white;
+    border-radius: 100%;
   }
   .fa-github-square {
     color: black;
+    background: white;
+    border-radius: 100%;
   }
 
   .showLargeScreen {
