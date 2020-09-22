@@ -80,7 +80,8 @@ export class ProjectsService {
       coverPic: "./../../assets/projects/listy.png ",
       extension: "/listy-project",
       elevators: [
-        "Listy is a day-to-day event and task manager application, that gives you current weather information, along with estimated drive times for your events.  I built this application with three teammates for our final project at Grand Circus.  We followed the Scrum and Agile frameworks in order to complete our project, with daily scrums, and small sprints. ",
+        "As part of the Grand Circus curriculum, you are required to complete a final project. Throughout the bootcamp we completed two mid-term projects, one a pure JavaScript project the other an Angular project involving an API. The final project required pulling everything we learned throughout the bootcamp, and utilizing it in our projects.  To meet the requirement, my team and I developed Listy.  Listy is a day-to-day event and task manager application, that gives you current weather information, along with estimated drive times for your events.",
+        "One of the biggest challenges my team and I faced was working with Google’s Distance Matrix API. While our experience with the OpenWeather API was relatively painless, the Distance Matrix API call was throwing a lot of errors that were new to us. We needed to be passing the correct security to Google to pass the CORS errors we were facing.  Overall our time was pretty happy with our final project, we wanted to add a suggested time to leave by, and blocking your schedule from adding events too close together, but it was a great experience that ended our time at Grand Circus.",
       ],
       mobile: true,
       live: true,

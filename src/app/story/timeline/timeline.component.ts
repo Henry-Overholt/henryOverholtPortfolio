@@ -14,7 +14,11 @@ export class TimelineComponent implements OnInit {
       alt: "Grand Circus Bootcamp Logo",
       position: "After Hours Bootcamp Teaching Assistant",
       date: "JULY 2020 - PRESENT",
-      strings: ["", "", ""],
+      strings: [
+        "A returned to Grand Circus, after I graduated from their Frontend Bootcamp, to serve as the Teaching Assistant for their July After-Hours Frontend Bootcamp.  Helping the next cohort of Michigan based developers, complete their bootcamp.  We began the bootcamp learning HTML and CSS, then into JavaScript, TypeScript, Angular.  We then begin an introduction to some backend and database concepts to help our frontend students take a significant step into full-stack development. They become skilled in express and postgresSQL databases, so they can build full stack applications.",
+        "An additional requirement of my position is grading and providing feedback for students from their assessments and assignments. This was an eye opening experience for me, because I was learning that I had a skill I didn’t know I had obtained in my short career in software development, in my ease in reading code from students that are only learning coding now. Figuring out what a student was trying to do, or how they could simplify their code, or where they were making a mistake that was breaking their code. In grading assessments I utilized testing languages, with written tests, as well figuring if a student had done enough in the code to deserve points.",
+        "As part of my position at Grand Circus I also tutor for all current running frontend bootcamps. That means identifying a student’s problem areas and addressing them in individual tutoring sessions. I utilize my understanding of programming and Frontend development in order to explain concepts and ideas into terms that students might better understand.  I ran weekly tutoring hours, as well as a group study session to review weekly material. ",
+      ],
       index: 0,
     },
     {
@@ -109,7 +113,7 @@ export class TimelineComponent implements OnInit {
     },
   ];
   spin: boolean = true;
-  currentTimeline: any = this.timeline[1];
+  currentTimeline: any = this.timeline[0];
   lastTimeLine: any = this.timeline[0];
   up: boolean = true;
   down: boolean = true;
