@@ -7,6 +7,24 @@ import { Project } from "./../interfaces/project";
 export class ProjectsService {
   projects: Project[] = [
     {
+      projectName: "Random Episode Generator",
+      coverPic: "./../../assets/projects/randomEpisodeGen.png ",
+      extension: "/randomEpisodeGenerator",
+      elevators: [
+        "While Netflix has incredibly popular original content, once people have binged the new shows they return to their old faithful shows, like 'The Office' or 'Friends'.  Like a lot of other people I like to have a familiar show on in the background, shows I’ve seen a lot, that I enjoy but don’t need to pay attention to. For a couple years I’ve gone out and searched for sites that can provide me with a random episode of my favorite shows. I have never been satisfied with what is out there, so I took a Saturday and created my own.",
+        "I found an API available from ‘The Movie Database’ that allowed me to get details of a show, then randomly pick a season, then a random episode from that season. Originally I thought I would choose a couple shows, but then decided I could use the API to allow a user to search for any show they want, then get a random episode for that show. I use this application almost daily now to find me a random episode to have on in the background, and I’m very happy with how it came. I also took this opportunity to use the Youtube Component built into Angular, that was introduced in Angular 9.",
+      ],
+
+      mobile: true,
+      live: true,
+      link: "http://random-episode.surge.sh/",
+      github: "https://github.com/Henry-Overholt/randomEpisodeGenerator",
+      techSpecs:
+        "Angular, HTML, CSS, surge.sh, TMDb API, Angular's Youtube Player Component, Git/Github",
+      moreInfo: false,
+      date: "OCTOBER 2020",
+    },
+    {
       projectName: "Weather App",
       coverPic: "./../../assets/projects/weatherApp.png ",
       extension: "/weatherApp",
