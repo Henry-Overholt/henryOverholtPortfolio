@@ -18,6 +18,12 @@
     </div>
   </div>
   <app-sills-display [@swingUp] id="skillsDisplay"></app-sills-display>
-  <a [@swingUp] id="about" routerLink="/story">ABOUT ME</a>
+
+  <app-button
+    [@swingUp]
+    id="about"
+    path="story"
+    buttonTxt="ABOUT ME"
+  ></app-button>
   <app-footer [@swingUp]></app-footer>
 </main>

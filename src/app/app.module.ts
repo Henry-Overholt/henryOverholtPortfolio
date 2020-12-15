@@ -13,6 +13,7 @@ import { ProjectComponent } from "./projects/project/project.component";
 import { FooterComponent } from "./footer/footer.component";
 import { TimelineComponent } from "./story/timeline/timeline.component";
 import { HeaderComponent } from "./header/header.component";
+import { ButtonComponent } from './button/button.component';
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
     FooterComponent,
     TimelineComponent,
     HeaderComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
