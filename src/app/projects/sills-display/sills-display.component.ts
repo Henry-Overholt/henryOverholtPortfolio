@@ -32,7 +32,8 @@ export class SillsDisplayComponent implements OnInit {
     { skill: "Git/GitHub", last: false, write: false, cursor: false },
     { skill: "TypeScript", last: false, write: false, cursor: false },
     { skill: "postgresSQL", last: false, write: false, cursor: false },
-    { skill: "express.js", last: true, write: false, cursor: false },
+    { skill: "express.js", last: false, write: false, cursor: false },
+    { skill: "Docker", last: true, write: false, cursor: false },
   ];
   lastSkill: object = this.skillsList[this.skillsList.length - 1];
   skillsListNum: number = this.skillsList.length - 1;

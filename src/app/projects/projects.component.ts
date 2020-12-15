@@ -72,6 +72,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.projects = this.projectsService.projects;
+    window.scrollTo(0, 0);
     this.startAnimations();
   }
 
