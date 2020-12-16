@@ -63,45 +63,21 @@
         [ngClass]="{ selected: show }"
         (click)="handleNavClick()"
       ></i>
-      <ul id="smallNav" *ngIf="show">
-        <li>
-          <a
-            routerLinkActive="activeRoute"
-            (click)="handleAnchorClicks()"
-            routerLink="/projects"
-            >PROJECTS</a
-          >
-        </li>
-        <li>
-          <a
-            routerLinkActive="activeRoute"
-            (click)="handleAnchorClicks()"
-            routerLink="/story"
-            >ABOUT ME</a
-          >
-        </li>
-
-        <li>
-          <a
-            routerLinkActive="activeRoute"
-            (click)="handleAnchorClicks()"
-            routerLink="/contact"
-            >SAY 'HELLO'</a
-          >
-        </li>
-      </ul>
     </div>
     <ul id="bigNav">
       <li>
-        <a routerLinkActive="activeRoute" routerLink="/projects">PROJECTS</a>
+        <div class="line blue"></div>
+        <a routerLinkActive="activeRoute" routerLink="/projects"> PROJECTS</a>
       </li>
       <li>
-        <a routerLinkActive="activeRoute" routerLink="/story">ABOUT ME</a>
+        <div class="line lightblue"></div>
+        <a routerLinkActive="activeRoute" routerLink="/story"> ABOUT ME</a>
       </li>
 
       <li>
-        <a routerLinkActive="activeRoute" id="contact" routerLink="/contact"
-          >SAY 'HELLO'</a
+        <div class="line yellow"></div>
+        <a routerLinkActive="activeRoute" routerLink="/contact" id="contact">
+          CONTACT</a
         >
       </li>
     </ul>

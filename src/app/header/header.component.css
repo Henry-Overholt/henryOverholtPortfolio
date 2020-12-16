@@ -115,6 +115,14 @@ i {
 }
 
 @media screen and (min-width: 869px) {
+  #bigNav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
   #smallLogo {
     display: none;
   }
@@ -151,24 +159,67 @@ i {
     width: 50%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-left: 10px;
+    height: 100%;
   }
 
   /* #mediumLogo:hover {
     transform: scale(1.05);
     transition: all 0.5s ease-in-out;
   } */
+  li {
+    height: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 140px;
+    transition: all 0.25s ease-in-out;
+  }
+  .line {
+    position: absolute;
+    left: 0;
+    height: 70%;
+    background: rgb(0, 191, 255);
+    width: 10%;
+    z-index: -1;
+    transform: skewX(-15deg);
+  }
+  .blue {
+    background: rgb(0, 0, 56);
+  }
+  .lightblue {
+    background: rgb(0, 191, 255);
+  }
+  .yellow {
+    background: yellow;
+  }
+  li:hover > .line {
+    animation: slideIn 0.25s ease-in-out forwards;
+  }
+  li:hover > .lightblue + a {
+    color: rgb(0, 0, 56);
+  }
+  @keyframes slideIn {
+    to {
+      width: 100%;
+    }
+  }
   a {
     font-size: 20px;
     height: 0;
     padding: 0;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #logoWrapper a:hover {
     border: none;
   }
   #contact {
-    border: 4px solid yellow;
     padding: 12px 6px 12px 6px;
   }
   #contact:hover {
@@ -187,21 +238,17 @@ i {
     overflow: hidden;
     animation: expand 0.5s linear 0.5s forwards;
   }
-  #bigNav {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 100%;
-  }
+
   #dropDownNav {
     display: none;
   }
   .activeRoute {
-    background-color: yellow;
+    width: 100%;
+    /* background-color: yellow;
 
     padding: 16px 10px 16px 10px;
     border-radius: 10px;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s; */
   }
   #headerLogo {
     width: 200px;
@@ -219,5 +266,8 @@ i {
 @media screen and (min-width: 1400px) {
   a {
     font-size: 23px;
+  }
+  li {
+    width: 160px;
   }
 }
