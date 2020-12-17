@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "portfolio";
-  open: boolean = true;
+  open: boolean = false;
 
   openNav(): void {
     this.open = !this.open;

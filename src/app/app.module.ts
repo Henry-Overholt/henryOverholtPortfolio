@@ -15,7 +15,7 @@ import { TimelineComponent } from "./story/timeline/timeline.component";
 import { HeaderComponent } from "./header/header.component";
 import { ButtonComponent } from "./button/button.component";
 import { BlogComponent } from "./blog/blog.component";
-import { SideNavComponent } from './side-nav/side-nav.component';
+import { SideNavComponent } from "./side-nav/side-nav.component";
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -45,7 +45,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {
+      scrollPositionRestoration: "top",
+    }),
     BrowserAnimationsModule,
   ],
   providers: [],

@@ -3,23 +3,43 @@
     <i class="fas fa-times" (click)="closeNav()"></i>
     <ul id="bigNav">
       <li>
+        <a
+          (click)="handleRouteClick('projects')"
+          routerLinkActive="activeRoute"
+          routerLink="/projects"
+        >
+          PROJECTS</a
+        >
         <div class="line blue" [ngClass]="{ open: route === 'projects' }"></div>
-        <a (click)="handleRouteClick('projects')"> PROJECTS</a>
       </li>
       <li>
+        <a
+          (click)="handleRouteClick('story')"
+          routerLinkActive="activeRoute"
+          routerLink="/story"
+          id="about"
+        >
+          ABOUT ME</a
+        >
         <div
           class="line lightblue"
           [ngClass]="{ open: route === 'story' }"
         ></div>
-        <a (click)="handleRouteClick('story')"> ABOUT ME</a>
       </li>
 
       <li>
+        <a
+          (click)="handleRouteClick('contact')"
+          id="contact"
+          routerLinkActive="activeRoute"
+          routerLink="/contact"
+        >
+          CONTACT</a
+        >
         <div
           class="line yellow"
           [ngClass]="{ open: route === 'contact' }"
         ></div>
-        <a (click)="handleRouteClick('contact')" id="contact"> CONTACT</a>
       </li>
     </ul>
   </nav>

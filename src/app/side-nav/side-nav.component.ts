@@ -21,5 +21,8 @@ export class SideNavComponent implements OnInit {
       this.router.navigate([`/${route}`]);
       this.closeNav();
     }, 500);
+    setTimeout(() => {
+      this.route = undefined;
+    }, 800);
   }
 }

@@ -30,7 +30,7 @@ li {
   border-bottom: 1px solid whitesmoke;
 }
 a {
-  color: grey;
+  color: rgb(0, 0, 56);
   text-decoration: none;
   font-family: "Fugaz One";
   z-index: 1;
@@ -45,7 +45,7 @@ a {
   z-index: 0;
 }
 .open {
-  animation: open 0.5s ease-in-out forwards;
+  animation: open 0.25s ease-in-out forwards;
 }
 .blue {
   background: rgb(0, 0, 56);
@@ -59,11 +59,21 @@ a {
 a:hover {
   color: rgb(0, 191, 255);
 }
+.about {
+  color: yellow;
+}
+.lightblue + a:hover {
+  color: rgb(0, 0, 56);
+}
 .spaceHolder {
   width: 40%;
   height: 100%;
   background: transparent;
 }
+.activeRoute + .line {
+  width: 100%;
+}
+
 @keyframes open {
   to {
     width: 100%;

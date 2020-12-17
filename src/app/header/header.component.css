@@ -216,6 +216,9 @@ i {
     justify-content: center;
     align-items: center;
   }
+  #about:hover {
+    color: rgb(0, 0, 56);
+  }
   #logoWrapper a:hover {
     border: none;
   }
@@ -244,12 +247,23 @@ i {
   }
   .activeRoute {
     width: 100%;
+    color: rgb(0, 191, 255);
     /* background-color: yellow;
 
     padding: 16px 10px 16px 10px;
     border-radius: 10px;
     transition-duration: 0.5s; */
   }
+  .activeRouteAbout {
+    color: rgb(0, 0, 56);
+  }
+  #about.activeRoute {
+    color: rgb(0, 0, 56);
+  }
+  .activeRoute + .line {
+    width: 100%;
+  }
+
   #headerLogo {
     width: 200px;
   }
