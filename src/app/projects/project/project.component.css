@@ -95,6 +95,10 @@ i {
     color: rgb(0, 0, 56);
     z-index: 2;
   }
+  i:hover {
+    color: rgb(0, 191, 255);
+    transform: scale(1.1);
+  }
   .project {
     display: flex;
     flex-direction: row-reverse;

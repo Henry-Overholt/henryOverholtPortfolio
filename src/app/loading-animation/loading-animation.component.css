@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Fugaz One", sans-serif;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  margin-top: 100px;
+}
+h1 {
+  font-size: 40px;
+  color: rgb(0, 0, 56);
+}
+.wipeAnimation {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background: white;
+  transform: skew(15deg);
+  animation: wipeAnimation 2s linear infinite;
+}
+#color-container {
+  background: rgb(0, 191, 255);
+  width: 40px;
+  height: 100%;
+}
+.navy {
+  background: rgb(0, 0, 56);
+}
+.yellow {
+  background: yellow;
+}
+.lightBlue {
+  background: rgb(0, 191, 255);
+}
+.circle-container {
+  width: 300px;
+  height: 300px;
+  border-bottom: 3px solid whitesmoke;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 20px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0px;
+  animation: bounce 4s ease-in-out infinite;
+}
+#circle-one {
+  left: 30px;
+  background: rgb(0, 0, 56);
+  animation-delay: 0.25s;
+}
+#circle-two {
+  background: yellow;
+  animation-delay: 0.05s;
+}
+#circle-three {
+  background: rgb(0, 191, 255);
+  right: 30px;
+  animation-delay: 0.35s;
+}
+@keyframes wipeAnimation {
+  0% {
+    left: -10%;
+  }
+  50% {
+    left: 120%;
+  }
+  to {
+    left: 120%;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: scaleX(1.2) scaleY(0.8);
+  }
+  2% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1);
+    bottom: 125px;
+  }
+  20% {
+    bottom: 0;
+    transform: scaleX(1.2) scale(0.8);
+  }
+  22% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1);
+    bottom: 100px;
+  }
+  40% {
+    bottom: 0;
+    transform: scaleX(1.2) scale(0.8);
+  }
+  42% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+    bottom: 75px;
+  }
+  60% {
+    bottom: 0;
+    transform: scaleX(1.2) scale(0.8);
+  }
+  62% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+    bottom: 50px;
+  }
+  80% {
+    bottom: 0;
+    transform: scaleX(1.2) scale(0.8);
+  }
+  82% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1);
+    bottom: 25px;
+  }
+  100% {
+    bottom: 0;
+    transform: scaleX(1.2) scale(0.8);
+  }
+}

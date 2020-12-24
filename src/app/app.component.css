@@ -7,4 +7,24 @@
 body {
   display: flex;
   flex-direction: column-reverse;
+  position: relative;
+}
+#sideNav {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.open {
+  width: 100%;
+}
+.close {
+  width: 0;
+}
+@media screen and (min-width: 869px) {
+  #sideNav {
+    display: none;
+  }
 }

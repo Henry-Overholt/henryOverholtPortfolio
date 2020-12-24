@@ -61,6 +61,9 @@ h4 {
   font-size: 35px;
   margin-top: 5px;
 }
+#skillContainer i:hover {
+  color: yellow;
+}
 .hidePlay {
   visibility: hidden;
 }
@@ -86,32 +89,36 @@ h4 {
 .fa-angular /* skillCrawler */ {
   color: red;
   /* right: -100px; */
-  animation: slideOutRight 18s infinite linear;
+  animation: slideOutRight 21s infinite linear;
 }
 .fa-js-square /* skillCrawler */ {
   color: rgb(0, 191, 255);
   /* right: -100px; */
-  animation: slideOutRight 18s infinite 3s linear;
+  animation: slideOutRight 21s infinite 3s linear;
 }
 
 .fa-html5 /* skillCrawler */ {
   color: orange;
   /* right: -100px; */
-  animation: slideOutRight 18s infinite 6s linear;
+  animation: slideOutRight 21s infinite 6s linear;
 }
 .fa-css3-alt /* skillCrawler */ {
   color: yellow;
   /* right: -100px; */
-  animation: slideOutRight 18s infinite 9s linear;
+  animation: slideOutRight 21s infinite 9s linear;
 }
 .fa-github {
   color: rgb(0, 0, 56);
   /* right: -100px; */
-  animation: slideOutRight 18s infinite 12s linear;
+  animation: slideOutRight 21s infinite 12s linear;
 }
 .fa-code-branch {
+  color: orange;
+  animation: slideOutRight 21s infinite 15s linear;
+}
+.fa-docker {
   color: rgb(0, 191, 255);
-  animation: slideOutRight 18s infinite 15s linear;
+  animation: slideOutRight 21s infinite 18s linear;
 }
 @keyframes slideOutRight /* skillCrawler */ {
   from {
@@ -139,24 +146,28 @@ h4 {
     top: -100px;
   }
   .fa-angular/* skillCrawler */ {
-    animation: slideOut 30s infinite linear;
+    animation: slideOut 35s infinite linear;
   }
   .fa-js-square /* skillCrawler */ {
-    animation: slideOut 30s infinite 5s linear;
+    animation: slideOut 35s infinite 5s linear;
   }
   .fa-html5 /* skillCrawler */ {
-    animation: slideOut 30s infinite 10s linear;
+    animation: slideOut 35s infinite 10s linear;
   }
   .fa-css3-alt /* skillCrawler */ {
-    animation: slideOut 30s infinite 15s linear;
+    animation: slideOut 35s infinite 15s linear;
   }
   .fa-github {
     color: rgb(0, 0, 56);
-    animation: slideOut 30s infinite 20s linear;
+    animation: slideOut 35s infinite 20s linear;
   }
   .fa-code-branch {
+    color: orange;
+    animation: slideOut 35s infinite 25s linear;
+  }
+  .fa-docker {
     color: rgb(0, 191, 255);
-    animation: slideOut 30s infinite 25s linear;
+    animation: slideOut 35s infinite 30s linear;
   }
   h4 {
     font-size: 35px;

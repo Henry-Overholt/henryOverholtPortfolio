@@ -1,4 +1,9 @@
 <body>
   <router-outlet id="routerOutlet"></router-outlet>
-  <app-header id="header"></app-header>
+  <app-header id="header" (clicked)="openNav()"></app-header>
+  <app-side-nav
+    id="sideNav"
+    [ngClass]="open ? 'open' : 'close'"
+    (clicked)="openNav()"
+  ></app-side-nav>
 </body>

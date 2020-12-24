@@ -1,0 +1,81 @@
+body {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+nav {
+  width: 60%;
+  height: 100%;
+  border-left: 4px solid rgb(0, 191, 255);
+  background: white;
+}
+i {
+  margin: 60px 5px 5px 10px;
+  color: rgb(0, 191, 255);
+  font-size: 30px;
+}
+ul {
+  margin: 10px 5px;
+}
+li {
+  width: 95%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid whitesmoke;
+}
+a {
+  color: rgb(0, 0, 56);
+  text-decoration: none;
+  font-family: "Fugaz One";
+  z-index: 1;
+}
+.line {
+  position: absolute;
+  width: 10%;
+  height: 70%;
+  transform: skewX(-15deg);
+  background: rgb(0, 191, 255);
+  left: 0;
+  z-index: 0;
+}
+.open {
+  animation: open 0.25s ease-in-out forwards;
+}
+.blue {
+  background: rgb(0, 0, 56);
+}
+.lightblue {
+  background: rgb(0, 191, 255);
+}
+.yellow {
+  background: yellow;
+}
+a:hover {
+  color: rgb(0, 191, 255);
+}
+.about:hover {
+  color: yellow;
+}
+.lightblue + a:hover {
+  color: rgb(0, 0, 56);
+}
+.spaceHolder {
+  width: 40%;
+  height: 100%;
+  background: transparent;
+}
+.activeRoute + .line {
+  width: 100%;
+}
+
+@keyframes open {
+  to {
+    width: 100%;
+  }
+}
