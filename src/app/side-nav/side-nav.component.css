@@ -59,7 +59,7 @@ a {
 a:hover {
   color: rgb(0, 191, 255);
 }
-.about {
+.about:hover {
   color: yellow;
 }
 .lightblue + a:hover {

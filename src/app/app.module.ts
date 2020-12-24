@@ -16,6 +16,7 @@ import { HeaderComponent } from "./header/header.component";
 import { ButtonComponent } from "./button/button.component";
 import { BlogComponent } from "./blog/blog.component";
 import { SideNavComponent } from "./side-nav/side-nav.component";
+import { LoadingAnimationComponent } from "./loading-animation/loading-animation.component";
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
   { path: "projects", component: ProjectsComponent },
   { path: "contact", component: ContactComponent },
   { path: "blog", component: BlogComponent },
+  { path: "testing-lab", component: LoadingAnimationComponent },
   { path: "**", component: HomeComponent },
   { path: "", redirectTo: "/home", pathMatch: "full" },
 ];
@@ -41,6 +43,7 @@ const appRoutes: Routes = [
     ButtonComponent,
     BlogComponent,
     SideNavComponent,
+    LoadingAnimationComponent,
   ],
   imports: [
     BrowserModule,
